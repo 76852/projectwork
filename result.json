@@ -1,0 +1,1675 @@
+{
+  "model": "Qwen2-8B",
+  "test_date": "2025-11-05T17:24:02.218767",
+  "test_config": {
+    "sample_size": 999,
+    "max_new_tokens": 50,
+    "duration_seconds": 1833.487352
+  },
+  "metrics": {
+    "exact_match_rate": 0.0,
+    "average_similarity": 0.26877464398456774,
+    "success_rate": 1.0
+  },
+  "similarity_distribution": {
+    "0.0-0.1": {
+      "count": 81,
+      "percentage": 8.11
+    },
+    "0.1-0.2": {
+      "count": 215,
+      "percentage": 21.52
+    },
+    "0.2-0.3": {
+      "count": 328,
+      "percentage": 32.83
+    },
+    "0.3-0.4": {
+      "count": 223,
+      "percentage": 22.32
+    },
+    "0.4-0.5": {
+      "count": 104,
+      "percentage": 10.41
+    },
+    "0.5-0.6": {
+      "count": 37,
+      "percentage": 3.7
+    },
+    "0.6-0.7": {
+      "count": 8,
+      "percentage": 0.8
+    },
+    "0.7-0.8": {
+      "count": 3,
+      "percentage": 0.3
+    },
+    "0.8-0.9": {
+      "count": 0,
+      "percentage": 0.0
+    },
+    "0.9-1.0": {
+      "count": 0,
+      "percentage": 0.0
+    }
+  },
+  "by_difficulty": {
+    "Easy": {
+      "count": 333,
+      "emr": 0.0,
+      "avg_similarity": 0.28601763609981795
+    },
+    "Medium": {
+      "count": 333,
+      "emr": 0.0,
+      "avg_similarity": 0.28956146298903085
+    },
+    "Hard": {
+      "count": 333,
+      "emr": 0.0,
+      "avg_similarity": 0.23074483286485448
+    }
+  },
+  "detailed_results": [
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.010526315789473674,
+      "generated": "earched for: \" + search_term + \" in \" + search_location + \" on \" + search_date + \" with \" + search_r...",
+      "ground_truth": "chema"
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.2559530791788856,
+      "generated": "Example 2:\nInput: \"1+1i\", \"1-1i\"\nOutput: \"0+0i\"\nExplanation: (1 + i) * (1 - i) = 1 - i2 - i + i2",
+      "ground_truth": "Example 2:\nInput: \"1+-1i\", \"1+-1i\"\nOutput: \"0+-2i\"\nExplanation: (1 - i) * (1 - i) = 1 + i2 - 2 * i =..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.29025684156045806,
+      "generated": "If it's impossible, return -1.\n\nExample 1:\nInput: [1,0,5]\nOutput: 1\nExplanation: \nOne move: choose a...",
+      "ground_truth": "If it is not possible to do it, return -1. Example1\nInput: [1,0,5]\nOutput: 3\nExplanation: \n1st move:..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.36791979949874687,
+      "generated": "A palindrome is a word, phrase, or sequence that reads the same backward as forward, ignoring spaces...",
+      "ground_truth": "Example 1:\nInput: s = \"babad\"\nOutput: \"bab\"\nNote: \"aba\" is also a valid answer. Example 2:\nInput: s ..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.010526315789473674,
+      "generated": "earched for: \" + search_term + \" in \" + search_location + \" on \" + search_date + \" with \" + search_r...",
+      "ground_truth": "chema"
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.16303162486368594,
+      "generated": "Adjacent is defined as only left or right adjacent.\n\nExample:\nInput: triangle = [[7],[3,4],[5,6,7],[...",
+      "ground_truth": "More formally, if you are on index `i` on the current row, you may move to either index `i` or index..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.35697147427352705,
+      "generated": "If there is no valid subset, return an empty list.\n\nExample 1:\nInput: nums = [3,1,12,8,15,17]\nOutput...",
+      "ground_truth": "Example 1:\nInput: nums = [1,2,3]\nOutput: [1,2]\nExplanation: [1,3] is also accepted. Example 2:\nInput..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.010526315789473674,
+      "generated": "earched for: \" + search_term + \" in \" + search_location + \" on \" + search_date + \" with \" + search_r...",
+      "ground_truth": "chema"
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.18273269380347423,
+      "generated": "Example 2:\nInput: nums = [5,4,3,3,10]\nOutput: nums[0] = 5, nums[2] = 3, nums[4] = 10 -> true Example",
+      "ground_truth": "Example 2:\nInput: nums = [5,4,3,2,1]\nOutput: false\nExplanation: No triplet exists. Example 3:\nInput:..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.4646853146853147,
+      "generated": "It is known that for `n <= 9`, the n-queens puzzle can be solved by brute-force. For `n > 9`, we nee...",
+      "ground_truth": "Example 1:\nInput: n = 4\nOutput: 2\nExplanation: There are two distinct solutions to the 4-queens puzz..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.1909485606418122,
+      "generated": "To solve this problem, we need to find the maximum integer that can be painted given the cost of eac...",
+      "ground_truth": "Example 1:\nInput: cost = [4,3,2,5,6,7,2,5,5], target = 9\nOutput: \"7772\"\nExplanation: The cost to pai..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.24129955947136567,
+      "generated": "(A leaf is a node with no children.)\n\nExample 1:\nInput: root = [3,1,5,0,2,4,6], tree = 2\nOutput: 1\nE...",
+      "ground_truth": "Nary-Tree input serialization is represented in their level order traversal, each group of children ..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.10228953016932982,
+      "generated": "+ tm`\nAnd `s3 = s1[i1] + t1[j1] + s2[i2] + t2[j2] + ...` where `i1, i2, ..., in` and `j1,",
+      "ground_truth": "+ tm`\n`|n - m| <= 1`\nThe interleaving is `s1 + t1 + s2 + t2 + s3 + t3 + ...` or `t1 + s1 + t2 + s2 +..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.2632633007346404,
+      "generated": "You may perform the operation as many times as you want.\n\nReturn `true` if and only if you can obtai...",
+      "ground_truth": "You may repeat this procedure as many times as needed. Return True if it is possible to construct th..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.4263453171513625,
+      "generated": "An array `A` is monotone decreasing if for all `i <= j`, `A[i] >= A[j]`. Given an integer array `num...",
+      "ground_truth": "An array `A` is monotone decreasing if for all `i <= j`, `A[i] >= A[j]`. Return `true` if and only i..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.14405829087995645,
+      "generated": "// For example, the caller will have initialized an array nums with certain values.\n\nExample 1:\nInpu...",
+      "ground_truth": "// using the length returned by your function, it prints the first len elements. for (int i = 0; i <..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.2277673545966229,
+      "generated": "The image shows three rows: the first row has 'qwertyuiop', the second has 'second row has 'asdfghjk...",
+      "ground_truth": "In the American keyboard:\nthe first row consists of the characters `\"qwertyuiop\"`,\nthe second row co..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.16758563074352545,
+      "generated": "The 3rd pattern `[1,2,7,7]` is invalid because the same dot `7` is used twice in the sequence. The 4...",
+      "ground_truth": "The 3rd pattern `[2,4,1,3,6]` is valid because it follows the conditions. The line connecting dots `..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.5062865497076023,
+      "generated": "The last three digits is the longest.\n\nExample 2:\nInput: [1,0,1,1,0,1]\nOutput: 2\nExplanation: The lo...",
+      "ground_truth": "The maximum number of consecutive 1s is 3. Note:\nThe input array will only contain `0` and `1`. The ..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.21235085879113674,
+      "generated": "If there is no solution, return an empty array.\n\nExample 1:\nInput: A = [1,2,3,4,5,6], B = [3,2,5,6,7...",
+      "ground_truth": "If there are multiple answers, you may return any one of them. It is guaranteed an answer exists. Ex..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.280672268907563,
+      "generated": "Two paths are different if at least one step is different.\n\nWe are given: m, n, start coordinate (i,...",
+      "ground_truth": "The answer may be very large, return it after mod 109 + 7. Example 1:\nInput: m = 2, n = 2, N = 2, i ..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.26934713375796177,
+      "generated": "In other words, the string should be periodic with period `n/2` (where `n` is the length of the stri...",
+      "ground_truth": "Example 1:\nInput: text = \"abcabcabc\"\nOutput: 3\nExplanation: The 3 substrings are \"abcabc\", \"bcabca\" ..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.304978813559322,
+      "generated": "However, note that the problem does not specify the order within the couple. So, for example, if cou...",
+      "ground_truth": "The couples' initial seating is given by `row[i]` being the value of the person who is initially sit..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.31785547785547785,
+      "generated": "Moreover, by this definition, S[i] is the set of elements in the cycle that occurs when we start ite...",
+      "ground_truth": "By that analogy, we stop adding right before a duplicate element occurs in S. Example 1:\nInput: A = ..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.19431818181818183,
+      "generated": "The same rule applies to the horizons: `IX` is nine, and `XC` is forty. These\nsubtractions are only ...",
+      "ground_truth": "The same principle applies to the number nine, which is written as `IX`. There are six instances whe..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.5554878048780488,
+      "generated": "1 <= Node.val <= 100\nWe are going to solve this problem by swapping adjacent nodes in groups of two....",
+      "ground_truth": "`0 <= Node.val <= 100`\nFollow up: Can you solve the problem without modifying the values in the list..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.3358391608391609,
+      "generated": "6 * 2 = 12 is more than 3, 1, and 0.\n\nExample 2:\nInput: nums = [1, 2]\nOutput: -1\nExplanation: 2 is t...",
+      "ground_truth": "The index of value 6 is 1, so we return 1. Example 2:\nInput: nums = [1, 2, 3, 4]\nOutput: -1\nExplanat..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.3317766497461929,
+      "generated": "The spiral order should start at the top-left corner, go right, then down, then left, then up, and s...",
+      "ground_truth": "Example 1:\nInput: n = 3\nOutput: [[1,2,3],[8,9,4],[7,6,5]]\nExample 2:\nInput: n = 1\nOutput: [[1]]\nCons..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.16319935257620716,
+      "generated": "From starting index i = 3, we can make our 1st jump to i = 4. From starting index i = 4, we can stay...",
+      "ground_truth": "From starting index i = 3, we can make our 1st jump to i = 4, so we have reached the end. From start..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.3539745278875714,
+      "generated": "The fourth row and fourth column both read \"dtye\".\n\nExample 2:\nInput:\n[\n \"abcd\",\n \"bnry\",\n \"cyrm\"\n]\n...",
+      "ground_truth": "The fourth row and fourth column both read \"dtye\". Therefore, it is a valid word square. Example 2:\n..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.4561058465939567,
+      "generated": "The second rectangle is defined by its bottom-left corner `(E, F)` and its top-right corner `(G, H)`...",
+      "ground_truth": "The second rectangle is defined by its bottom-left corner `(E, F)` and its top-right corner `(G, H)`..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.010526315789473674,
+      "generated": "earched for: \" + search_term + \" in \" + search_location + \" on \" + search_date + \" with \" + search_r...",
+      "ground_truth": "chema"
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.2541279387643521,
+      "generated": "We are to find the minimum number of days required to make the grid connected. If the grid is alread...",
+      "ground_truth": "Return the minimum number of days to disconnect the grid. Example 1:\nInput: grid = [[0,1,1,0],[0,1,1..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.2143944842637831,
+      "generated": "The dictionary may contain duplicates, but the output should not contain duplicates. If there is no ...",
+      "ground_truth": "Example 1:\nInput: s = \"catsanddog\", wordDict = [\"cat\",\"cats\",\"and\",\"sand\",\"dog\"]\nOutput: [\"cats and ..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.16678587299236092,
+      "generated": "You must use only two stacks to implement the queue. You may assume that the two stacks only store i...",
+      "ground_truth": "Notes:\nYou must use only standard operations of a stack, which means only `push to top`, `peek/pop f..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.09733115213835009,
+      "generated": "So the new children of node q (which is 1) are [2,3,4,5,6,7,8]. Example 2:\nInput: deserialization: r...",
+      "ground_truth": "Notice that node 4 is the last child of node 1. Example 2:\nInput: root = [1,null,2,3,null,4,5,null,6..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.38471177944862156,
+      "generated": "If yes, return True, else False.\n\nExample 1:\nInput: s = \"abcde\"\nOutput: False\n\nExample 2:\nInput: s =...",
+      "ground_truth": "Example 1:\nInput: \"aba\"\nOutput: True\nExample 2:\nInput: \"abca\"\nOutput: True\nExplanation: You could de..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.16708339461685542,
+      "generated": "If the target is `target = 'a'` and `letters = ['a', 'b']`, the answer is `'b'`. If the target is `t...",
+      "ground_truth": "Examples:\nInput:\nletters = [\"c\", \"f\", \"j\"]\ntarget = \"a\"\nOutput: \"c\"\nInput:\nletters = [\"c\", \"f\", \"j\"]..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.07776515151515154,
+      "generated": "For example, `0.1.1` and `1.1` are equivalent as `0.1.1` is equivalent to `0.1.1.0` and `1.1` is equ...",
+      "ground_truth": "For example, version `1.0` is less than version `1.1` because their revision 0s are the same, but th..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.1741288009480806,
+      "generated": "Note that the right pointer is always pointing to an element that has been returned by `next()` (if ...",
+      "ground_truth": "Notice that by initializing the pointer to a non-existent smallest number, the first call to `next()..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.5091666666666668,
+      "generated": "A palindrome is a word that reads the same forwards and backwards.\n\nExample 1:\nInput: s = \"bbbab\"\nOu...",
+      "ground_truth": "Example 1:\nInput: s = \"bbbab\"\nOutput: 4\nExplanation: One possible longest palindromic subsequence is..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.2004085983300764,
+      "generated": "For example, if `nums = [7,2,5,10,8]` and `m=2`, the answer is 20. How can we achieve this?\n\nTo solv...",
+      "ground_truth": "Example 1:\nInput: nums = [7,2,5,10,8], m = 2\nOutput: 18\nExplanation:\nThere are four ways to split nu..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.010526315789473674,
+      "generated": "earched for: \" + search_term + \" in \" + search_location + \" on \" + search_date + \" with \" + search_r...",
+      "ground_truth": "chema"
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.30459363957597174,
+      "generated": "Z -> 26\nAA -> 27\nAB -> 28\n... ZZZ -> 26*26^2 + 26*26 + 26 = 18278\n\nExample",
+      "ground_truth": "Z -> 26\nAA -> 27\nAB -> 28 \n... Example 1:\nInput: columnNumber = 1\nOutput: \"A\"\nExample 2:\nInput: colu..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.15235120427536059,
+      "generated": "How can we solve this efficiently?\n\nWe are given a node in a BST and we need to find its in-order su...",
+      "ground_truth": "Below is the definition for `Node`:\nclass Node {\n public int val;\n public Node left;\n public Node ri..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.44688995215311006,
+      "generated": "The substring with start index = 6 is \"babacd\", wait no, actually the substring starting at index 6 ...",
+      "ground_truth": "The substring with start index = 6 is \"bac\", which is an anagram of \"abc\". Example 2:\nInput:\ns: \"aba..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.43363841929578983,
+      "generated": "But note that \"bbb\" is also valid, but shorter. So the answer is 3.\n\nExample 2:\nInput: s = \"ababacb\"...",
+      "ground_truth": "Example 2:\nInput: s = \"ababbc\", k = 2\nOutput: 5\nExplanation: The longest substring is \"ababb\", as 'a..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.2397376816731655,
+      "generated": "Example 1:  \nInput: root = [1,null,2,3]  \nOutput: [1,3,2]  \n\nExample 2:  \nInput: root = [1,null,2]  ...",
+      "ground_truth": "Example 1:\nInput: root = [1,null,2,3]\nOutput: [3,2,1]\nExample 2:\nInput: root = []\nOutput: []\nExample..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.43037190082644633,
+      "generated": "Additionally, we are allowed to remove any number of elements from the array. The goal is to minimiz...",
+      "ground_truth": "You may assume the array's length is at most 10,000. Example:\nInput:\n[1,2,3]\nOutput:\n2\nExplanation:\n..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.19671532846715328,
+      "generated": "The transformation sequence length is `k + 1`. We want to find the shortest transformation sequence ...",
+      "ground_truth": "`sk == endWord`\nGiven two words, `beginWord` and `endWord`, and a dictionary `wordList`, return the ..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.18455908576390506,
+      "generated": "// For example, the caller will have printed the first len elements of nums. 用中文回复\nWe are going to u...",
+      "ground_truth": "// using the length returned by your function, it prints the first len elements. for (int i = 0; i <..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.2980433190331694,
+      "generated": "There are 3 types of candies: 1, 2, and 3. She can eat one of each, so the maximum number of differe...",
+      "ground_truth": "Since there are only 3 types, she can eat one of each type. Example 2:\nInput: candyType = [1,1,2,3]\n..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.23701879219120597,
+      "generated": "(1, 3), (4, 2) -> min(1, 3) + min(4, \nTo solve this problem, we need to group the integers in the ar...",
+      "ground_truth": "(1, 3), (2, 4) -> min(1, 3) + min(2, 4) = 1 + 2 = 3\n3. (1, 2), (3, 4) -> min(1, 2) + min(3, 4) = 1 +..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.3193662628145387,
+      "generated": "If s1 is empty, return true. If s2 is empty and s1 is not, return false. If the length of s1 is grea...",
+      "ground_truth": "Example 1:\nInput: s1 = \"ab\" s2 = \"eidbaooo\"\nOutput: True\nExplanation: s2 contains one permutation of..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.3677902621722846,
+      "generated": "The pairs with absolute difference 1 are [1,2],[2,3],[3,4].\nExample 2:\nInput: arr = [1,3,6,19,7,2]\nO...",
+      "ground_truth": "List all pairs with difference equal to 1 in ascending order. Example 2:\nInput: arr = [1,3,6,10,15]\n..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.1952631993075773,
+      "generated": "We return no change for the customer with $5. The 4th customer pays $10. We return one $5 bill (you ...",
+      "ground_truth": "From the fourth customer, we collect a $10 bill and give back a $5. From the fifth customer, we give..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.010526315789473674,
+      "generated": "earched for: \" + search_term + \" in \" + search_location + \" on \" + search_date + \" with \" + search_r...",
+      "ground_truth": "chema"
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.39100346020761245,
+      "generated": "Two permutations are the same if and only if the ordered sequence is the same.\n\nExample 1:\nInput: [1...",
+      "ground_truth": "Two permutations `A1` and `A2` differ if and only if there is some index `i` such that `A1[i] != A2[..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.13790619628386677,
+      "generated": "If there are multiple ranges with the same smallest length, return the smallest starting number.\n\nEx...",
+      "ground_truth": "Example 1:\nInput: nums = [[4,10,15,24,26],[0,9,12,20],[5,18,22,30]]\nOutput: [20,24]\nExplanation: \nLi..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.2283457570222639,
+      "generated": "Example 1:  \nInput: matrix = [[9,9,4],  \n                [6,6,7],  \n                [3,1,1]]  \nOutpu...",
+      "ground_truth": "Example 1:\nInput: matrix = [[9,9,4],[6,6,8],[2,1,1]]\nOutput: 4\nExplanation: The longest increasing p..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.35644768856447684,
+      "generated": "Otherwise, return the reversed integer.\n\nExample 1:\nInput: 123\nOutput: 123\n\nExample 2:\nInput: -123\nO...",
+      "ground_truth": "Assume the environment does not allow you to store 64-bit integers (signed or unsigned). Example 1:\n..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.4292564823492659,
+      "generated": "It might be easier to think about this problem in terms of logarithms. However, the problem states t...",
+      "ground_truth": "An integer `n` is a power of four, if there exists an integer `x` such that `n == 4x`. Example 1:\nIn..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.22222873900293255,
+      "generated": "Example:  \nInput: n = 13  \nOutput: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,",
+      "ground_truth": "Example 1:\nInput: n = 13\nOutput: [1,10,11,12,13,2,3,4,5,6,7,8,9]\nExample 2:\nInput: n = 2\nOutput: [1,..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.2908808088664204,
+      "generated": "It's guaranteed that the answer is not empty.\n\nExample 1:\nInput: words = [\"cat\", \"dog\"]\nOutput: \"cat...",
+      "ground_truth": "Example 1:\nInput: words = [\"alex\",\"loves\",\"leetcode\"]\nOutput: \"alexlovesleetcode\"\nExplanation: All p..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.4894455389811427,
+      "generated": "The number of nodes in the tree is in the range [1, 1000]. Actually, the constraints say 1000 nodes,...",
+      "ground_truth": "Each value of `postorder` also appears in `inorder`. `inorder` is guaranteed to be the inorder trave..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.5052059176329469,
+      "generated": "- LeetCode\nGiven a string `s` which consists of lowercase or uppercase letters, return the length of...",
+      "ground_truth": "Example 1:\nInput: s = \"abccccdd\"\nOutput: 7\nExplanation:\nOne longest palindrome that can be built is ..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.4396875,
+      "generated": "How can we solve this problem efficiently?\n\nTo solve this problem, we need to count the number of un...",
+      "ground_truth": "Example 1:\nInput: root = [5,1,5,5,5,null,5]\nOutput: 4\nExample 2:\nInput: root = []\nOutput: 0\nExample ..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.34876411851366834,
+      "generated": "Also, 1 is a superpalindrome, but 1 is not in the range [4,1000]. So the answer is 4.\n\nExample 2:\nIn...",
+      "ground_truth": "Example 2:\nInput: left = \"1\", right = \"2\"\nOutput: 1\nConstraints:\n`1 <= left.length, right.length <= ..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.6262068965517242,
+      "generated": "Example:  \nInput: n = 3  \nOutput:  \n[  \n\"((()))\",  \n\"(()())\",  \n\"((()))\",  \n\"(()())\",  \n\"((()))\"  \n]...",
+      "ground_truth": "Example 1:\nInput: n = 3\nOutput: [\"((()))\",\"(()())\",\"(())()\",\"()(())\",\"()()()\"]\nExample 2:\nInput: n =..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.17911272861288985,
+      "generated": "For example, the 3rd smallest element in the matrix below is 3.\n\nExample:\nmatrix = [[1, 5, 9], [10, ...",
+      "ground_truth": "Example 1:\nInput: matrix = [[1,5,9],[10,11,13],[12,13,15]], k = 8\nOutput: 13\nExplanation: The elemen..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.2355855855855856,
+      "generated": "When you step on a square labeled `k`, you must take exactly `k` steps (moving one square in one of ...",
+      "ground_truth": "In one move you can go up, left or up-left (diagonally) only if there is no obstacle there. Return a..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.25391920623671155,
+      "generated": "The tree is at (0,0), and the squirrel starts at (0,0) but can immediately collect a nut that is at ...",
+      "ground_truth": "Example 1:\nInput: \nHeight : 5\nWidth : 7\nTree position : [2,2]\nSquirrel : [4,4]\nNuts : [[3,0], [2,5]]..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.33287749287749285,
+      "generated": "Vowels are 'a', 'e', 'i', 'o', 'u', and also 'A', 'E', 'I', 'O', 'U'. The rest of the characters rem...",
+      "ground_truth": "The vowels are `'a'`, `'e'`, `'i'`, `'o'`, and `'u'`, and they can appear in both cases. Example 1:\n..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.27919342793129204,
+      "generated": "How to solve it?\nWe are given an m x n matrix where:\n  - Each row is sorted in non-decreasing order ...",
+      "ground_truth": "Example 1:\nInput: matrix = [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.23649542575650953,
+      "generated": "Given an `n x k` cost matrix, how can we compute the minimum total cost to paint all the houses?\n\nWe...",
+      "ground_truth": "Return the minimum cost to paint all houses. Example 1:\nInput: costs = [[1,5,3],[2,9,4]]\nOutput: 5\nE..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.316551484498668,
+      "generated": "The judge will serialize the returned node of your answers.\n\nExample 2:\nInput: [1,2,3,4]\nOutput: Nod...",
+      "ground_truth": "(The judge's serialization of this node is [3,4,5]). Note that we returned a ListNode object ans, su..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.036864124750404084,
+      "generated": "= 0.1(6)`, `1/3 = 0.33333333... = 0.3(3)`, `1/7 = 0.1428571",
+      "ground_truth": "= 0.1(6) = 0.1666(6) = 0.166(66)`. Example 1:\nInput: s = \"0.(52)\", t = \"0.5(25)\"\nOutput: true\nExplan..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.21775751072961375,
+      "generated": "The thief has to break into a house, and then he will go from house to house following the **secret ...",
+      "ground_truth": "Given the `root` of the binary tree, return the maximum amount of money the thief can rob without al..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.3278672985781991,
+      "generated": "Otherwise, the non-overlapped node will just be added to the new tree. Return the merged tree.\n\nExam...",
+      "ground_truth": "Otherwise, the NOT null node will be used as the node of the new tree. Return the merged tree. Note:..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.37507198683669274,
+      "generated": "Given the string `currentState`, return `True` if the current player (the one who will make the firs...",
+      "ground_truth": "Return `true` if the starting player can guarantee a win, and `false` otherwise. Example 1:\nInput: c..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.3005001471020889,
+      "generated": "We are guaranteed that the answer exists in the range `[1, 5e14]`.\n\nWe are guaranteed that the answe...",
+      "ground_truth": "Since the answer may be very large, return it modulo `109 + 7`. Example 1:\nInput: n = 1, a = 2, b = ..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.13785166240409208,
+      "generated": "The expression contains the operators `+`, `-`, `*`, `/`, `^` (exponentiation), and parentheses `(` ...",
+      "ground_truth": "An expression can either be:\n`\"t\"`, evaluating to `True`;\n`\"f\"`, evaluating to `False`;\n`\"!(expr)\"`,..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.20772238514174002,
+      "generated": "For example, (2/(3/(4*5))) is redundant because 3/(4*5) already has inner parenthesis, so you should...",
+      "ground_truth": "Example:\nInput: [1000,100,10,2]\nOutput: \"1000/(100/10/2)\"\nExplanation:\n1000/(100/10/2) = 1000/((100/..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.2553295504146661,
+      "generated": "Given a string of 'D' and 'I', return the lexicographically smallest permutation of [1, 2, ... , n] ...",
+      "ground_truth": "On the other hand, now your job is to find the lexicographically smallest permutation of [1, 2, ... ..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.3660952380952381,
+      "generated": "The tree should remain a BST after the modification.\n\nExample 1:\nInput: root = [5,3,6,2,4,null,7]\nOu...",
+      "ground_truth": "Example 1:\nInput: root = [5,3,6,2,4,null,8,1,null,null,null,7,9]\nOutput: [1,null,2,null,3,null,4,nul..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.2648401826484018,
+      "generated": "If there are multiple answer, you may return any one of them.\n\nExample 1:\nInput: root = [5,3,6,2,4,n...",
+      "ground_truth": "Follow up: Can you figure out ways to solve it with O(n) time complexity. Example 1:\nInput: root = [..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.15180229582510785,
+      "generated": "Then we have [1,1,1,1,1]. Then increment index 1 to 2 (inclusive) to get [2,2,2,1,1]. Then increment...",
+      "ground_truth": "[1,1,1,1,1] increment 1 from index 1 to 3 (inclusive). [1,2,2,2,1] increment 1 at index 2. [1,2,3,2,..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.2399050371593724,
+      "generated": "Example 2:\nInput: intervals = [[3,4],[2,3],[1,2]]\nOutput: [-1,0,1]\nExplanation: For the first interv...",
+      "ground_truth": "Example 2:\nInput: intervals = [[3,4],[2,3],[1,2]]\nOutput: [-1,0,1]\nExplanation: There is no right in..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.2674772036474164,
+      "generated": "Example 2:\nInput:\n\"cclasses\"\nOutput:\n\"elssccoc\"\nExplanation:\n'e' appears once, 'l' appears 3 times, ...",
+      "ground_truth": "Example 2:\nInput:\n\"cccaaa\"\nOutput:\n\"cccaaa\"\nExplanation:\nBoth 'c' and 'a' appear three times, so \"aa..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.44976682211858765,
+      "generated": "You may not create extra nodes beyond the given two lists. To solve this problem, we need to merge t...",
+      "ground_truth": "Example 1:\nInput: l1 = [1,2,4], l2 = [1,3,4]\nOutput: [1,1,2,3,4,4]\nExample 2:\nInput: l1 = [], l2 = [..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.19760802076441547,
+      "generated": "For example, if `s = \"abcde\"`, then `t` could be `\"daabc\"` where we added `'d'` at the beginning or ...",
+      "ground_truth": "Return the letter that was added to `t`. Example 1:\nInput: s = \"abcd\", t = \"abcde\"\nOutput: \"e\"\nExpla..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.4512323943661972,
+      "generated": "Example 2:\nInput: \"aba\"\nOutput: 4\nExplanation: The 4 distinct subsequences are \"a\", \"b\", \"aa\", \"aba\"...",
+      "ground_truth": "Example 2:\nInput: \"aba\"\nOutput: 6\nExplanation: The 6 distinct subsequences are \"a\", \"b\", \"ab\", \"ba\",..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.12450331125827817,
+      "generated": "The digits are `01689` and the rotations are `006899` (i.e., `0`->`0`, `1`->`1`, `6`->`9`, `8`",
+      "ground_truth": "Example 1:\nInput: num = \"69\"\nOutput: true\nExample 2:\nInput: num = \"88\"\nOutput: true\nExample 3:\nInput..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.34418604651162793,
+      "generated": "To solve this, we can use a set to track elements from one array and then iterate through the other ...",
+      "ground_truth": "Example 1:\nInput: nums1 = [1,2,2,1], nums2 = [2,2]\nOutput: [2]\nExample 2:\nInput: nums1 = [4,9,5], nu..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.22311827956989247,
+      "generated": "Your task is to determine the maximum amount of money the professional robber can steal without trig...",
+      "ground_truth": "Given an integer array `nums` representing the amount of money of each house, return the maximum amo..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.3936388140161725,
+      "generated": "We are going to arrange the dominoes in a line such that adjacent dominoes are equal.  \nWe want to k...",
+      "ground_truth": "Return the number of pairs `(i, j)` for which `0 <= i < j < dominoes.length`, and `dominoes[i]` is e..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.5961121495327103,
+      "generated": "Otherwise, return `false`.\n\nExample 1:\nInput: s = \"code\"\nOutput: false\n\nExample 2:\nInput: s = \"aab\"\n...",
+      "ground_truth": "Example 1:\nInput: s = \"code\"\nOutput: false\nExample 2:\nInput: s = \"aab\"\nOutput: true\nExample 3:\nInput..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.24165535956580736,
+      "generated": "The greed factors of the children are [1,2,3]. Your cookies are of sizes [1,1]. We can assign the fi...",
+      "ground_truth": "The greed factors of 3 children are 1, 2, 3. And even though you have 2 cookies, since their size is..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.28382428940568477,
+      "generated": "How do I approach this problem?\n\nWe are given an array `nums` of positive integers. We need to deter...",
+      "ground_truth": "Return `True` if the array is good otherwise return `False`. Example 1:\nInput: nums = [12,5,7,23]\nOu..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.2340972914213244,
+      "generated": "Note that the problem does not require that the two indices be adjacent. Let's think step by step an...",
+      "ground_truth": "Example 1:\nInput: a = \"ab\", b = \"ba\"\nOutput: true\nExplanation: You can swap a[0] = 'a' and a[1] = 'b..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.2690848214285714,
+      "generated": "It can be proved that the final array is unique.\n\nExample 1:\nInput: arr = [1, 2, 3, 4]\nOutput: [1, 2...",
+      "ground_truth": "Example 1:\nInput: arr = [6,2,3,4]\nOutput: [6,3,3,4]\nExplanation: \nOn the first day, the array is cha..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.3801000883132175,
+      "generated": "Example 2:\nInput: [0,0,null,0,0,0,null,null,0]\nOutput: 2\nExplanation: We can use two cameras as show...",
+      "ground_truth": "Example 2:\nInput: [0,0,null,0,null,0,null,null,0]\nOutput: 2\nExplanation: At least two cameras are ne..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.24920337394564196,
+      "generated": "You may assume that the input string is always a valid parentheses string.\n\nExample 1:  \nInput: s = ...",
+      "ground_truth": "Example 1:\nInput: \"(()())(())\"\nOutput: \"()()()\"\nExplanation: \nThe input string is \"(()())(())\", with..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.3115995115995116,
+      "generated": "`i` is divisible by `pm[i]` (where `pm` is the inverse permutation of `perm`).\n\nLet `f(n)` be the nu...",
+      "ground_truth": "`i` is divisible by `perm[i]`. Given an integer `n`, return the number of the beautiful arrangements..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.37385171790235083,
+      "generated": "Additionally, find the row number where the leftover coins start to not be enough to form a complete...",
+      "ground_truth": "n is a non-negative integer and fits within the range of a 32-bit signed integer. Example 1:\nn = 5\nT..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.010526315789473674,
+      "generated": "earched for: \" + search_term + \" in \" + search_location + \" on \" + search_date + \" with \" + search_r...",
+      "ground_truth": "chema"
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.2083809523809524,
+      "generated": "ticTacToe.move(0, 2, 2); // return 0 // Player 2 makes a move at (0, 2). ticTacToe.move(2, 2, 1); //...",
+      "ground_truth": "| | | |\nticTacToe.move(0, 2, 2); // return 0 (no one wins)\n|X| |O|\n| | | | // Player 2 makes a move ..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.5433895818048423,
+      "generated": "We are going to solve this without using extra space (O(1) space complexity) except for the output a...",
+      "ground_truth": "Follow up:\nCould you solve it in `O(n)` time complexity and without using division. Could you solve ..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.10986904245270979,
+      "generated": "1 is connected to 2 and 3, 2 is connected to 1 and 3, 3 is connected to 1 and 2, 4 is connected to 2...",
+      "ground_truth": "1st node (val = 1)'s neighbors are 2nd node (val = 2) and 4th node (val = 4). 2nd node (val = 2)'s n..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.3270286700872991,
+      "generated": "If no such subsequence exists, return `-1`.\n\nExample 1:\nInput: a = \"aba\", b = \"cdc\"\nOutput: 3\nExplan...",
+      "ground_truth": "If the longest uncommon subsequence doesn't exist, return `-1`. Example 1:\nInput: a = \"aba\", b = \"cd..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.3517178473700213,
+      "generated": "Otherwise, return `false`.\n\nConstraints:\n- `1 <= nums.length <= 2 * 10^4`\n- `0 <= k <= nums.length -...",
+      "ground_truth": "Example 1:\nInput: nums = [1,2,3,1], k = 3, t = 0\nOutput: true\nExample 2:\nInput: nums = [1,0,1,1], k ..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.010526315789473674,
+      "generated": "earched for: \" + search_term + \" in \" + search_location + \" on \" + search_date + \" with \" + search_r...",
+      "ground_truth": "chema"
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.010526315789473674,
+      "generated": "earched for: \" + search_term + \" in \" + search_location + \" on \" + search_date + \" with \" + search_r...",
+      "ground_truth": "chema"
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.24878223495702007,
+      "generated": "After sorting, you get [0,1,9,16,100].\n\nExample 2:\nInput: nums = [-7,-3,2,6]\nOutput: [4,9,36,49]\nExp...",
+      "ground_truth": "After sorting, it becomes [0,1,9,16,100]. Example 2:\nInput: nums = [-7,-3,2,3,11]\nOutput: [4,9,9,49,..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.28613723441309646,
+      "generated": "Similarly, the closest occurrence for index 1 is at index 3, distance = 2, and so on.\n\nExample 2:\nIn...",
+      "ground_truth": "The closest occurrence of 'e' for index 1 is at index 3, so the distance is abs(1 - 3) = 3. For inde..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.25113882863340564,
+      "generated": "- LeetCode\nGiven an array of integers `citations` where `citations[i]]` is the number of citations a...",
+      "ground_truth": "Example 1:\nInput: citations = [3,0,6,1,5]\nOutput: 3\nExplanation: [3,0,6,1,5] means the researcher ha..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.010526315789473674,
+      "generated": "earched for: \" + search_term + \" in \" + search_location + \" on \" + search_date + \" with \" + search_r...",
+      "ground_truth": "chema"
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.2855227882037533,
+      "generated": "If there are multiple answers, return the smallest starting index to start the subarray. If no such ...",
+      "ground_truth": "Example 1:\nInput: nums = [2,6,4,8,10,9,15]\nOutput: 5\nExplanation: You need to sort [6, 4, 8, 10, 9] ..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.15256024096385543,
+      "generated": "How do I calculate the probability that the frog will never reach vertex n?\n\nTo solve this problem, ...",
+      "ground_truth": "Return the probability that after `t` seconds the frog is on the vertex `target`. Example 1:\nInput: ..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.2419023029192521,
+      "generated": "Example 2:\nInput: digits = [\"7\",\"8\"], n = 5\nOutput: 0\nExplanation: All numbers in the set are greate...",
+      "ground_truth": "Example 2:\nInput: digits = [\"1\",\"4\",\"9\"], n = 1000000000\nOutput: 29523\nExplanation: \nWe can write 3 ..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.23036860443792406,
+      "generated": "To define a node in the tree:  \n```python\nclass TreeNode:\n    def __init__(self, val=0, left=None, r...",
+      "ground_truth": "Example 1:\nInput: root = [1,null,2,3]\nOutput: [1,2,3]\nExample 2:\nInput: root = []\nOutput: []\nExample..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.21880153930731172,
+      "generated": "For example, January 1, 2023 is the 1st day of the year, January 2 is the ordinal day number 2, etc....",
+      "ground_truth": "Example 1:\nInput: date = \"2019-01-09\"\nOutput: 9\nExplanation: Given date is the 9th day of the year i..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.4667435424354244,
+      "generated": "constant space)? The problem requires sorting a linked list in ascending order with a time complexit...",
+      "ground_truth": "constant space). Example 1:\nInput: head = [4,2,1,3]\nOutput: [1,2,3,4]\nExample 2:\nInput: head = [-1,5..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.34647408666100254,
+      "generated": "To solve this problem, we need to find the maximum profit achievable by buying a stock on one day an...",
+      "ground_truth": "Example 1:\nInput: prices = [7,1,5,3,6,4]\nOutput: 5\nExplanation: Buy on day 2 (price = 1) and sell on..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.36863344051446945,
+      "generated": "Can you explain why? Because the subarray [2,2] has length 2 and degree 2.\n\nExample 2:\nInput: nums =...",
+      "ground_truth": "So return 2. Example 2:\nInput: nums = [1,2,2,3,1,4,2]\nOutput: 6\nExplanation: \nThe degree is 3 becaus..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.20336913510457888,
+      "generated": "hitCounter.hit(3); // hit at timestamp 3. hitCounter.getHits(4); // 3 hits in the past 4 minutes (hi...",
+      "ground_truth": "hitCounter.hit(3); // hit at timestamp 3. hitCounter.getHits(4); // get hits at timestamp 4, return ..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.09433005524608579,
+      "generated": "If the coefficient of a term is `1`, we omit the coefficient in the output. If the coefficient of a ...",
+      "ground_truth": "Terms have degree equal to the number of free variables being multiplied, counting multiplicity. (Fo..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.14684933224653585,
+      "generated": "How many arrays `arr` of length `n` with elements in the **range** `[1, m]` are there?\n\nLet's denote...",
+      "ground_truth": "Return the number of ways to build the array `arr` under the mentioned conditions. As the answer may..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.2845424887369893,
+      "generated": "Example 1:  \nInput: nums = [1,2,3], a = -1, b = 0, c = 10  \nOutput: [9,7,5]  \nExample 2:  \nInput:",
+      "ground_truth": "Example 1:\nInput: nums = [-4,-2,2,4], a = 1, b = 3, c = 5\nOutput: [3,9,15,33]\nExample 2:\nInput: nums..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.22284584501785462,
+      "generated": "Since \"a4\" is in the dictionary, we cannot use it. However, \"4e\" is not in the dictionary, so we ret...",
+      "ground_truth": "\"4e\" is an abbreviation of blade while \"a4\" is not. Hence, return \"a4\". Example 2:\nInput: target = \"..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.36686107957881553,
+      "generated": "In particular, the subsequence slice has to have at least three elements, so k must be at least 2.\n\n...",
+      "ground_truth": "In particular, this means that k ≥ 2. The function should return the number of arithmetic subsequenc..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.1660736046795028,
+      "generated": "To solve this problem, we need to count the number of strings of length `n` that meet three conditio...",
+      "ground_truth": "Example 1:\nInput: n = 2, s1 = \"aa\", s2 = \"da\", evil = \"b\"\nOutput: 51 \nExplanation: There are 25 good..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.44408602150537635,
+      "generated": "You must write a function that returns True if the tree is symmetric, and False otherwise.\n\nExample ...",
+      "ground_truth": "Example 1:\nInput: root = [1,2,2,3,4,4,3]\nOutput: true\nExample 2:\nInput: root = [1,2,2,null,3,null,3]..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.34964912280701754,
+      "generated": "How many moves are required to remove all the elements of the array?\n\nExample: \nFor `arr = [1, 2, 3,...",
+      "ground_truth": "Return the minimum number of moves needed to remove all numbers from the array. Example 1:\nInput: ar..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.48888888888888893,
+      "generated": "To solve this problem, we need to determine if the binary representation of a given positive integer...",
+      "ground_truth": "Example 3:\nInput: n = 11\nOutput: false\nExplanation: The binary representation of 11 is: 1011. Exampl..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.3423813906786043,
+      "generated": "How can we identify all critical connections in the network? Also, we need to output the answer sort...",
+      "ground_truth": "Return all critical connections in the network in any order. Example 1:\nInput: n = 4, connections = ..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.2806060606060606,
+      "generated": "Can you explain how to solve this problem efficiently?\n\nTo solve this problem, we need to find the s...",
+      "ground_truth": "Example 1:\nInput: target = 7, nums = [2,3,1,2,4,3]\nOutput: 2\nExplanation: The subarray [4,3] has the..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.30681290082721446,
+      "generated": "There are no punctuation marks. The file has at most 1000 words. The words are separated by space. T...",
+      "ground_truth": "Words are separated by one or more whitespace characters. Example:\nAssume that `words.txt` has the f..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.32446351931330475,
+      "generated": "How can we efficiently solve this problem?\n\nTo solve this problem, we need to find the number of con...",
+      "ground_truth": "Example 1:\nInput: nums = [1,1,1], k = 2\nOutput: 2\nExample 2:\nInput: nums = [1,2,3], k = 3\nOutput: 2\n..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.4091822094691535,
+      "generated": "Example 2:\nInput: N = 2, L = 3, K = 0\nOutput: 2\nExplanation: [1,1,1] and [2,2,2] are the only two po...",
+      "ground_truth": "[1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1]. Example 2:\nInput: N = 2, L = 3, K ..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.37509695290858724,
+      "generated": "By convention, `1` is also considered an ugly number.\n\nExample 1:\nInput: n = 6, Output: True\nExample...",
+      "ground_truth": "Example 1:\nInput: n = 6\nOutput: true\nExplanation: 6 = 2 × 3\nExample 2:\nInput: n = 8\nOutput: true\nExp..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.30178471551329633,
+      "generated": "The graph contains `n` nodes and `n` edges (one more than a tree). The graph is connected. Return an...",
+      "ground_truth": "Each element of `edges` is a pair `[ui, vi]` that represents a directed edge connecting nodes `ui` a..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.5648898365316276,
+      "generated": "Return the answer as a list of the root nodes of a BST.\n\nExample 1:\nInput: 3\nOutput: [1,2,3]\nBut the...",
+      "ground_truth": "Return the answer in any order. Example 1:\nInput: n = 3\nOutput: [[1,null,2,null,3],[1,null,3,2],[2,1..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.40344946059231773,
+      "generated": "Those numbers for which the process ends with 1 are called happy numbers.\n\nExample:\nInput: 19\nOutput...",
+      "ground_truth": "Those numbers for which this process ends in 1 are happy. Return `true` if `n` is a happy number, an..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.2508953341740227,
+      "generated": "Since rectangles may overlap, we cannot simply sum the areas of all rectangles.\n\nWe are going to use...",
+      "ground_truth": "Since the answer may be too large, return it modulo `109 + 7`. Example 1:\nInput: rectangles = [[0,0,..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.549554367201426,
+      "generated": "Example 2:\nInput: [0,1,0]\nOutput: 1\nExplanation: [0], [1], and [0] are the only contiguous subarrays...",
+      "ground_truth": "Example 2:\nInput: [0,1,0]\nOutput: 2\nExplanation: [0, 1] (or [1, 0]) is a longest contiguous subarray..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.10615901455767077,
+      "generated": "Example: Given this linked list: 1->2->3->4->5->6->7->8->null, for k = 3, should return 8->7->6->5->...",
+      "ground_truth": "Follow up:\nCould you solve the problem in `O(1)` extra memory space. You may not alter the values in..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.22062975027144408,
+      "generated": "Return true if and two binary trees are leaf-similar, and false otherwise.\n\nExample 1:\nInput: leaf1 ...",
+      "ground_truth": "Return `true` if and only if the two given trees with head nodes `root1` and `root2` are leaf-simila..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.20461760461760461,
+      "generated": "To solve this problem, we need to determine the minimum number of refueling stops a car must make to...",
+      "ground_truth": "Example 1:\nInput: target = 1, startFuel = 1, stations = []\nOutput: 0\nExplanation: We can reach the t..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.2365603146853147,
+      "generated": "Example 1:\nInput: s = \"abc\", t = \"ahbgdc\"\nOutput: True\n\nExample 2:\nInput: s = \"axc\", t = \"ahbgdc\"\nOu...",
+      "ground_truth": "Example 1:\nInput: s = \"abc\", t = \"ahbgdc\"\nOutput: true\nExample 2:\nInput: s = \"axc\", t = \"ahbgdc\"\nOut..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.11956469672474705,
+      "generated": "Note: Each call to `next()` and `peek()` will be valid when `hasNext()` is `true`.\n\nWe have to imple...",
+      "ground_truth": "Example 1:\nInput\n[\"PeekingIterator\", \"next\", \"peek\", \"next\", \"next\", \"hasNext\"]\n[[[1, 2, 3]], [], []..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.21761864712243184,
+      "generated": "`find`: Given a file name and a list of directory paths, return the full path for the file. If the f...",
+      "ground_truth": "`addContentToFile`: Given a file path and file content in string format. If the file doesn't exist, ..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.2015108660627976,
+      "generated": "Each node is represented as [val, children[[]]]. For example, 1 node has children [2,3,4] would be r...",
+      "ground_truth": "Each group of children is separated by the null value (See examples)\nExample 1:\nInput: root = [1,nul..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.5447654551102827,
+      "generated": "str2 = \"cab\" is a subsequence of \"cabac\" because we can delete the last \"c\". \n\"cabac\" is one shortes...",
+      "ground_truth": "str2 = \"cab\" is a subsequence of \"cabac\" because we can delete the last \"ac\". The answer provided is..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.3135658914728683,
+      "generated": "4*4=16. Example 2:\nInput: words = [\"a\",\"b\",\"c\",\"d\"]\nOutput: 16\nExplanation: The two words can be \"a\"...",
+      "ground_truth": "Example 2:\nInput: words = [\"a\",\"ab\",\"abc\",\"d\",\"cd\",\"bcd\",\"abcd\"]\nOutput: 4\nExplanation: The two word..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.33243659346892473,
+      "generated": "The positions are 1-indexed.\n\nExample 1:\nInput: head = [1,2,3,4,5], left = 2, right = 4\nOutput: [1,4...",
+      "ground_truth": "Example 1:\nInput: head = [1,2,3,4,5], left = 2, right = 4\nOutput: [1,4,3,2,5]\nExample 2:\nInput: head..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.31117647058823533,
+      "generated": "You must return the minimum path sum of the grid.\n\nExample 1:\nInput: grid = [[1,3,1],[1,5,1],[4,2,2]...",
+      "ground_truth": "Example 1:\nInput: grid = [[1,3,1],[1,5,1],[4,2,1]]\nOutput: 7\nExplanation: Because the path 1 → 3 → 1..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.2829599177800617,
+      "generated": "1 <= text.length <= 100\n1 <= words.length <= 100\n1 <= words[i].length <= 100\n1 <= text[i] matches wo...",
+      "ground_truth": "It's guaranteed that all strings in `words` are different. `1 <= text.length <= 100`\n`1 <= words.len..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.23491712707182322,
+      "generated": "The pairs (1, 3) and (3, 5) are the only ones that satisfy the conditions. Even though there are two...",
+      "ground_truth": "Although we have two 1s in the input, we should only return the number of unique pairs. Example 2:\nI..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.43821681864235057,
+      "generated": "Do not use any built-in functions that solve this problem.\n\nNote: Do not return the kth distinct ele...",
+      "ground_truth": "Note that it is the `kth` largest element in the sorted order, not the `kth` distinct element. Examp..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.16889400921658987,
+      "generated": "If there are multiple, return the maximum average value.\n\nIf no such subarray exists, return -1.0.\n\n...",
+      "ground_truth": "Any answer with a calculation error less than `10-5` will be accepted. Example 1:\nInput: nums = [1,1..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.17875094244785122,
+      "generated": "Specifically, if a request at time `t` occurs, then a request is counted if it is in the range `[t -...",
+      "ground_truth": "Specifically, return the number of requests that have happened in the inclusive range `[t - 3000, t]..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.25026737967914436,
+      "generated": "You need to return the final abbreviation of each word.\n\nExample 1:\nInput: [\"apple\", \"app\"]\nOutput: ...",
+      "ground_truth": "If the abbreviation doesn't make the word shorter, then keep it as original. Example:\nInput: [\"like\"..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.2806783493499152,
+      "generated": "Example 2:\nInput: n = 5\nOutput: \nExplanation: 5 in binary is \"101\". The two 1's are separated by one...",
+      "ground_truth": "The second adjacent pair of 1's is \"10110\" with a distance of 1. The answer is the largest of these ..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.20083816892327527,
+      "generated": "Constraints: `1 <= n <= 2000`, `-10^6 <= nums[i] <= 10^6`, `-10^6 <= target <= 10^6`.\n\nWe are counti...",
+      "ground_truth": "Follow up: Could you solve it in `O(n2)` runtime. Example 1:\nInput: nums = [-2,0,1,3], target = 2\nOu..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.32133249264396807,
+      "generated": "A move is defined as incrementing `n-1` elements of the **array** by `1`.\n\nThe problem is to find th...",
+      "ground_truth": "In one move, you can increment `n - 1` elements of the array by `1`. Example 1:\nInput: nums = [1,2,3..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.44271012006861066,
+      "generated": "Given a string num representing a positive integer, and an integer k, return the maximum good number...",
+      "ground_truth": "Now given a positive number `N`, how many numbers X from `1` to `N` are good. Example:\nInput: 10\nOut..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.21114058355437665,
+      "generated": "How do we find the maximum number of days where the bulb that is turned on is the only on bulb in it...",
+      "ground_truth": "Given an integer `k`, return the minimum day number such that there exists two turned on bulbs that ..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.38645394340758576,
+      "generated": "The returned array should be sorted in increasing order. Additionally, the solution should be implem...",
+      "ground_truth": "Example 1:\nInput: nums = [4,3,2,7,8,2,3,1]\nOutput: [5,6]\nExample 2:\nInput: nums = [1,1]\nOutput: [2]\n..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.16263250883392227,
+      "generated": "It is guaranteed that the world will become fully infected if no walls are built. It is also guarant...",
+      "ground_truth": "Example 1:\nInput: grid = \n[[0,1,0,0,0,0,0,1],\n [0,1,0,0,0,0,0,1],\n [0,0,0,0,0,0,0,1],\n [0,0,0,0,0,0,..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.39768339768339767,
+      "generated": "For example, if `s = \"two four zero five\"`, the output should be `\"0125\"`. Note that the string may ...",
+      "ground_truth": "Example 1:\nInput: s = \"owoztneoer\"\nOutput: \"012\"\nExample 2:\nInput: s = \"fviefuro\"\nOutput: \"45\"\nConst..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.39976037655113394,
+      "generated": "If no such subarray exists, return -1.\n\nExample 1:\nInput: A = [1], K = 1\nOutput: 1\n\nExample 2:\nInput...",
+      "ground_truth": "If there is no non-empty subarray with sum at least `K`, return `-1`. Example 1:\nInput: A = [1], K =..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.2771349369578825,
+      "generated": "Return the sum of the maximum binary numbers represented by each leaf.\n\nA leaf is a node with no chi...",
+      "ground_truth": "Return the sum of these numbers. The answer is guaranteed to fit in a 32-bits integer. Example 1:\nIn..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.4542602797795676,
+      "generated": "From right to left, it reads 121-. Therefore, it is not a palindrome.\nExample 3:\nInput: x = -123\nOut...",
+      "ground_truth": "From right to left, it becomes 121-. Therefore it is not a palindrome. Example 3:\nInput: x = 10\nOutp..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.38702290076335877,
+      "generated": "To solve this problem, we need to retrieve the nth highest salary from the `Employee` table. The app...",
+      "ground_truth": "If there is no nth highest salary, then the query should return `null`. +------------------------+\n|..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.2216547497446374,
+      "generated": "You may assume the string only contains letters and digits, and its length is at least K.\n\nExample 1...",
+      "ground_truth": "Example 1:\nInput: S = \"5F3Z-2e-9-w\", K = 4\nOutput: \"5F3Z-2E9W\"\nExplanation: The string S has been sp..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.312967032967033,
+      "generated": "Integers in each column are sorted from top to bottom.  \nHow to approach this problem? To solve this...",
+      "ground_truth": "The first integer of each row is greater than the last integer of the previous row. Example 1:\nInput..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.26881265770988205,
+      "generated": "Also, note that the array elements are distinct and from `1` to `n`.\n\nExample: n=3, k=1 -> 2. Becaus...",
+      "ground_truth": "Example 1:\nInput: n = 3, k = 0\nOutput: 1\nExplanation: \nOnly the array [1,2,3] which consists of numb..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.21541494184900456,
+      "generated": "If it is impossible to travel from `source` to `target`, return -1.\n\nExample 1:\nInput: routes = [[1,...",
+      "ground_truth": "Return `-1` if it is not possible. Example 1:\nInput: routes = [[1,2,7],[3,6,7]], source = 1, target ..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.20299402719532345,
+      "generated": "Otherwise, return false.\n\nExample 1:\nInput: words = [\"hello\",\"leetcode\"], order = \"hlabcdefgijkmnopq...",
+      "ground_truth": "Example 1:\nInput: words = [\"hello\",\"leetcode\"], order = \"hlabcdefgijkmnopqrstuvwxyz\"\nOutput: true\nEx..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.40773993808049536,
+      "generated": "Now, from this sequence, remove any integer that contains 9 in its digits. So now, you will have a n...",
+      "ground_truth": "Given a positive integer `n`, you need to return the n-th integer after removing. Note that 1 will b..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.11606270015169394,
+      "generated": "For [1,3]: 2,3 are in S and in the interval. For [1,4]: 2,3,4. For [2,5]: 2,3,4. For [3,5]:",
+      "ground_truth": "Also, there isn't a smaller size set that fulfills the above condition. Thus, we output the size of ..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.23478348439073515,
+      "generated": "Guess 6. - If this is my number, your total is $7 + $3 = $10. Otherwise, you pay $6. - If my number ...",
+      "ground_truth": "Guess 5. - If this is my number, your total is $7 + $3 = $10. Otherwise, you pay $5. - If my number ..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.273768115942029,
+      "generated": "How would you do it?\n\nExample 1:\nInput: jewels = \"aA\", stones = \"aAAbbbb\"\nOutput: 3\nExplanation: sto...",
+      "ground_truth": "Letters are case sensitive, so `\"a\"` is considered a different type of stone from `\"A\"`. Example 1:\n..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.30594717841535246,
+      "generated": "The expression string `s` is given in a format that does not include any extra spaces between tokens...",
+      "ground_truth": "Example 1:\nInput: s = \"1 + 1\"\nOutput: 2\nExample 2:\nInput: s = \" 2-1 + 2 \"\nOutput: 3\nExample 3:\nInput..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.43076248904469766,
+      "generated": "A nested list containing two elements: 456 and a nested list with 789.\n\nTo solve this problem, we ne...",
+      "ground_truth": "A nested list containing two elements:\n i. An integer containing value 456. ii. A nested list with o..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.010526315789473674,
+      "generated": "earched for: \" + search_term + \" in \" + search_location + \" on \" + search_date + \" with \" + search_r...",
+      "ground_truth": "chema"
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.18810164424514203,
+      "generated": "However, if `k` is 0, then no transaction is done, so the maximum profit is 0. If `k` is large enoug...",
+      "ground_truth": "Example 1:\nInput: k = 2, prices = [2,4,1]\nOutput: 2\nExplanation: Buy on day 1 (price = 2) and sell o..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.3295825771324864,
+      "generated": "The original right child becomes the the new left child. The new left and right children of the orig...",
+      "ground_truth": "The original right child becomes the new left child. The mentioned steps are done level by level, it..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.31945570353213665,
+      "generated": "Example 1:  \nInput: head = [3,2,4,4], pos = 0  \nOutput: true  \nExplanation: There is a cycle in the ...",
+      "ground_truth": "Example 1:\nInput: head = [3,2,0,-4], pos = 1\nOutput: true\nExplanation: There is a cycle in the linke..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.14708717518860018,
+      "generated": "`int get(int key)` returns the value corresponding to the given key. If the key does not exist, retu...",
+      "ground_truth": "`int get(int key)` returns the `value` to which the specified `key` is mapped, or `-1` if this map c..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.17394122731201384,
+      "generated": "Let `n = len(distance)`. If `n` is odd, the last move is north, and if `n` is even, the last move is...",
+      "ground_truth": "In other words, after each move, your direction changes counter-clockwise. Return `true` if your pat..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Hard",
+      "exact_match": false,
+      "similarity": 0.1297259593027917,
+      "generated": "`update(int row, int col, int val) updates the value of the matrix at `(row, col)` to `val`. `sumReg...",
+      "ground_truth": "`void update(int row, int col, int val)` updates the value of `matrix[row][col]` to be `val`. `int s..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.1618198071400042,
+      "generated": "To solve this problem, we need to find the shortest path for a ball rolling through a maze with wall...",
+      "ground_truth": "Example 1:\nInput: maze = [[0,0,1,0,0],[0,0,0,0,0],[0,0,0,1,0],[1,1,0,1,1],[0,0,0,0,0]], start = [0,4..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.3833388067870827,
+      "generated": "- LeetCode Discuss\nGiven a non-empty array of decimal digits representing a non-negative integer, in...",
+      "ground_truth": "Example 1:\nInput: digits = [1,2,3]\nOutput: [1,2,4]\nExplanation: The array represents the integer 123..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.22787249814677535,
+      "generated": "Then buy on day 4 (price = 3) and sell on day 5 (price = 6), profit = 6-3 = 3. Total profit = 4+3 = ...",
+      "ground_truth": "Then buy on day 4 (price = 3) and sell on day 5 (price = 6), profit = 6-3 = 3. Example 2:\nInput: pri..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.1623859649122807,
+      "generated": "\"D\" - Double the previous score, record is now [5, 10]. \"+\" - Add to the record the sum of the two p...",
+      "ground_truth": "\"D\" - Add 2 * 5 = 10 to the record, record is now [5, 10]. \"+\" - Add 5 + 10 = 15 to the record, reco..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.16658779453810507,
+      "generated": "`hasNext()` returns `true` if there are still elements in the 2D vector after the current pointer, a...",
+      "ground_truth": "You may assume that all the calls to `next` are valid. `hasNext()` returns `true` if there are still..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Medium",
+      "exact_match": false,
+      "similarity": 0.3609109730848861,
+      "generated": "If the list has less than 2 time points, return -1.\n\nExample: \nInput: [\"23:59\",\"3:00\",\"1:00\",\"0:00\"]...",
+      "ground_truth": "Example 1:\nInput: timePoints = [\"23:59\",\"00:00\"]\nOutput: 1\nExample 2:\nInput: timePoints = [\"00:00\",\"..."
+    },
+    {
+      "problem_id": null,
+      "difficulty": "Easy",
+      "exact_match": false,
+      "similarity": 0.010526315789473674,
+      "generated": "earched for: \" + search_term + \" in \" + search_location + \" on \" + search_date + \" with \" + search_r...",
+      "ground_truth": "chema"
+    }
+  ]
+}
