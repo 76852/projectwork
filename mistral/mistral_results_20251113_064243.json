@@ -1,0 +1,75 @@
+{
+  "model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "test_type": "complete_dataset",
+  "test_date": "2025-11-13T06:42:43.645450",
+  "test_config": {
+    "total_samples": 1825,
+    "successful_samples": 1825,
+    "max_new_tokens": 50,
+    "duration_seconds": 2913.374647
+  },
+  "metrics": {
+    "exact_match_rate": 0.0,
+    "average_similarity": 0.4144787559816198,
+    "success_rate": 1.0
+  },
+  "similarity_distribution": {
+    "0.0-0.1": {
+      "count": 156,
+      "percentage": 8.55
+    },
+    "0.1-0.2": {
+      "count": 17,
+      "percentage": 0.93
+    },
+    "0.2-0.3": {
+      "count": 85,
+      "percentage": 4.66
+    },
+    "0.3-0.4": {
+      "count": 327,
+      "percentage": 17.92
+    },
+    "0.4-0.5": {
+      "count": 704,
+      "percentage": 38.58
+    },
+    "0.5-0.6": {
+      "count": 468,
+      "percentage": 25.64
+    },
+    "0.6-0.7": {
+      "count": 65,
+      "percentage": 3.56
+    },
+    "0.7-0.8": {
+      "count": 3,
+      "percentage": 0.16
+    },
+    "0.8-0.9": {
+      "count": 0,
+      "percentage": 0.0
+    },
+    "0.9-1.0": {
+      "count": 0,
+      "percentage": 0.0
+    }
+  },
+  "difficulty_analysis": {
+    "Easy": {
+      "count": 477,
+      "exact_match_rate": 0.0,
+      "average_similarity": 0.37755396044362105
+    },
+    "Medium": {
+      "count": 963,
+      "exact_match_rate": 0.0,
+      "average_similarity": 0.42656587134371576
+    },
+    "Hard": {
+      "count": 385,
+      "exact_match_rate": 0.0,
+      "average_similarity": 0.4299936530671444
+    }
+  }
+}
