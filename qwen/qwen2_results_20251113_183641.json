@@ -1,0 +1,75 @@
+{
+  "model": "Qwen/Qwen2-8B-Instruct",
+  "test_type": "complete_dataset",
+  "test_date": "2025-11-13T18:36:41.166586",
+  "test_config": {
+    "total_samples": 1825,
+    "successful_samples": 1825,
+    "max_new_tokens": 50,
+    "duration_seconds": 3807.748186
+  },
+  "metrics": {
+    "exact_match_rate": 0.0,
+    "average_similarity": 0.4106988579614333,
+    "success_rate": 1.0
+  },
+  "similarity_distribution": {
+    "0.0-0.1": {
+      "count": 156,
+      "percentage": 8.55
+    },
+    "0.1-0.2": {
+      "count": 19,
+      "percentage": 1.04
+    },
+    "0.2-0.3": {
+      "count": 88,
+      "percentage": 4.82
+    },
+    "0.3-0.4": {
+      "count": 359,
+      "percentage": 19.67
+    },
+    "0.4-0.5": {
+      "count": 681,
+      "percentage": 37.32
+    },
+    "0.5-0.6": {
+      "count": 471,
+      "percentage": 25.81
+    },
+    "0.6-0.7": {
+      "count": 49,
+      "percentage": 2.68
+    },
+    "0.7-0.8": {
+      "count": 2,
+      "percentage": 0.11
+    },
+    "0.8-0.9": {
+      "count": 0,
+      "percentage": 0.0
+    },
+    "0.9-1.0": {
+      "count": 0,
+      "percentage": 0.0
+    }
+  },
+  "difficulty_analysis": {
+    "Easy": {
+      "count": 477,
+      "exact_match_rate": 0.0,
+      "average_similarity": 0.3725628143219714
+    },
+    "Medium": {
+      "count": 963,
+      "exact_match_rate": 0.0,
+      "average_similarity": 0.4227086104237624
+    },
+    "Hard": {
+      "count": 385,
+      "exact_match_rate": 0.0,
+      "average_similarity": 0.42790795197390175
+    }
+  }
+}
