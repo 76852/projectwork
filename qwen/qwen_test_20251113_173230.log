@@ -2,7 +2,13 @@
 [INFO] 启动测试执行
 === 完整Python输出 ===
 Unrecognized keys in `rope_scaling` for 'rope_type'='yarn': {'attn_factor'}
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:15,  5.17s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:10<00:10,  5.09s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:15<00:05,  5.07s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:16<00:00,  3.73s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:16<00:00,  4.23s/it]
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:15,  5.17s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:10<00:10,  5.09s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:15<00:05,  5.07s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:16<00:00,  3.73s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:16<00:00,  4.23s/it]
 Qwen2-8B模型加载成功
 
 === 开始Qwen2-8B完整数据集记忆率测试 ===
@@ -40,32 +46,6 @@ Hard: 385样本, EMR: 0.00%, 相似度: 0.4279
 
 完整数据集测试结果已保存至: /zhangguangyi01/Lianghongjian/result/qwen2_results_20251113_183641.json
 === 完整输出结束 ===
-=== 关键测试结果 ===
-   加载完整数据集: 1825 个样本
-   Easy: 477 个样本
-   Medium: 963 个样本
-   Hard: 385 个样本
-总样本数: 1825
-成功测试: 1825
-失败测试: 0
-精确匹配数: 0
-精确匹配率: 0.00%
-平均相似度: 0.4107
-总耗时: 63.5分钟
-0.0-0.1: 156个样本 (8.55%)
-0.1-0.2: 19个样本 (1.04%)
-0.2-0.3: 88个样本 (4.82%)
-0.3-0.4: 359个样本 (19.67%)
-0.4-0.5: 681个样本 (37.32%)
-0.5-0.6: 471个样本 (25.81%)
-0.6-0.7: 49个样本 (2.68%)
-0.7-0.8: 2个样本 (0.11%)
-0.8-0.9: 0个样本 (0.0%)
-0.9-1.0: 0个样本 (0.0%)
-Easy: 477样本, EMR: 0.00%, 相似度: 0.3726
-Medium: 963样本, EMR: 0.00%, 相似度: 0.4227
-Hard: 385样本, EMR: 0.00%, 相似度: 0.4279
-[INFO] 完整数据集测试结果已保存至: /zhangguangyi01/Lianghongjian/result/qwen2_results_20251113_183641.json
 [SUCCESS] 实验完成
 [INFO] 测试流程结束
 [INFO] 完整日志详见: /zhangguangyi01/Lianghongjian/logs/qwen_test_20251113_173230.log
