@@ -1,0 +1,75 @@
+{
+  "model": "WeiboAI/VibeThinker-1.5B",
+  "test_type": "complete_dataset",
+  "test_date": "2025-11-13T20:00:03.044280",
+  "test_config": {
+    "total_samples": 1825,
+    "successful_samples": 1825,
+    "max_new_tokens": 50,
+    "duration_seconds": 2518.026431
+  },
+  "metrics": {
+    "exact_match_rate": 0.0,
+    "average_similarity": 0.04667604894537559,
+    "success_rate": 1.0
+  },
+  "similarity_distribution": {
+    "0.0-0.1": {
+      "count": 1747,
+      "percentage": 95.73
+    },
+    "0.1-0.2": {
+      "count": 67,
+      "percentage": 3.67
+    },
+    "0.2-0.3": {
+      "count": 5,
+      "percentage": 0.27
+    },
+    "0.3-0.4": {
+      "count": 2,
+      "percentage": 0.11
+    },
+    "0.4-0.5": {
+      "count": 2,
+      "percentage": 0.11
+    },
+    "0.5-0.6": {
+      "count": 1,
+      "percentage": 0.05
+    },
+    "0.6-0.7": {
+      "count": 1,
+      "percentage": 0.05
+    },
+    "0.7-0.8": {
+      "count": 0,
+      "percentage": 0.0
+    },
+    "0.8-0.9": {
+      "count": 0,
+      "percentage": 0.0
+    },
+    "0.9-1.0": {
+      "count": 0,
+      "percentage": 0.0
+    }
+  },
+  "difficulty_analysis": {
+    "Easy": {
+      "count": 477,
+      "exact_match_rate": 0.0,
+      "average_similarity": 0.05133793181032198
+    },
+    "Medium": {
+      "count": 963,
+      "exact_match_rate": 0.0,
+      "average_similarity": 0.046020686109000425
+    },
+    "Hard": {
+      "count": 385,
+      "exact_match_rate": 0.0,
+      "average_similarity": 0.042539415919011586
+    }
+  }
+}
