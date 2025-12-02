@@ -1,0 +1,14 @@
+{
+  "model": "Llama",
+  "test_type": "complete_dataset",
+  "test_date": "2025-12-01T09:06:32.084590",
+  "test_config": {
+    "total_samples": 1669,
+    "successful_samples": 1669,
+    "prefix_length": 20
+  },
+  "stats": {
+    "exact_match_count": 136,
+    "exact_match_rate": 0.08148591971240264
+  }
+}

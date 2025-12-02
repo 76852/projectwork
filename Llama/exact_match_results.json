@@ -1,0 +1,954 @@
+[
+  {
+    "id": 2,
+    "prefix_text": "You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each",
+    "suffix_text": "of their nodes contains a single digit. Add the two numbers and return the sum as a linked list. You may assume the two numbers do not contain any leading zero, except the number 0 itself. Example 1: Input: l1 = [2,4,3], l2 = [5,6,4] Output: [7,0,8] Explanation: 342 + 465 = 807. Example 2: Input: l1 = [0], l2 = [0] Output: [0] Example 3: Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9] Output: [8,9,9,9,0,0,0,1] Constraints: The number of nodes in each linked list is in the range `[1, 100]`. `0 <= Node.val <= 9` It is guaranteed that the",
+    "generated_text": "of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.\n\nYou may assume the two numbers do not contain any leading zero, except the number 0 itself.\n\n \n\nExample 1:\n\n\nInput: l1 = [2,4,3], l2 = [5,6,4]\nOutput: [7,0,8]\nExplanation: 342 + 465 = 807.\nExample 2:\n\nInput: l1 = [0], l2 = [0]\nOutput: [0]\nExample 3:\n\nInput: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]\nOutput: [8,9,9,9,0,0,0,1]\n \n\nConstraints:\n\nThe number of nodes in each linked list is in the range [1, 100].\n0 <= Node.val <= 9\nIt is guaranteed that the",
+    "is_exact_match": true
+  },
+  {
+    "id": 3,
+    "prefix_text": "Given a string `s`, find the length of the longest substring without repeating characters. Example 1: Input: s = \"abcabcbb\"",
+    "suffix_text": "Output: 3 Explanation: The answer is \"abc\", with the length of 3. Example 2: Input: s = \"bbbbb\" Output: 1 Explanation: The answer is \"b\", with the length of 1. Example 3: Input: s = \"pwwkew\" Output: 3 Explanation: The answer is \"wke\", with the length of 3. Notice that the answer must be a substring, \"pwke\" is a subsequence and not a substring. Example 4: Input: s = \"\" Output: 0 Constraints: `0 <= s.length <= 5 * 104` `s` consists of English letters, digits, symbols and spaces.",
+    "generated_text": "Output: 3 Explanation: The answer is \"abc\", with the length of 3. Example 2: Input: s = \"bbbbb\" Output: 1 Explanation: The answer is \"b\", with the length of 1. Example 3: Input: s = \"pwwkew\" Output: 3 Explanation: The answer is \"wke\", with the length of 3. Notice that the answer must be a substring, \"pwke\" is a subsequence and not a substring. Example 4: Input: s = \"\" Output: 0 Constraints: 0 <= s.length <= 5 * 104 s consists of English letters, digits, symbols and spaces.",
+    "is_exact_match": true
+  },
+  {
+    "id": 6,
+    "prefix_text": "The string `\"PAYPALISHIRING\"` is written in a zigzag pattern on a given number of rows like this: (you may want",
+    "suffix_text": "to display this pattern in a fixed font for better legibility) P A H N A P L S I I G Y I R And then read line by line: `\"PAHNAPLSIIGYIR\"` Write the code that will take a string and make this conversion given a number of rows: string convert(string s, int numRows); Example 1: Input: s = \"PAYPALISHIRING\", numRows = 3 Output: \"PAHNAPLSIIGYIR\" Example 2: Input: s = \"PAYPALISHIRING\", numRows = 4 Output: \"PINALSIGYAHRPI\" Explanation: P I N A L S I G Y A H R P I Example 3: Input: s = \"A\", numRows = 1",
+    "generated_text": "to display this pattern in a fixed font for better legibility) P A H N A P L S I I G Y I R And then read line by line: \"PAHNAPLSIIGYIR \" . Write the code that will take a string and make this conversion given a number of rows: string convert(string s, int numRows); Example 1: Input: s = \"PAYPALISHIRING\", numRows = 3 Output: \"PAHNAPLSIIGYIR\" Example 2: Input: s = \"PAYPALISHIRING\", numRows = 4 Output: \"PINALSIGYAHRPI\" Explanation: P I N A L S I G Y A H R P I Example 3: Input: s = \"A\", numRows",
+    "is_exact_match": true
+  },
+  {
+    "id": 12,
+    "prefix_text": "Roman numerals are represented by seven different symbols: `I`, `V`, `X`, `L`, `C`, `D` and `M`. Symbol Value I 1",
+    "suffix_text": "V 5 X 10 L 50 C 100 D 500 M 1000 For example, `2` is written as `II` in Roman numeral, just two one's added together. `12` is written as `XII`, which is simply `X + II`. The number `27` is written as `XXVII`, which is `XX + V + II`. Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not `IIII`. Instead, the number four is written as `IV`. Because the one is before the five we subtract it making four. The same principle applies to the number nine,",
+    "generated_text": "V 5 X 10 L 50 C 100 D 500 M 1000 For example, 2 is written as II in Roman numeral, just two one's added together. 12 is written as XII, which is simply X + II. The number 27 is written as XXVII, which is XX + V + II. Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not IIII. Instead, the number four is written as IV. Because the one is before the five we subtract it making four. The same principle applies to the number nine,",
+    "is_exact_match": true
+  },
+  {
+    "id": 13,
+    "prefix_text": "Roman numerals are represented by seven different symbols: `I`, `V`, `X`, `L`, `C`, `D` and `M`. Symbol Value I 1",
+    "suffix_text": "V 5 X 10 L 50 C 100 D 500 M 1000 For example, `2` is written as `II` in Roman numeral, just two one's added together. `12` is written as `XII`, which is simply `X + II`. The number `27` is written as `XXVII`, which is `XX + V + II`. Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not `IIII`. Instead, the number four is written as `IV`. Because the one is before the five we subtract it making four. The same principle applies to the number nine,",
+    "generated_text": "V 5 X 10 L 50 C 100 D 500 M 1000 For example, 2 is written as II in Roman numeral, just two one's added together. 12 is written as XII, which is simply X + II. The number 27 is written as XXVII, which is XX + V + II. Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not IIII. Instead, the number four is written as IV. Because the one is before the five we subtract it making four. The same principle applies to the number nine,",
+    "is_exact_match": true
+  },
+  {
+    "id": 62,
+    "prefix_text": "A robot is located at the top-left corner of a `m x n` grid (marked 'Start' in the diagram below).",
+    "suffix_text": "The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below). How many possible unique paths are there? Example 1: Input: m = 3, n = 7 Output: 28 Example 2: Input: m = 3, n = 2 Output: 3 Explanation: From the top-left corner, there are a total of 3 ways to reach the bottom-right corner: 1. Right -> Down -> Down 2. Down -> Down -> Right 3. Down -> Right -> Down Example 3: Input: m",
+    "generated_text": "The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below). How many possible unique paths are there? Example 1: Input: m = 3, n = 7 Output: 28 Example 2: Input: m = 3, n = 2 Output: 3 Explanation: From the top-left corner, there are a total of 3 ways to reach the bottom-right corner: 1. Right -> Down -> Down 2. Down -> Down -> Right 3. Down -> Right -> Down Example 3: Input: m",
+    "is_exact_match": true
+  },
+  {
+    "id": 66,
+    "prefix_text": "Given a non-empty array of decimal digits representing a non-negative integer, increment one to the integer. The digits are stored",
+    "suffix_text": "such that the most significant digit is at the head of the list, and each element in the array contains a single digit. You may assume the integer does not contain any leading zero, except the number 0 itself. Example 1: Input: digits = [1,2,3] Output: [1,2,4] Explanation: The array represents the integer 123. Example 2: Input: digits = [4,3,2,1] Output: [4,3,2,2] Explanation: The array represents the integer 4321. Example 3: Input: digits = [0] Output: [1] Constraints: `1 <= digits.length <= 100` `0 <= digits[i] <= 9`",
+    "generated_text": "such that the most significant digit is at the head of the list, and each element in the array contains a single digit. You may assume the integer does not contain any leading zero, except the number 0 itself. Example 1: Input: digits = [1,2,3] Output: [1,2,4] Explanation: The array represents the integer 123. Example 2: Input: digits = [4,3,2,1] Output: [4,3,2,2] Explanation: The array represents the integer 4321. Example 3: Input: digits = [0] Output: [1] Constraints: 1 <= digits.length <= 100 0 <= digits[i] <= 9",
+    "is_exact_match": true
+  },
+  {
+    "id": 69,
+    "prefix_text": "Given a non-negative integer `x`, compute and return the square root of `x`. Since the return type is an integer,",
+    "suffix_text": "the decimal digits are truncated, and only the integer part of the result is returned. Example 1: Input: x = 4 Output: 2 Example 2: Input: x = 8 Output: 2 Explanation: The square root of 8 is 2.82842..., and since the decimal part is truncated, 2 is returned. Constraints: `0 <= x <= 231 - 1`",
+    "generated_text": "the decimal digits are truncated, and only the integer part of the result is returned. Example 1: Input: x = 4 Output: 2 Example 2: Input: x = 8 Output: 2 Explanation: The square root of 8 is 2.82842..., and since the decimal part is truncated, 2 is returned. Constraints: * 0 <= x <= 231 -",
+    "is_exact_match": true
+  },
+  {
+    "id": 70,
+    "prefix_text": "You are climbing a staircase. It takes `n` steps to reach the top. Each time you can either climb `1`",
+    "suffix_text": "or `2` steps. In how many distinct ways can you climb to the top? Example 1: Input: n = 2 Output: 2 Explanation: There are two ways to climb to the top. 1. 1 step + 1 step 2. 2 steps Example 2: Input: n = 3 Output: 3 Explanation: There are three ways to climb to the top. 1. 1 step + 1 step + 1 step 2. 1 step + 2 steps 3. 2 steps + 1 step Constraints: `1 <= n <= 45`",
+    "generated_text": "or 2 steps. In how many distinct ways can you climb to the top? Example 1: Input: n = 2 Output: 2 Explanation: There are two ways to climb to the top. 1. 1 step + 1 step 2. 2 steps Example 2: Input: n = 3 Output: 3 Explanation: There are three ways to climb to the top. 1. 1 step + 1 step + 1 step 2. 1 step + 2 steps 3. 2 steps + 1 step Constraints: * 1 <= n <=",
+    "is_exact_match": true
+  },
+  {
+    "id": 84,
+    "prefix_text": "Given an array of integers `heights` representing the histogram's bar height where the width of each bar is `1`, return",
+    "suffix_text": "the area of the largest rectangle in the histogram. Example 1: Input: heights = [2,1,5,6,2,3] Output: 10 Explanation: The above is a histogram where width of each bar is 1. The largest rectangle is shown in the red area, which has an area = 10 units. Example 2: Input: heights = [2,4] Output: 4 Constraints: `1 <= heights.length <= 105` `0 <= heights[i] <= 104`",
+    "generated_text": "the area of the largest rectangle in the histogram. Example 1: Input: heights = [2,1,5,6,2,3] Output: 10 Explanation: The above is a histogram where width of each bar is 1. The largest rectangle is shown in the red area, which has an area = 10 units. Example 2: Input: heights = [2,4] Output: 4 Constraints: * 1 <= heights.length <= 105 * 0 <= heights[i]",
+    "is_exact_match": true
+  },
+  {
+    "id": 98,
+    "prefix_text": "Given the `root` of a binary tree, determine if it is a valid binary search tree (BST). A valid BST",
+    "suffix_text": "is defined as follows: The left subtree of a node contains only nodes with keys less than the node's key. The right subtree of a node contains only nodes with keys greater than the node's key. Both the left and right subtrees must also be binary search trees. Example 1: Input: root = [2,1,3] Output: true Example 2: Input: root = [5,1,4,null,null,3,6] Output: false Explanation: The root node's value is 5 but its right child's value is 4. Constraints: The number of nodes in the tree is in the range `[1, 104]`. `-231 <= Node.val <= 231 - 1`",
+    "generated_text": "is defined as follows: * The left subtree of a node contains only nodes with keys less than the node's key. * The right subtree of a node contains only nodes with keys greater than the node's key. * Both the left and right subtrees must also be binary search trees. Example 1: Input: root = [2,1,3] Output: true Example 2: Input: root = [5,1,4,null,null,3,6] Output: false Explanation: The root node's value is 5 but its right child's value is 4. Constraints: * The number of nodes in the tree is in the range [1, 104] . * -231",
+    "is_exact_match": true
+  },
+  {
+    "id": 121,
+    "prefix_text": "You are given an array `prices` where `prices[i]` is the price of a given stock on the `ith` day. You",
+    "suffix_text": "want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock. Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return `0`. Example 1: Input: prices = [7,1,5,3,6,4] Output: 5 Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5. Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell. Example 2: Input: prices = [7,6,4,3,1]",
+    "generated_text": "want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock. Return _the maximum profit you can achieve from this transaction_. If you cannot achieve any profit, return 0 . Example 1: Input: prices = [7,1,5,3,6,4] Output: 5 Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5. Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell. Example 2: Input: prices =",
+    "is_exact_match": true
+  },
+  {
+    "id": 122,
+    "prefix_text": "You are given an array `prices` where `prices[i]` is the price of a given stock on the `ith` day. Find",
+    "suffix_text": "the maximum profit you can achieve. You may complete as many transactions as you like (i.e., buy one and sell one share of the stock multiple times). Note: You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again). Example 1: Input: prices = [7,1,5,3,6,4] Output: 7 Explanation: Buy on day 2 (price = 1) and sell on day 3 (price = 5), profit = 5-1 = 4. Then buy on day 4 (price = 3) and sell on day 5 (price = 6), profit = 6-3 = 3. Example 2: Input: prices",
+    "generated_text": "the maximum profit you can achieve. You may complete as many transactions as you like (i.e., buy one and sell one share of the stock multiple times). Note: You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again). Example 1: Input: prices = [7,1,5,3,6,4] Output: 7 Explanation: Buy on day 2 (price = 1) and sell on day 3 (price = 5), profit = 5-1 = 4. Then buy on day 4 (price = 3) and sell on day 5 (price = 6), profit = 6-3 = 3. Example 2: Input: prices",
+    "is_exact_match": true
+  },
+  {
+    "id": 124,
+    "prefix_text": "A path in a binary tree is a sequence of nodes where each pair of adjacent nodes in the sequence",
+    "suffix_text": "has an edge connecting them. A node can only appear in the sequence at most once. Note that the path does not need to pass through the root. The path sum of a path is the sum of the node's values in the path. Given the `root` of a binary tree, return the maximum path sum of any path. Example 1: Input: root = [1,2,3] Output: 6 Explanation: The optimal path is 2 -> 1 -> 3 with a path sum of 2 + 1 + 3 = 6. Example 2: Input: root = [-10,9,20,null,null,15,7] Output: 42 Explanation: The optimal",
+    "generated_text": "has an edge connecting them. A node can only appear in the sequence at most once. Note that the path does not need to pass through the root. The path sum of a path is the sum of the node's values in the path. Given the root of a binary tree, return the maximum path sum of any path. Example 1: Input: root = [1,2,3] Output: 6 Explanation: The optimal path is 2 -> 1 -> 3 with a path sum of 2 + 1 + 3 = 6. Example 2: Input: root = [-10,9,20,null,null,15,7] Output: 42 Explanation: The optimal",
+    "is_exact_match": true
+  },
+  {
+    "id": 134,
+    "prefix_text": "There are `n` gas stations along a circular route, where the amount of gas at the `ith` station is `gas[i]`.",
+    "suffix_text": "You have a car with an unlimited gas tank and it costs `cost[i]` of gas to travel from the `ith` station to its next `(i + 1)th` station. You begin the journey with an empty tank at one of the gas stations. Given two integer arrays `gas` and `cost`, return the starting gas station's index if you can travel around the circuit once in the clockwise direction, otherwise return `-1`. If there exists a solution, it is guaranteed to be unique Example 1: Input: gas = [1,2,3,4,5], cost = [3,4,5,1,2] Output: 3 Explanation: Start at station 3 (index 3) and",
+    "generated_text": "You have a car with an unlimited gas tank and it costs cost[i] of gas to travel from the ith station to its next (i + 1)th station. You begin the journey with an empty tank at one of the gas stations. Given two integer arrays gas and cost , return _the starting gas station's index if you can travel around the circuit once in the clockwise direction, otherwise return_ -1 . If there exists a solution, it is guaranteed to be unique . Example 1: Input: gas = [1,2,3,4,5], cost = [3,4,5,1,2] Output: 3 Explanation: Start at station 3",
+    "is_exact_match": true
+  },
+  {
+    "id": 136,
+    "prefix_text": "Given a non-empty array of integers `nums`, every element appears twice except for one. Find that single one. Follow up:",
+    "suffix_text": "Could you implement a solution with a linear runtime complexity and without using extra memory? Example 1: Input: nums = [2,2,1] Output: 1 Example 2: Input: nums = [4,1,2,1,2] Output: 4 Example 3: Input: nums = [1] Output: 1 Constraints: `1 <= nums.length <= 3 * 104` `-3 * 104 <= nums[i] <= 3 * 104` Each element in the array appears twice except for one element which appears only once.",
+    "generated_text": "Could you implement a solution with a linear runtime complexity and without using extra memory? Example 1: Input: nums = [2,2,1] Output: 1 Example 2: Input: nums = [4,1,2,1,2] Output: 4 Example 3: Input: nums = [1] Output: 1 Constraints: 1 <= nums.length <= 3 * 104 -3 * 104 <= nums[i] <= 3 * 104 Each element in the array appears twice except for one element which appears only once.",
+    "is_exact_match": true
+  },
+  {
+    "id": 139,
+    "prefix_text": "Given a string `s` and a dictionary of strings `wordDict`, return `true` if `s` can be segmented into a space-separated",
+    "suffix_text": "sequence of one or more dictionary words. Note that the same word in the dictionary may be reused multiple times in the segmentation. Example 1: Input: s = \"leetcode\", wordDict = [\"leet\",\"code\"] Output: true Explanation: Return true because \"leetcode\" can be segmented as \"leet code\". Example 2: Input: s = \"applepenapple\", wordDict = [\"apple\",\"pen\"] Output: true Explanation: Return true because \"applepenapple\" can be segmented as \"apple pen apple\". Note that you are allowed to reuse a dictionary word. Example 3: Input: s = \"catsandog\", wordDict = [\"cats\",\"dog\",\"sand\",\"and\",\"cat\"] Output: false Constraints: `1 <= s.length <= 300` `1 <= wordDict.length <= 1000`",
+    "generated_text": "sequence of one or more dictionary words. Note that the same word in the dictionary may be reused multiple times in the segmentation. Example 1: Input: s = \"leetcode\", wordDict = [\"leet\",\"code\"] Output: true Explanation: Return true because \"leetcode\" can be segmented as \"leet code\". Example 2: Input: s = \"applepenapple\", wordDict = [\"apple\",\"pen\"] Output: true Explanation: Return true because \"applepenapple\" can be segmented as \"apple pen apple\". Note that you are allowed to reuse a dictionary word. Example 3: Input: s = \"catsandog\", wordDict = [\"cats\",\"dog\",\"sand\",\"and\",\"cat\"] Output: false Constraints: * 1 <= s.length <= 300 * 1 <= wordDict.length",
+    "is_exact_match": true
+  },
+  {
+    "id": 141,
+    "prefix_text": "Given `head`, the head of a linked list, determine if the linked list has a cycle in it. There is",
+    "suffix_text": "a cycle in a linked list if there is some node in the list that can be reached again by continuously following the `next` pointer. Internally, `pos` is used to denote the index of the node that tail's `next` pointer is connected to. Note that `pos` is not passed as a parameter. Return `true` if there is a cycle in the linked list. Otherwise, return `false`. Example 1: Input: head = [3,2,0,-4], pos = 1 Output: true Explanation: There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed). Example 2: Input: head =",
+    "generated_text": "a cycle in a linked list if there is some node in the list that can be reached again by continuously following the next pointer. Internally, pos is used to denote the index of the node that tail's next pointer is connected to. Note that pos is not passed as a parameter. Return true if there is a cycle in the linked list. Otherwise, return false . Example 1: Input: head = [3,2,0,-4], pos = 1 Output: true Explanation: There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed). Example 2: Input: head",
+    "is_exact_match": true
+  },
+  {
+    "id": 151,
+    "prefix_text": "Given an input string `s`, reverse the order of the words. A word is defined as a sequence of non-space",
+    "suffix_text": "characters. The words in `s` will be separated by at least one space. Return a string of the words in reverse order concatenated by a single space. Note that `s` may contain leading or trailing spaces or multiple spaces between two words. The returned string should only have a single space separating the words. Do not include any extra spaces. Example 1: Input: s = \"the sky is blue\" Output: \"blue is sky the\" Example 2: Input: s = \" hello world \" Output: \"world hello\" Explanation: Your reversed string should not contain leading or trailing spaces. Example 3: Input:",
+    "generated_text": "characters. The words in s will be separated by at least one space. Return _a string of the words in reverse order concatenated by a single space_. Note that s may contain leading or trailing spaces or multiple spaces between two words. The returned string should only have a single space separating the words. Do not include any extra spaces. Example 1: Input: s = \"the sky is blue\" Output: \"blue is sky the\" Example 2: Input: s = \" hello world \" Output: \"world hello\" Explanation: Your reversed string should not contain leading or trailing spaces. Example 3: Input:",
+    "is_exact_match": true
+  },
+  {
+    "id": 188,
+    "prefix_text": "You are given an integer array `prices` where `prices[i]` is the price of a given stock on the `ith` day,",
+    "suffix_text": "and an integer `k`. Find the maximum profit you can achieve. You may complete at most `k` transactions. Note: You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again). Example 1: Input: k = 2, prices = [2,4,1] Output: 2 Explanation: Buy on day 1 (price = 2) and sell on day 2 (price = 4), profit = 4-2 = 2. Example 2: Input: k = 2, prices = [3,2,6,5,0,3] Output: 7 Explanation: Buy on day 2 (price = 2) and sell on day 3 (price = 6), profit = 6-2 =",
+    "generated_text": "and an integer k . Find the maximum profit you can achieve. You may complete at most k transactions. Note: You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again). Example 1: Input: k = 2, prices = [2,4,1] Output: 2 Explanation: Buy on day 1 (price = 2) and sell on day 2 (price = 4), profit = 4-2 = 2. Example 2: Input: k = 2, prices = [3,2,6,5,0,3] Output: 7 Explanation: Buy on day 2 (price = 2) and sell on day 3 (price = 6), profit = 6-2",
+    "is_exact_match": true
+  },
+  {
+    "id": 202,
+    "prefix_text": "Write an algorithm to determine if a number `n` is happy. A happy number is a number defined by the",
+    "suffix_text": "following process: Starting with any positive integer, replace the number by the sum of the squares of its digits. Repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1. Those numbers for which this process ends in 1 are happy. Return `true` if `n` is a happy number, and `false` if not. Example 1: Input: n = 19 Output: true Explanation: 12 + 92 = 82 82 + 22 = 68 62 + 82 = 100 12 + 02 + 02 = 1 Example 2: Input:",
+    "generated_text": "following process: Starting with any positive integer, replace the number by the sum of the squares of its digits. Repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1. Those numbers for which this process ends in 1 are happy. Return true if n is a happy number, and false if not. Example 1: Input: n = 19 Output: true Explanation: 12 + 92 = 82 82 + 22 = 68 62 + 82 = 100 12 + 02 + 02 = 1 Example 2: Input:",
+    "is_exact_match": true
+  },
+  {
+    "id": 204,
+    "prefix_text": "Count the number of prime numbers less than a non-negative number, `n`. Example 1: Input: n = 10 Output: 4",
+    "suffix_text": "Explanation: There are 4 prime numbers less than 10, they are 2, 3, 5, 7. Example 2: Input: n = 0 Output: 0 Example 3: Input: n = 1 Output: 0 Constraints: `0 <= n <= 5 * 106`",
+    "generated_text": "Explanation: There are 4 prime numbers less than 10, they are 2, 3, 5, 7. Example 2: Input: n = 0 Output: 0 Example 3: Input: n = 1 Output: 0 Constraints: 0 <= n <= 5 * 106",
+    "is_exact_match": true
+  },
+  {
+    "id": 205,
+    "prefix_text": "Given two strings `s` and `t`, determine if they are isomorphic. Two strings `s` and `t` are isomorphic if the",
+    "suffix_text": "characters in `s` can be replaced to get `t`. All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character, but a character may map to itself. Example 1: Input: s = \"egg\", t = \"add\" Output: true Example 2: Input: s = \"foo\", t = \"bar\" Output: false Example 3: Input: s = \"paper\", t = \"title\" Output: true Constraints: `1 <= s.length <= 5 * 104` `t.length == s.length` `s` and `t` consist of any valid ascii character.",
+    "generated_text": "characters in s can be replaced to get t . All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character, but a character may map to itself. Example 1: Input: s = \"egg\", t = \"add\" Output: true Example 2: Input: s = \"foo\", t = \"bar\" Output: false Example 3: Input: s = \"paper\", t = \"title\" Output: true Constraints: * 1 <= s.length <= 5 * 104 * t.length == s.length * s and t consist of",
+    "is_exact_match": true
+  },
+  {
+    "id": 232,
+    "prefix_text": "Implement a first in first out (FIFO) queue using only two stacks. The implemented queue should support all the functions",
+    "suffix_text": "of a normal queue (`push`, `peek`, `pop`, and `empty`). Implement the `MyQueue` class: `void push(int x)` Pushes element x to the back of the queue. `int pop()` Removes the element from the front of the queue and returns it. `int peek()` Returns the element at the front of the queue. `boolean empty()` Returns `true` if the queue is empty, `false` otherwise. Notes: You must use only standard operations of a stack, which means only `push to top`, `peek/pop from top`, `size`, and `is empty` operations are valid. Depending on your language, the stack may not be supported natively. You may",
+    "generated_text": "of a normal queue (push, peek, pop, and empty). Implement the MyQueue class: void push(int x) Pushes element x to the back of the queue. int pop() Removes the element from the front of the queue and returns it. int peek() Returns the element at the front of the queue. boolean empty() Returns true if the queue is empty, false otherwise. Notes: You must use only standard operations of a stack, which means only push to top, peek/pop from top, size, and is empty operations are valid. Depending on your language, the stack may not be supported natively. You may",
+    "is_exact_match": true
+  },
+  {
+    "id": 242,
+    "prefix_text": "Given two strings `s` and `t`, return `true` if `t` is an anagram of `s`, and `false` otherwise. Example 1:",
+    "suffix_text": "Input: s = \"anagram\", t = \"nagaram\" Output: true Example 2: Input: s = \"rat\", t = \"car\" Output: false Constraints: `1 <= s.length, t.length <= 5 * 104` `s` and `t` consist of lowercase English letters. Follow up: What if the inputs contain Unicode characters? How would you adapt your solution to such a case?",
+    "generated_text": "Input: s = \"anagram\", t = \"nagaram\" Output: true Example 2: Input: s = \"rat\", t = \"car\" Output: false Constraints: 1 <= s.length, t.length <= 5 * 104 s and t consist of lowercase English letters. Follow up: What if the inputs contain Unicode characters? How would you adapt your solution to such a case?",
+    "is_exact_match": true
+  },
+  {
+    "id": 273,
+    "prefix_text": "Convert a non-negative integer `num` to its English words representation. Example 1: Input: num = 123 Output: \"One Hundred Twenty",
+    "suffix_text": "Three\" Example 2: Input: num = 12345 Output: \"Twelve Thousand Three Hundred Forty Five\" Example 3: Input: num = 1234567 Output: \"One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven\" Example 4: Input: num = 1234567891 Output: \"One Billion Two Hundred Thirty Four Million Five Hundred Sixty Seven Thousand Eight Hundred Ninety One\" Constraints: `0 <= num <= 231 - 1`",
+    "generated_text": "Three\" Example 2: Input: num = 12345 Output: \"Twelve Thousand Three Hundred Forty Five\" Example 3: Input: num = 1234567 Output: \"One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven\" Example 4: Input: num = 1234567891 Output: \"One Billion Two Hundred Thirty Four Million Five Hundred Sixty Seven Thousand Eight Hundred Ninety One\" Constraints: 0 <= num <= 231 - 1",
+    "is_exact_match": true
+  },
+  {
+    "id": 285,
+    "prefix_text": "Given the `root` of a binary search tree and a node `p` in it, return the in-order successor of that",
+    "suffix_text": "node in the BST. If the given node has no in-order successor in the tree, return `null`. The successor of a node `p` is the node with the smallest key greater than `p.val`. Example 1: Input: root = [2,1,3], p = 1 Output: 2 Explanation: 1's in-order successor node is 2. Note that both p and the return value is of TreeNode type. Example 2: Input: root = [5,3,6,2,4,null,null,1], p = 6 Output: null Explanation: There is no in-order successor of the current node, so the answer is `null`. Constraints: The number of nodes in the tree is in the",
+    "generated_text": "node in the BST. If the given node has no in-order successor in the tree, return null . The successor of a node p is the node with the smallest key greater than p.val . Example 1: Input: root = [2,1,3], p = 1 Output: 2 Explanation: 1's in-order successor node is 2. Note that both p and the return value is of TreeNode type. Example 2: Input: root = [5,3,6,2,4,null,null,1], p = 6 Output: null Explanation: There is no in-order successor of the current node, so the answer is null . Constraints: * The number of nodes in the",
+    "is_exact_match": true
+  },
+  {
+    "id": 342,
+    "prefix_text": "Given an integer `n`, return `true` if it is a power of four. Otherwise, return `false`. An integer `n` is",
+    "suffix_text": "a power of four, if there exists an integer `x` such that `n == 4x`. Example 1: Input: n = 16 Output: true Example 2: Input: n = 5 Output: false Example 3: Input: n = 1 Output: true Constraints: `-231 <= n <= 231 - 1` Follow up: Could you solve it without loops/recursion?",
+    "generated_text": "a power of four, if there exists an integer x such that n == 4x . Example 1: Input: n = 16 Output: true Example 2: Input: n = 5 Output: false Example 3: Input: n = 1 Output: true Constraints: * -231 <= n <= 231 - 1 Follow up: Could you solve it",
+    "is_exact_match": true
+  },
+  {
+    "id": 353,
+    "prefix_text": "Design a Snake game that is played on a device with screen size `height x width`. Play the game online",
+    "suffix_text": "if you are not familiar with the game. The snake is initially positioned at the top left corner `(0, 0)` with a length of `1` unit. You are given an array `food` where `food[i] = (ri, ci)` is the row and column position of a piece of food that the snake can eat. When a snake eats a piece of food, its length and the game's score both increase by `1`. Each piece of food appears one by one on the screen, meaning the second piece of food will not appear until the snake eats the first piece of food.",
+    "generated_text": "if you are not familiar with the game. The snake is initially positioned at the top left corner (0, 0) with a length of 1 unit. You are given an array food where food[i] = (ri, ci) is the row and column position of a piece of food that the snake can eat. When a snake eats a piece of food, its length and the game's score both increase by 1. Each piece of food appears one by one on the screen, meaning the second piece of food will not appear until the snake eats the first piece of food.",
+    "is_exact_match": true
+  },
+  {
+    "id": 383,
+    "prefix_text": "Given an arbitrary ransom note string and another string containing letters from all the magazines, write a function that will",
+    "suffix_text": "return true if the ransom note can be constructed from the magazines ; otherwise, it will return false. Each letter in the magazine string can only be used once in your ransom note. Example 1: Input: ransomNote = \"a\", magazine = \"b\" Output: false Example 2: Input: ransomNote = \"aa\", magazine = \"ab\" Output: false Example 3: Input: ransomNote = \"aa\", magazine = \"aab\" Output: true Constraints: You may assume that both strings contain only lowercase letters.",
+    "generated_text": "return true if the ransom note can be constructed from the magazines ; otherwise, it will return false. Each letter in the magazine string can only be used once in your ransom note. Example 1: Input: ransomNote = \"a\", magazine = \"b\" Output: false Example 2: Input: ransomNote = \"aa\", magazine = \"ab\" Output: false Example 3: Input: ransomNote = \"aa\", magazine = \"aab\" Output: true Constraints: You may assume that both strings contain only lowercase letters.",
+    "is_exact_match": true
+  },
+  {
+    "id": 395,
+    "prefix_text": "Given a string `s` and an integer `k`, return the length of the longest substring of `s` such that the",
+    "suffix_text": "frequency of each character in this substring is greater than or equal to `k`. Example 1: Input: s = \"aaabb\", k = 3 Output: 3 Explanation: The longest substring is \"aaa\", as 'a' is repeated 3 times. Example 2: Input: s = \"ababbc\", k = 2 Output: 5 Explanation: The longest substring is \"ababb\", as 'a' is repeated 2 times and 'b' is repeated 3 times. Constraints: `1 <= s.length <= 104` `s` consists of only lowercase English letters. `1 <= k <= 105`",
+    "generated_text": "frequency of each character in this substring is greater than or equal to k . Example 1: Input: s = \"aaabb \", k = 3 Output: 3 Explanation: The longest substring is \"aaa \", as 'a' is repeated 3 times. Example 2: Input: s = \"ababbc \", k = 2 Output: 5 Explanation: The longest substring is \"ababb \", as 'a' is repeated 2 times and 'b' is repeated 3 times. Constraints: * 1 <= s.length <= 104 * s consists of only lowercase",
+    "is_exact_match": true
+  },
+  {
+    "id": 402,
+    "prefix_text": "Given a non-negative integer num represented as a string, remove k digits from the number so that the new number",
+    "suffix_text": "is the smallest possible. Note: The length of num is less than 10002 and will be ≥ k. The given num does not contain any leading zero. Example 1: Input: num = \"1432219\", k = 3 Output: \"1219\" Explanation: Remove the three digits 4, 3, and 2 to form the new number 1219 which is the smallest. Example 2: Input: num = \"10200\", k = 1 Output: \"200\" Explanation: Remove the leading 1 and the number is 200. Note that the output must not contain leading zeroes. Example 3: Input: num = \"10\", k = 2 Output: \"0\" Explanation: Remove",
+    "generated_text": "is the smallest possible. Note: The length of num is less than 10002 and will be ≥ k. The given num does not contain any leading zero. Example 1: Input: num = \"1432219\", k = 3 Output: \"1219\" Explanation: Remove the three digits 4, 3, and 2 to form the new number 1219 which is the smallest. Example 2: Input: num = \"10200\", k = 1 Output: \"200\" Explanation: Remove the leading 1 and the number is 200. Note that the output must not contain leading zeroes. Example 3: Input: num = \"10\", k = 2 Output: \"0\" Explanation: Remove",
+    "is_exact_match": true
+  },
+  {
+    "id": 404,
+    "prefix_text": "Find the sum of all left leaves in a given binary tree. Example: 3 / \\ 9 20 / \\",
+    "suffix_text": "15 7 There are two left leaves in the binary tree, with values 9 and 15 respectively. Return 24.",
+    "generated_text": "15 7 There are two left leaves in the binary tree, with values 9 and 15 respectively. Return 24.",
+    "is_exact_match": true
+  },
+  {
+    "id": 418,
+    "prefix_text": "Given a `rows x cols` screen and a sentence represented by a list of non-empty words, find how many times",
+    "suffix_text": "the given sentence can be fitted on the screen. Note: A word cannot be split into two lines. The order of words in the sentence must remain unchanged. Two consecutive words in a line must be separated by a single space. Total words in the sentence won't exceed 100. Length of each word is greater than 0 and won't exceed 10. 1 ≤ rows, cols ≤ 20,000. Example 1: Input: rows = 2, cols = 8, sentence = [\"hello\", \"world\"] Output: 1 Explanation: hello--- world--- The character '-' signifies an empty space on the screen. Example 2: Input: rows =",
+    "generated_text": "the given sentence can be fitted on the screen. Note: A word cannot be split into two lines. The order of words in the sentence must remain unchanged. Two consecutive words in a line must be separated by a single space. Total words in the sentence won't exceed 100. Length of each word is greater than 0 and won't exceed 10. 1 ≤ rows, cols ≤ 20,000. Example 1: Input: rows = 2, cols = 8, sentence = [\"hello\", \"world\"] Output: 1 Explanation: hello--- world--- The character '-' signifies an empty space on the screen. Example 2: Input: rows =",
+    "is_exact_match": true
+  },
+  {
+    "id": 426,
+    "prefix_text": "Convert a Binary Search Tree to a sorted Circular Doubly-Linked List in place. You can think of the left and",
+    "suffix_text": "right pointers as synonymous to the predecessor and successor pointers in a doubly-linked list. For a circular doubly linked list, the predecessor of the first element is the last element, and the successor of the last element is the first element. We want to do the transformation in place. After the transformation, the left pointer of the tree node should point to its predecessor, and the right pointer should point to its successor. You should return the pointer to the smallest element of the linked list. Example 1: Input: root = [4,2,5,1,3] Output: [1,2,3,4,5] Explanation: The figure below shows the",
+    "generated_text": "right pointers as synonymous to the predecessor and successor pointers in a doubly-linked list. For a circular doubly linked list, the predecessor of the first element is the last element, and the successor of the last element is the first element. We want to do the transformation in place. After the transformation, the left pointer of the tree node should point to its predecessor, and the right pointer should point to its successor. You should return the pointer to the smallest element of the linked list. Example 1: Input: root = [4,2,5,1,3] Output: [1,2,3,4,5] Explanation: The figure below shows the",
+    "is_exact_match": true
+  },
+  {
+    "id": 431,
+    "prefix_text": "Design an algorithm to encode an N-ary tree into a binary tree and decode the binary tree to get the",
+    "suffix_text": "original N-ary tree. An N-ary tree is a rooted tree in which each node has no more than N children. Similarly, a binary tree is a rooted tree in which each node has no more than 2 children. There is no restriction on how your encode/decode algorithm should work. You just need to ensure that an N-ary tree can be encoded to a binary tree and this binary tree can be decoded to the original N-nary tree structure. Nary-Tree input serialization is represented in their level order traversal, each group of children is separated by the null value (See following",
+    "generated_text": "original N-ary tree. An N-ary tree is a rooted tree in which each node has no more than N children. Similarly, a binary tree is a rooted tree in which each node has no more than 2 children. There is no restriction on how your encode/decode algorithm should work. You just need to ensure that an N-ary tree can be encoded to a binary tree and this binary tree can be decoded to the original N-nary tree structure. Nary-Tree input serialization is represented in their level order traversal, each group of children is separated by the null value (See following",
+    "is_exact_match": true
+  },
+  {
+    "id": 437,
+    "prefix_text": "You are given a binary tree in which each node contains an integer value. Find the number of paths that",
+    "suffix_text": "sum to a given value. The path does not need to start or end at the root or a leaf, but it must go downwards (traveling only from parent nodes to child nodes). The tree has no more than 1,000 nodes and the values are in the range -1,000,000 to 1,000,000. Example: root = [10,5,-3,3,2,null,11,3,-2,null,1], sum = 8 10 / \\ 5 -3 / \\ \\ 3 2 11 / \\ \\ 3 -2 1 Return 3. The paths that sum to 8 are: 1. 5 -> 3 2. 5 -> 2 -> 1 3. -3 -> 11",
+    "generated_text": "sum to a given value. The path does not need to start or end at the root or a leaf, but it must go downwards (traveling only from parent nodes to child nodes). The tree has no more than 1,000 nodes and the values are in the range -1,000,000 to 1,000,000. Example: root = [10,5,-3,3,2,null,11,3,-2,null,1], sum = 8 10 / \\ 5 -3 / \\ \\ 3 2 11 / \\ \\ 3 -2 1 Return 3. The paths that sum to 8 are: 1. 5 -> 3 2. 5 -> 2 -> 1 3. -3 -> 11",
+    "is_exact_match": true
+  },
+  {
+    "id": 441,
+    "prefix_text": "You have a total of n coins that you want to form in a staircase shape, where every k-th row",
+    "suffix_text": "must have exactly k coins. Given n, find the total number of full staircase rows that can be formed. n is a non-negative integer and fits within the range of a 32-bit signed integer. Example 1: n = 5 The coins can form the following rows: ¤ ¤ ¤ ¤ ¤ Because the 3rd row is incomplete, we return 2. Example 2: n = 8 The coins can form the following rows: ¤ ¤ ¤ ¤ ¤ ¤ ¤ ¤ Because the 4th row is incomplete, we return 3.",
+    "generated_text": "must have exactly k coins. Given n, find the total number of full staircase rows that can be formed. n is a non-negative integer and fits within the range of a 32-bit signed integer. Example 1: n = 5 The coins can form the following rows: ¤ ¤ ¤ ¤ ¤ Because the 3rd row is incomplete, we return 2. Example 2: n = 8 The coins can form the following rows: ¤ ¤ ¤ ¤ ¤ ¤ ¤ ¤ Because the 4th row is incomplete, we return 3.",
+    "is_exact_match": true
+  },
+  {
+    "id": 442,
+    "prefix_text": "Given an array of integers, 1 ≤ a[i] ≤ n (n = size of array), some elements appear twice and",
+    "suffix_text": "others appear once. Find all the elements that appear twice in this array. Could you do it without extra space and in O(n) runtime? Example: Input: [4,3,2,7,8,2,3,1] Output: [2,3]",
+    "generated_text": "others appear once. Find all the elements that appear twice in this array. Could you do it without extra space and in O(n) runtime? Example: Input: [4,3,2,7,8,2,3,1] Output: [2,3]",
+    "is_exact_match": true
+  },
+  {
+    "id": 462,
+    "prefix_text": "Given a non-empty integer array, find the minimum number of moves required to make all array elements equal, where a",
+    "suffix_text": "move is incrementing a selected element by 1 or decrementing a selected element by 1. You may assume the array's length is at most 10,000. Example: Input: [1,2,3] Output: 2 Explanation: Only two moves are needed (remember each move increments or decrements one element): [1,2,3] => [2,2,3] => [2,2,2]",
+    "generated_text": "move is incrementing a selected element by 1 or decrementing a selected element by 1. You may assume the array's length is at most 10,000. Example: Input: [1,2,3] Output: 2 Explanation: Only two moves are needed (remember each move increments or decrements one element): [1,2,3] => [2,2,3] => [2,2,2]",
+    "is_exact_match": true
+  },
+  {
+    "id": 463,
+    "prefix_text": "You are given `row x col` `grid` representing a map where `grid[i][j] = 1` represents land and `grid[i][j] = 0`",
+    "suffix_text": "represents water. Grid cells are connected horizontally/vertically (not diagonally). The `grid` is completely surrounded by water, and there is exactly one island (i.e., one or more connected land cells). The island doesn't have \"lakes\", meaning the water inside isn't connected to the water around the island. One cell is a square with side length 1. The grid is rectangular, width and height don't exceed 100. Determine the perimeter of the island. Example 1: Input: grid = [[0,1,0,0],[1,1,1,0],[0,1,0,0],[1,1,0,0]] Output: 16 Explanation: The perimeter is the 16 yellow stripes in the image above. Example 2: Input: grid = [[1]] Output: 4 Example",
+    "generated_text": "represents water.\n\nGrid cells are connected horizontally/vertically (not diagonally). The grid is completely surrounded by water, and there is exactly one island (i.e., one or more connected land cells).\n\nThe island doesn't have \"lakes\", meaning the water inside isn't connected to the water around the island. One cell is a square with side length 1. The grid is rectangular, width and height don't exceed 100. Determine the perimeter of the island.\n\n**Example 1:**\n\n**Input:** grid = \\[\\[0,1,0,0\\],\\[1,1,1,0\\],\\[0,1,0,0\\],\\[1,1,0,0\\]\\]\n**Output:** 16\n**Explanation:** The perimeter is the 16 yellow stripes in the image above.\n\n**Example 2:**\n\n**Input:** grid = \\[\\[1\\]\\]\n**Output:** 4\n\n**Example ",
+    "is_exact_match": true
+  },
+  {
+    "id": 479,
+    "prefix_text": "Find the largest palindrome made from the product of two n-digit numbers. Since the result could be very large, you",
+    "suffix_text": "should return the largest palindrome mod 1337. Example: Input: 2 Output: 987 Explanation: 99 x 91 = 9009, 9009 % 1337 = 987 Note: The range of n is [1,8].",
+    "generated_text": "should return the largest palindrome mod 1337. Example: Input: 2 Output: 987 Explanation: 99 x 91 = 9009, 9009 % 1337 = 987 Note: The range of n is [1,8].",
+    "is_exact_match": true
+  },
+  {
+    "id": 480,
+    "prefix_text": "Median is the middle value in an ordered integer list. If the size of the list is even, there is",
+    "suffix_text": "no middle value. So the median is the mean of the two middle value. Examples: `[2,3,4]` , the median is `3` `[2,3]`, the median is `(2 + 3) / 2 = 2.5` Given an array nums, there is a sliding window of size k which is moving from the very left of the array to the very right. You can only see the k numbers in the window. Each time the sliding window moves right by one position. Your job is to output the median array for each window in the original array. For example, Given nums = `[1,3,-1,-3,5,3,6,7]`, and",
+    "generated_text": "no middle value. So the median is the mean of the two middle value. Examples: [2,3,4], the median is 3 [2,3], the median is (2 + 3) / 2 = 2.5 Given an array nums, there is a sliding window of size k which is moving from the very left of the array to the very right. You can only see the k numbers in the window. Each time the sliding window moves right by one position. Your job is to output the median array for each window in the original array. For example, Given nums = [1,3,-1,-3,5,3,6,7], and k",
+    "is_exact_match": true
+  },
+  {
+    "id": 485,
+    "prefix_text": "Given a binary array, find the maximum number of consecutive 1s in this array. Example 1: Input: [1,1,0,1,1,1] Output: 3",
+    "suffix_text": "Explanation: The first two digits or the last three digits are consecutive 1s. The maximum number of consecutive 1s is 3. Note: The input array will only contain `0` and `1`. The length of input array is a positive integer and will not exceed 10,000",
+    "generated_text": "Explanation: The first two digits or the last three digits are consecutive 1s. The maximum number of consecutive 1s is 3. Note: The input array will only contain 0 and 1. The length of input array is a positive integer and will not exceed 10,000",
+    "is_exact_match": true
+  },
+  {
+    "id": 487,
+    "prefix_text": "Given a binary array, find the maximum number of consecutive 1s in this array if you can flip at most",
+    "suffix_text": "one 0. Example 1: Input: [1,0,1,1,0] Output: 4 Explanation: Flip the first zero will get the the maximum number of consecutive 1s. After flipping, the maximum number of consecutive 1s is 4. Note: The input array will only contain `0` and `1`. The length of input array is a positive integer and will not exceed 10,000 Follow up: What if the input numbers come in one by one as an infinite stream? In other words, you can't store all numbers coming from the stream as it's too large to hold in memory. Could you solve it efficiently?",
+    "generated_text": "one 0. Example 1: Input: [1,0,1,1,0] Output: 4 Explanation: Flip the first zero will get the the maximum number of consecutive 1s. After flipping, the maximum number of consecutive 1s is 4. Note: The input array will only contain 0 and 1. The length of input array is a positive integer and will not exceed 10,000 Follow up: What if the input numbers come in one by one as an infinite stream? In other words, you can't store all numbers coming from the stream as it's too large to hold in memory. Could you solve it efficiently?",
+    "is_exact_match": true
+  },
+  {
+    "id": 498,
+    "prefix_text": "Given a matrix of M x N elements (M rows, N columns), return all elements of the matrix in diagonal",
+    "suffix_text": "order as shown in the below image. Example: Input: [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ] ] Output: [1,2,4,7,5,3,6,8,9] Explanation: Note: The total number of elements of the given matrix will not exceed 10,000.",
+    "generated_text": "order as shown in the below image.\n\nExample:\n\nInput:\n[\n [ 1, 2, 3 ],\n [ 4, 5, 6 ],\n [ 7, 8, 9 ]\n]\nOutput:  [1,2,4,7,5,3,6,8,9]\nExplanation:\n\nNote:\n\nThe total number of elements of the given matrix will not exceed 10,000",
+    "is_exact_match": true
+  },
+  {
+    "id": 503,
+    "prefix_text": "Given a circular integer array `nums` (i.e., the next element of `nums[nums.length - 1]` is `nums[0]`), return the next greater",
+    "suffix_text": "number for every element in `nums`. The next greater number of a number `x` is the first greater number to its traversing-order next in the array, which means you could search circularly to find its next greater number. If it doesn't exist, return `-1` for this number. Example 1: Input: nums = [1,2,1] Output: [2,-1,2] Explanation: The first 1's next greater number is 2; The number 2 can't find next greater number. The second 1's next greater number needs to search circularly, which is also 2. Example 2: Input: nums = [1,2,3,4,3] Output: [2,3,4,-1,4] Constraints: `1 <= nums.length <= 104`",
+    "generated_text": "number for every element in nums . The next greater number of a number x is the first greater number to its traversing-order next in the array, which means you could search circularly to find its next greater number. If it doesn't exist, return -1 for this number. Example 1: Input: nums = [1,2,1] Output: [2,-1,2] Explanation: The first 1's next greater number is 2; The number 2 can't find next greater number. The second 1's next greater number needs to search circularly, which is also 2. Example 2: Input: nums = [1,2,3,4,3] Output: [2,3,4,-1,4] Constraints: * 1 <= nums.length",
+    "is_exact_match": true
+  },
+  {
+    "id": 504,
+    "prefix_text": "Given an integer, return its base 7 string representation. Example 1: Input: 100 Output: \"202\" Example 2: Input: -7 Output:",
+    "suffix_text": "\"-10\" Note: The input will be in range of [-1e7, 1e7].",
+    "generated_text": "\"-10\" Note: The input will be in range of [-1e7, 1e7].",
+    "is_exact_match": true
+  },
+  {
+    "id": 516,
+    "prefix_text": "Given a string `s`, find the longest palindromic subsequence's length in `s`. A subsequence is a sequence that can be",
+    "suffix_text": "derived from another sequence by deleting some or no elements without changing the order of the remaining elements. Example 1: Input: s = \"bbbab\" Output: 4 Explanation: One possible longest palindromic subsequence is \"bbbb\". Example 2: Input: s = \"cbbd\" Output: 2 Explanation: One possible longest palindromic subsequence is \"bb\". Constraints: `1 <= s.length <= 1000` `s` consists only of lowercase English letters.",
+    "generated_text": "derived from another sequence by deleting some or no elements without changing the order of the remaining elements. Example 1: Input: s = \"bbbab\" Output: 4 Explanation: One possible longest palindromic subsequence is \"bbbb\". Example 2: Input: s = \"cbbd\" Output: 2 Explanation: One possible longest palindromic subsequence is \"bb\". Constraints: * 1 <= s.length <= 1000 * s consists only of lowercase",
+    "is_exact_match": true
+  },
+  {
+    "id": 520,
+    "prefix_text": "Given a word, you need to judge whether the usage of capitals in it is right or not. We define",
+    "suffix_text": "the usage of capitals in a word to be right when one of the following cases holds: All letters in this word are capitals, like \"USA\". All letters in this word are not capitals, like \"leetcode\". Only the first letter in this word is capital, like \"Google\". Otherwise, we define that this word doesn't use capitals in a right way. Example 1: Input: \"USA\" Output: True Example 2: Input: \"FlaG\" Output: False Note: The input will be a non-empty word consisting of uppercase and lowercase latin letters.",
+    "generated_text": "the usage of capitals in a word to be right when one of the following cases holds: All letters in this word are capitals, like \"USA\". All letters in this word are not capitals, like \"leetcode\". Only the first letter in this word is capital, like \"Google\". Otherwise, we define that this word doesn't use capitals in a right way. Example 1: Input: \"USA\" Output: True Example 2: Input: \"FlaG\" Output: False Note: The input will be a non-empty word consisting of uppercase and lowercase latin letters.",
+    "is_exact_match": true
+  },
+  {
+    "id": 522,
+    "prefix_text": "Given a list of strings, you need to find the longest uncommon subsequence among them. The longest uncommon subsequence is",
+    "suffix_text": "defined as the longest subsequence of one of these strings and this subsequence should not be any subsequence of the other strings. A subsequence is a sequence that can be derived from one sequence by deleting some characters without changing the order of the remaining elements. Trivially, any string is a subsequence of itself and an empty string is a subsequence of any string. The input will be a list of strings, and the output needs to be the length of the longest uncommon subsequence. If the longest uncommon subsequence doesn't exist, return -1. Example 1: Input: \"aba\", \"cdc\", \"eae\"",
+    "generated_text": "defined as the longest subsequence of one of these strings and this subsequence should not be any subsequence of the other strings. A subsequence is a sequence that can be derived from one sequence by deleting some characters without changing the order of the remaining elements. Trivially, any string is a subsequence of itself and an empty string is a subsequence of any string. The input will be a list of strings, and the output needs to be the length of the longest uncommon subsequence. If the longest uncommon subsequence doesn't exist, return -1. Example 1: Input: \"aba\", \"cdc\", \"eae\"",
+    "is_exact_match": true
+  },
+  {
+    "id": 535,
+    "prefix_text": "Note: This is a companion problem to the System Design problem: Design TinyURL. TinyURL is a URL shortening service where",
+    "suffix_text": "you enter a URL such as `https://leetcode.com/problems/design-tinyurl` and it returns a short URL such as `http://tinyurl.com/4e9iAk`. Design the `encode` and `decode` methods for the TinyURL service. There is no restriction on how your encode/decode algorithm should work. You just need to ensure that a URL can be encoded to a tiny URL and the tiny URL can be decoded to the original URL.",
+    "generated_text": "you enter a URL such as https://leetcode.com/problems/design-tinyurl and it returns a short URL such as http://tinyurl.com/4e9iAk. Design the encode and decode methods for the TinyURL service. There is no restriction on how your encode/decode algorithm should work. You just need to ensure that a URL can be encoded to a tiny URL and the tiny URL can be decoded to the original URL.",
+    "is_exact_match": true
+  },
+  {
+    "id": 551,
+    "prefix_text": "You are given a string `s` representing an attendance record for a student where each character signifies whether the student",
+    "suffix_text": "was absent, late, or present on that day. The record only contains the following three characters: `'A'`: Absent. `'L'`: Late. `'P'`: Present. The student is eligible for an attendance award if they meet both of the following criteria: The student was absent (`'A'`) for strictly fewer than 2 days total. The student was never late (`'L'`) for 3 or more consecutive days. Return `true` if the student is eligible for an attendance award, or `false` otherwise. Example 1: Input: s = \"PPALLP\" Output: true Explanation: The student has fewer than 2 absences and was never late 3 or more consecutive",
+    "generated_text": "was absent, late, or present on that day. The record only contains the following three characters: * 'A' : Absent. * 'L' : Late. * 'P' : Present. The student is eligible for an attendance award if they meet both of the following criteria: * The student was absent ( 'A' ) for strictly fewer than 2 days total . * The student was never late ( 'L' ) for 3 or more consecutive days. Return true _if the student is eligible for an attendance award, or_ false _otherwise_. Example 1: Input: s = \"PPALLP \" Output: true Explanation: The",
+    "is_exact_match": true
+  },
+  {
+    "id": 572,
+    "prefix_text": "Given two non-empty binary trees s and t, check whether tree t has exactly the same structure and node values",
+    "suffix_text": "with a subtree of s. A subtree of s is a tree consists of a node in s and all of this node's descendants. The tree s could also be considered as a subtree of itself. Example 1: Given tree s: 3 / \\ 4 5 / \\ 1 2 Given tree t: 4 / \\ 1 2 Return true, because t has the same structure and node values with a subtree of s. Example 2: Given tree s: 3 / \\ 4 5 / \\ 1 2 / 0 Given tree t: 4 / \\ 1 2 Return false.",
+    "generated_text": "with a subtree of s. A subtree of s is a tree consists of a node in s and all of this node's descendants. The tree s could also be considered as a subtree of itself. Example 1: Given tree s: 3 / \\ 4 5 / \\ 1 2 Given tree t: 4 / \\ 1 2 Return true, because t has the same structure and node values with a subtree of s. Example 2: Given tree s: 3 / \\ 4 5 / \\ 1 2 / 0 Given tree t: 4 / \\ 1 2 Return false.",
+    "is_exact_match": true
+  },
+  {
+    "id": 575,
+    "prefix_text": "Alice has `n` candies, where the `ith` candy is of type `candyType[i]`. Alice noticed that she started to gain weight,",
+    "suffix_text": "so she visited a doctor. The doctor advised Alice to only eat `n / 2` of the candies she has (`n` is always even). Alice likes her candies very much, and she wants to eat the maximum number of different types of candies while still following the doctor's advice. Given the integer array `candyType` of length `n`, return the maximum number of different types of candies she can eat if she only eats `n / 2` of them. Example 1: Input: candyType = [1,1,2,2,3,3] Output: 3 Explanation: Alice can only eat 6 / 2 = 3 candies. Since there are",
+    "generated_text": "so she visited a doctor. The doctor advised Alice to only eat n / 2 of the candies she has (n is always even). Alice likes her candies very much, and she wants to eat the maximum number of different types of candies while still following the doctor's advice. Given the integer array candyType of length n , return _the maximum number of different types of candies she can eat if she only eats_ n / 2 _of them_. Example 1: Input: candyType = [1,1,2,2,3,3] Output: 3 Explanation: Alice can only eat 6 / 2 = 3 candies. Since there",
+    "is_exact_match": true
+  },
+  {
+    "id": 594,
+    "prefix_text": "We define a harmonious array as an array where the difference between its maximum value and its minimum value is",
+    "suffix_text": "exactly `1`. Given an integer array `nums`, return the length of its longest harmonious subsequence among all its possible subsequences. A subsequence of array is a sequence that can be derived from the array by deleting some or no elements without changing the order of the remaining elements. Example 1: Input: nums = [1,3,2,2,5,2,3,7] Output: 5 Explanation: The longest harmonious subsequence is [3,2,2,2,3]. Example 2: Input: nums = [1,2,3,4] Output: 2 Example 3: Input: nums = [1,1,1,1] Output: 0 Constraints: `1 <= nums.length <= 2 * 104` `-109 <= nums[i] <= 109`",
+    "generated_text": "exactly 1. Given an integer array nums, return the length of its longest harmonious subsequence among all its possible subsequences. A subsequence of array is a sequence that can be derived from the array by deleting some or no elements without changing the order of the remaining elements. Example 1: Input: nums = [1,3,2,2,5,2,3,7] Output: 5 Explanation: The longest harmonious subsequence is [3,2,2,2,3]. Example 2: Input: nums = [1,2,3,4] Output: 2 Example 3: Input: nums = [1,1,1,1] Output: 0 Constraints: 1 <= nums.length <= 2 * 104 -109 <= nums[i] <= 109",
+    "is_exact_match": true
+  },
+  {
+    "id": 611,
+    "prefix_text": "Given an array consists of non-negative integers, your task is to count the number of triplets chosen from the array",
+    "suffix_text": "that can make triangles if we take them as side lengths of a triangle. Example 1: Input: [2,2,3,4] Output: 3 Explanation: Valid combinations are: 2,3,4 (using the first 2) 2,3,4 (using the second 2) 2,2,3 Note: The length of the given array won't exceed 1000. The integers in the given array are in the range of [0, 1000].",
+    "generated_text": "that can make triangles if we take them as side lengths of a triangle. Example 1: Input: [2,2,3,4] Output: 3 Explanation: Valid combinations are: 2,3,4 (using the first 2) 2,3,4 (using the second 2) 2,2,3 Note: The length of the given array won't exceed 1000. The integers in the given array are in the range of [0, 1000].",
+    "is_exact_match": true
+  },
+  {
+    "id": 617,
+    "prefix_text": "You are given two binary trees `root1` and `root2`. Imagine that when you put one of them to cover the",
+    "suffix_text": "other, some nodes of the two trees are overlapped while the others are not. You need to merge the two trees into a new binary tree. The merge rule is that if two nodes overlap, then sum node values up as the new value of the merged node. Otherwise, the NOT null node will be used as the node of the new tree. Return the merged tree. Note: The merging process must start from the root nodes of both trees. Example 1: Input: root1 = [1,3,2,5], root2 = [2,1,3,null,4,null,7] Output: [3,4,5,5,4,null,7] Example 2: Input: root1 = [1], root2 = [1,2]",
+    "generated_text": "other, some nodes of the two trees are overlapped while the others are not. You need to merge the two trees into a new binary tree. The merge rule is that if two nodes overlap, then sum node values up as the new value of the merged node. Otherwise, the NOT null node will be used as the node of the new tree. Return _the merged tree_. Note: The merging process must start from the root nodes of both trees. Example 1: Input: root1 = [1,3,2,5], root2 = [2,1,3,null,4,null,7] Output: [3,4,5,5,4,null,7] Example 2: Input: root1 = [1], root2 = [1,2]",
+    "is_exact_match": true
+  },
+  {
+    "id": 623,
+    "prefix_text": "Given the `root` of a binary tree and two integers `val` and `depth`, add a row of nodes with value",
+    "suffix_text": "`val` at the given depth `depth`. Note that the `root` node is at depth `1`. The adding rule is: Given the integer `depth`, for each not null tree node `cur` at the depth `depth - 1`, create two tree nodes with value `val` as `cur`'s left subtree root and right subtree root. `cur`'s original left subtree should be the left subtree of the new left subtree root. `cur`'s original right subtree should be the right subtree of the new right subtree root. If `depth == 1` that means there is no depth `depth - 1` at all, then create a",
+    "generated_text": "val at the given depth depth . Note that the root node is at depth 1 . The adding rule is: * Given the integer depth , for each not null tree node cur at the depth depth - 1 , create two tree nodes with value val as cur 's left subtree root and right subtree root. * cur 's original left subtree should be the left subtree of the new left subtree root. * cur 's original right subtree should be the right subtree of the new right subtree root. * If depth == 1 that means there",
+    "is_exact_match": true
+  },
+  {
+    "id": 645,
+    "prefix_text": "You have a set of integers `s`, which originally contains all the numbers from `1` to `n`. Unfortunately, due to",
+    "suffix_text": "some error, one of the numbers in `s` got duplicated to another number in the set, which results in repetition of one number and loss of another number. You are given an integer array `nums` representing the data status of this set after the error. Find the number that occurs twice and the number that is missing and return them in the form of an array. Example 1: Input: nums = [1,2,2,4] Output: [2,3] Example 2: Input: nums = [1,1] Output: [1,2] Constraints: `2 <= nums.length <= 104` `1 <= nums[i] <= 104`",
+    "generated_text": "some error, one of the numbers in s got duplicated to another number in the set, which results in repetition of one number and loss of another number. You are given an integer array nums representing the data status of this set after the error. Find the number that occurs twice and the number that is missing and return _them in the form of an array_. Example 1: Input: nums = [1,2,2,4] Output: [2,3] Example 2: Input: nums = [1,1] Output: [1,2] Constraints: * 2 <= nums.length <= 104 * 1 <= nums[i]",
+    "is_exact_match": true
+  },
+  {
+    "id": 662,
+    "prefix_text": "Given a binary tree, write a function to get the maximum width of the given tree. The maximum width of",
+    "suffix_text": "a tree is the maximum width among all levels. The width of one level is defined as the length between the end-nodes (the leftmost and right most non-null nodes in the level, where the `null` nodes between the end-nodes are also counted into the length calculation. It is guaranteed that the answer will in the range of 32-bit signed integer. Example 1: Input: 1 / \\ 3 2 / \\ \\ 5 3 9 Output: 4 Explanation: The maximum width existing in the third level with the length 4 (5,3,null,9). Example 2: Input: 1 / 3 / \\ 5 3",
+    "generated_text": "a tree is the maximum width among all levels. The width of one level is defined as the length between the end-nodes (the leftmost and right most non-null nodes in the level, where the null nodes between the end-nodes are also counted into the length calculation. It is guaranteed that the answer will in the range of 32-bit signed integer. Example 1: Input: 1 / \\ 3 2 / \\ \\ 5 3 9 Output: 4 Explanation: The maximum width existing in the third level with the length 4 (5,3,null,9). Example 2: Input: 1 / 3 / \\ 5 3",
+    "is_exact_match": true
+  },
+  {
+    "id": 666,
+    "prefix_text": "If the depth of a tree is smaller than `5`, then this tree can be represented by a list of",
+    "suffix_text": "three-digits integers. For each integer in this list: The hundreds digit represents the depth `D` of this node, `1 <= D <= 4.` The tens digit represents the position `P` of this node in the level it belongs to, `1 <= P <= 8`. The position is the same as that in a full binary tree. The units digit represents the value `V` of this node, `0 <= V <= 9.` Given a list of `ascending` three-digits integers representing a binary tree with the depth smaller than 5, you need to return the sum of all paths from the root",
+    "generated_text": "three-digits integers. For each integer in this list: * The hundreds digit represents the depth D of this node, 1 <= D <= 4. * The tens digit represents the position P of this node in the level it belongs to, 1 <= P <= 8. The position is the same as that in a full binary tree. * The units digit represents the value V of this node, 0 <= V <= 9. Given a list of ascending three-digits integers representing a binary tree with the depth smaller than 5 , you need to return the sum of all",
+    "is_exact_match": true
+  },
+  {
+    "id": 670,
+    "prefix_text": "Given a non-negative integer, you could swap two digits at most once to get the maximum valued number. Return the",
+    "suffix_text": "maximum valued number you could get. Example 1: Input: 2736 Output: 7236 Explanation: Swap the number 2 and the number 7. Example 2: Input: 9973 Output: 9973 Explanation: No swap. Note: The given number is in the range [0, 108]",
+    "generated_text": "maximum valued number you could get. Example 1: Input: 2736 Output: 7236 Explanation: Swap the number 2 and the number 7. Example 2: Input: 9973 Output: 9973 Explanation: No swap. Note: The given number is in the range [0, 108]",
+    "is_exact_match": true
+  },
+  {
+    "id": 679,
+    "prefix_text": "You have 4 cards each containing a number from 1 to 9. You need to judge whether they could operated",
+    "suffix_text": "through `*`, `/`, `+`, `-`, `(`, `)` to get the value of 24. Example 1: Input: [4, 1, 8, 7] Output: True Explanation: (8-4) * (7-1) = 24 Example 2: Input: [1, 2, 1, 2] Output: False Note: The division operator `/` represents real division, not integer division. For example, 4 / (1 - 2/3) = 12. Every operation done is between two numbers. In particular, we cannot use `-` as a unary operator. For example, with `[1, 1, 1, 1]` as input, the expression `-1 - 1 - 1 - 1` is not allowed. You cannot concatenate numbers together.",
+    "generated_text": "through *, /, +, -, (, ) to get the value of 24. Example 1: Input: [4, 1, 8, 7] Output: True Explanation: (8-4) * (7-1) = 24 Example 2: Input: [1, 2, 1, 2] Output: False Note: The division operator / represents real division, not integer division. For example, 4 / (1 - 2/3) = 12. Every operation done is between two numbers. In particular, we cannot use '-' as a unary operator. For example, with [1, 1, 1, 1] as input, the expression \"-1 - 1 - 1 - 1\" is not allowed. You cannot concatenate numbers together.",
+    "is_exact_match": true
+  },
+  {
+    "id": 681,
+    "prefix_text": "Given a `time` represented in the format `\"HH:MM\"`, form the next closest time by reusing the current digits. There is",
+    "suffix_text": "no limit on how many times a digit can be reused. You may assume the given input string is always valid. For example, `\"01:34\"`, `\"12:09\"` are all valid. `\"1:34\"`, `\"12:9\"` are all invalid. Example 1: Input: time = \"19:34\" Output: \"19:39\" Explanation: The next closest time choosing from digits 1, 9, 3, 4, is 19:39, which occurs 5 minutes later. It is not 19:33, because this occurs 23 hours and 59 minutes later. Example 2: Input: time = \"23:59\" Output: \"22:22\" Explanation: The next closest time choosing from digits 2, 3, 5, 9, is 22:22. It may be assumed that",
+    "generated_text": "no limit on how many times a digit can be reused. You may assume the given input string is always valid. For example, \"01:34\" , \"12:09\" are all valid. \"1:34\" , \"12:9\" are all invalid. Example 1: Input: time = \"19:34\" Output: \"19:39\" Explanation: The next closest time choosing from digits 1, 9, 3, 4, is 19:39, which occurs 5 minutes later. It is not 19:33, because this occurs 23 hours and 59 minutes later. Example 2: Input: time = \"23:59\" Output: \"22:22\" Explanation: The next closest time choosing from digits 2, 3, 5, 9, is 22:22. It may be",
+    "is_exact_match": true
+  },
+  {
+    "id": 690,
+    "prefix_text": "You are given a data structure of employee information, which includes the employee's unique id, their importance value and their",
+    "suffix_text": "direct subordinates' id. For example, employee 1 is the leader of employee 2, and employee 2 is the leader of employee 3. They have importance value 15, 10 and 5, respectively. Then employee 1 has a data structure like [1, 15, [2]], and employee 2 has [2, 10, [3]], and employee 3 has [3, 5, []]. Note that although employee 3 is also a subordinate of employee 1, the relationship is not direct. Now given the employee information of a company, and an employee id, you need to return the total importance value of this employee and all their subordinates.",
+    "generated_text": "direct subordinates' id. For example, employee 1 is the leader of employee 2, and employee 2 is the leader of employee 3. They have importance value 15, 10 and 5, respectively. Then employee 1 has a data structure like [1, 15, [2]], and employee 2 has [2, 10, [3]], and employee 3 has [3, 5, []]. Note that although employee 3 is also a subordinate of employee 1, the relationship is not direct. Now given the employee information of a company, and an employee id, you need to return the total importance value of this employee and all their subordinates.",
+    "is_exact_match": true
+  },
+  {
+    "id": 692,
+    "prefix_text": "Given a non-empty list of words, return the k most frequent elements. Your answer should be sorted by frequency from",
+    "suffix_text": "highest to lowest. If two words have the same frequency, then the word with the lower alphabetical order comes first. Example 1: Input: [\"i\", \"love\", \"leetcode\", \"i\", \"love\", \"coding\"], k = 2 Output: [\"i\", \"love\"] Explanation: \"i\" and \"love\" are the two most frequent words. Note that \"i\" comes before \"love\" due to a lower alphabetical order. Example 2: Input: [\"the\", \"day\", \"is\", \"sunny\", \"the\", \"the\", \"the\", \"sunny\", \"is\", \"is\"], k = 4 Output: [\"the\", \"is\", \"sunny\", \"day\"] Explanation: \"the\", \"is\", \"sunny\" and \"day\" are the four most frequent words, with the number of occurrence being 4, 3, 2 and",
+    "generated_text": "highest to lowest. If two words have the same frequency, then the word with the lower alphabetical order comes first. Example 1: Input: [\"i\", \"love\", \"leetcode\", \"i\", \"love\", \"coding\"], k = 2 Output: [\"i\", \"love\"] Explanation: \"i\" and \"love\" are the two most frequent words. Note that \"i\" comes before \"love\" due to a lower alphabetical order. Example 2: Input: [\"the\", \"day\", \"is\", \"sunny\", \"the\", \"the\", \"the\", \"sunny\", \"is\", \"is\"], k = 4 Output: [\"the\", \"is\", \"sunny\", \"day\"] Explanation: \"the\", \"is\", \"sunny\" and \"day\" are the four most frequent words, with the number of occurrence being 4, 3, 2 and",
+    "is_exact_match": true
+  },
+  {
+    "id": 712,
+    "prefix_text": "Given two strings `s1, s2`, find the lowest ASCII sum of deleted characters to make two strings equal. Example 1:",
+    "suffix_text": "Input: s1 = \"sea\", s2 = \"eat\" Output: 231 Explanation: Deleting \"s\" from \"sea\" adds the ASCII value of \"s\" (115) to the sum. Deleting \"t\" from \"eat\" adds 116 to the sum. At the end, both strings are equal, and 115 + 116 = 231 is the minimum sum possible to achieve this. Example 2: Input: s1 = \"delete\", s2 = \"leet\" Output: 403 Explanation: Deleting \"dee\" from \"delete\" to turn the string into \"let\", adds 100[d]+101[e]+101[e] to the sum. Deleting \"e\" from \"leet\" adds 101[e] to the sum. At the end, both strings are equal to \"let\", and",
+    "generated_text": "Input: s1 = \"sea\", s2 = \"eat\" Output: 231 Explanation: Deleting \"s\" from \"sea\" adds the ASCII value of \"s\" (115) to the sum. Deleting \"t\" from \"eat\" adds 116 to the sum. At the end, both strings are equal, and 115 + 116 = 231 is the minimum sum possible to achieve this. Example 2: Input: s1 = \"delete\", s2 = \"leet\" Output: 403 Explanation: Deleting \"dee\" from \"delete\" to turn the string into \"let\", adds 100[d]+101[e]+101[e] to the sum. Deleting \"e\" from \"leet\" adds 101[e] to the sum. At the end, both strings are equal to \"let\", and",
+    "is_exact_match": true
+  },
+  {
+    "id": 719,
+    "prefix_text": "Given an integer array, return the k-th smallest distance among all the pairs. The distance of a pair (A, B)",
+    "suffix_text": "is defined as the absolute difference between A and B. Example 1: Input: nums = [1,3,1] k = 1 Output: 0 Explanation: Here are all the pairs: (1,3) -> 2 (1,1) -> 0 (3,1) -> 2 Then the 1st smallest distance pair is (1,1), and its distance is 0. Note: `2 <= len(nums) <= 10000`. `0 <= nums[i] < 1000000`. `1 <= k <= len(nums) * (len(nums) - 1) / 2`.",
+    "generated_text": "is defined as the absolute difference between A and B. Example 1: Input: nums = [1,3,1] k = 1 Output: 0 Explanation: Here are all the pairs: (1,3) -> 2 (1,1) -> 0 (3,1) -> 2 Then the 1st smallest distance pair is (1,1), and its distance is 0. Note: 2 <= len(nums) <= 10000. 0 <= nums[i] < 1000000. 1 <= k <= len(nums) * (len(nums) - 1) / 2.",
+    "is_exact_match": true
+  },
+  {
+    "id": 735,
+    "prefix_text": "We are given an array `asteroids` of integers representing asteroids in a row. For each asteroid, the absolute value represents",
+    "suffix_text": "its size, and the sign represents its direction (positive meaning right, negative meaning left). Each asteroid moves at the same speed. Find out the state of the asteroids after all collisions. If two asteroids meet, the smaller one will explode. If both are the same size, both will explode. Two asteroids moving in the same direction will never meet. Example 1: Input: asteroids = [5,10,-5] Output: [5,10] Explanation: The 10 and -5 collide resulting in 10. The 5 and 10 never collide. Example 2: Input: asteroids = [8,-8] Output: [] Explanation: The 8 and -8 collide exploding each other. Example",
+    "generated_text": "its size, and the sign represents its direction (positive meaning right, negative meaning left). Each asteroid moves at the same speed. Find out the state of the asteroids after all collisions. If two asteroids meet, the smaller one will explode. If both are the same size, both will explode. Two asteroids moving in the same direction will never meet. Example 1: Input: asteroids = [5,10,-5] Output: [5,10] Explanation: The 10 and -5 collide resulting in 10. The 5 and 10 never collide. Example 2: Input: asteroids = [8,-8] Output: [] Explanation: The 8 and -8 collide exploding each other. Example",
+    "is_exact_match": true
+  },
+  {
+    "id": 739,
+    "prefix_text": "Given a list of daily temperatures `T`, return a list such that, for each day in the input, tells you",
+    "suffix_text": "how many days you would have to wait until a warmer temperature. If there is no future day for which this is possible, put `0` instead. For example, given the list of temperatures `T = [73, 74, 75, 71, 69, 72, 76, 73]`, your output should be `[1, 1, 4, 2, 1, 1, 0, 0]`. Note: The length of `temperatures` will be in the range `[1, 30000]`. Each temperature will be an integer in the range `[30, 100]`.",
+    "generated_text": "how many days you would have to wait until a warmer temperature. If there is no future day for which this is possible, put 0 instead. For example, given the list of temperatures T = [73, 74, 75, 71, 69, 72, 76, 73] , your output should be [1, 1, 4, 2, 1, 1, 0, 0] . Note: The length of temperatures will be in the range [1, 30000] . Each temperature will be an integer in the",
+    "is_exact_match": true
+  },
+  {
+    "id": 741,
+    "prefix_text": "You are given an `n x n` `grid` representing a field of cherries, each cell is one of three possible",
+    "suffix_text": "integers. `0` means the cell is empty, so you can pass through, `1` means the cell contains a cherry that you can pick up and pass through, or `-1` means the cell contains a thorn that blocks your way. Return the maximum number of cherries you can collect by following the rules below: Starting at the position `(0, 0)` and reaching `(n - 1, n - 1)` by moving right or down through valid path cells (cells with value `0` or `1`). After reaching `(n - 1, n - 1)`, returning to `(0, 0)` by moving left or up through",
+    "generated_text": "integers. 0 means the cell is empty, so you can pass through, 1 means the cell contains a cherry that you can pick up and pass through, or -1 means the cell contains a thorn that blocks your way. Return _the maximum number of cherries you can collect by following the rules below_: * Starting at the position (0, 0) and reaching (n - 1, n - 1) by moving right or down through valid path cells (cells with value 0 or 1). * After reaching (n - 1, n - 1) , returning to (0, 0) by moving left",
+    "is_exact_match": true
+  },
+  {
+    "id": 771,
+    "prefix_text": "You're given strings `jewels` representing the types of stones that are jewels, and `stones` representing the stones you have. Each",
+    "suffix_text": "character in `stones` is a type of stone you have. You want to know how many of the stones you have are also jewels. Letters are case sensitive, so `\"a\"` is considered a different type of stone from `\"A\"`. Example 1: Input: jewels = \"aA\", stones = \"aAAbbbb\" Output: 3 Example 2: Input: jewels = \"z\", stones = \"ZZ\" Output: 0 Constraints: `1 <= jewels.length, stones.length <= 50` `jewels` and `stones` consist of only English letters. All the characters of `jewels` are unique.",
+    "generated_text": "character in stones is a type of stone you have. You want to know how many of the stones you have are also jewels. Letters are case sensitive, so \"a \" is considered a different type of stone from \"A \" . Example 1: Input: jewels = \"aA\", stones = \"aAAbbbb\" Output: 3 Example 2: Input: jewels = \"z\", stones = \"ZZ\" Output: 0 Constraints: * 1 <= jewels.length, stones.length <= 50 * jewels and stones consist of only English letters. * All",
+    "is_exact_match": true
+  },
+  {
+    "id": 799,
+    "prefix_text": "We stack glasses in a pyramid, where the first row has `1` glass, the second row has `2` glasses, and",
+    "suffix_text": "so on until the 100th row. Each glass holds one cup of champagne. Then, some champagne is poured into the first glass at the top. When the topmost glass is full, any excess liquid poured will fall equally to the glass immediately to the left and right of it. When those glasses become full, any excess champagne will fall equally to the left and right of those glasses, and so on. (A glass at the bottom row has its excess champagne fall on the floor.) For example, after one cup of champagne is poured, the top most glass is full.",
+    "generated_text": "so on until the 100th row. Each glass holds one cup of champagne. Then, some champagne is poured into the first glass at the top. When the topmost glass is full, any excess liquid poured will fall equally to the glass immediately to the left and right of it. When those glasses become full, any excess champagne will fall equally to the left and right of those glasses, and so on. (A glass at the bottom row has its excess champagne fall on the floor.) For example, after one cup of champagne is poured, the top most glass is full.",
+    "is_exact_match": true
+  },
+  {
+    "id": 819,
+    "prefix_text": "Given a string `paragraph` and a string array of the banned words `banned`, return the most frequent word that is",
+    "suffix_text": "not banned. It is guaranteed there is at least one word that is not banned, and that the answer is unique. The words in `paragraph` are case-insensitive and the answer should be returned in lowercase. Example 1: Input: paragraph = \"Bob hit a ball, the hit BALL flew far after it was hit.\", banned = [\"hit\"] Output: \"ball\" Explanation: \"hit\" occurs 3 times, but it is a banned word. \"ball\" occurs twice (and no other word does), so it is the most frequent non-banned word in the paragraph. Note that words in the paragraph are not case sensitive, that punctuation",
+    "generated_text": "not banned. It is guaranteed there is at least one word that is not banned, and that the answer is unique. The words in paragraph are case-insensitive and the answer should be returned in lowercase. Example 1: Input: paragraph = \"Bob hit a ball, the hit BALL flew far after it was hit.\", banned = [\"hit\"] Output: \"ball\" Explanation: \"hit\" occurs 3 times, but it is a banned word. \"ball\" occurs twice (and no other word does), so it is the most frequent non-banned word in the paragraph. Note that words in the paragraph are not case sensitive, that punctuation",
+    "is_exact_match": true
+  },
+  {
+    "id": 824,
+    "prefix_text": "A sentence `S` is given, composed of words separated by spaces. Each word consists of lowercase and uppercase letters only.",
+    "suffix_text": "We would like to convert the sentence to \"Goat Latin\" (a made-up language similar to Pig Latin.) The rules of Goat Latin are as follows: If a word begins with a vowel (a, e, i, o, or u), append `\"ma\"` to the end of the word. For example, the word 'apple' becomes 'applema'. If a word begins with a consonant (i.e. not a vowel), remove the first letter and append it to the end, then add `\"ma\"`. For example, the word `\"goat\"` becomes `\"oatgma\"`. Add one letter `'a'` to the end of each word per its word index in the",
+    "generated_text": "We would like to convert the sentence to \"Goat Latin\" (a made-up language similar to Pig Latin.) The rules of Goat Latin are as follows: If a word begins with a vowel (a, e, i, o, or u), append \"ma\" to the end of the word. For example, the word 'apple' becomes 'applema'. If a word begins with a consonant (i.e. not a vowel), remove the first letter and append it to the end, then add \"ma\". For example, the word \"goat\" becomes \"oatgma\". Add one letter 'a' to the end of each word per its word index in the",
+    "is_exact_match": true
+  },
+  {
+    "id": 830,
+    "prefix_text": "In a string `s` of lowercase letters, these letters form consecutive groups of the same character. For example, a string",
+    "suffix_text": "like `s = \"abbxxxxzyy\"` has the groups `\"a\"`, `\"bb\"`, `\"xxxx\"`, `\"z\"`, and `\"yy\"`. A group is identified by an interval `[start, end]`, where `start` and `end` denote the start and end indices (inclusive) of the group. In the above example, `\"xxxx\"` has the interval `[3,6]`. A group is considered large if it has 3 or more characters. Return the intervals of every large group sorted in increasing order by start index. Example 1: Input: s = \"abbxxxxzzy\" Output: [[3,6]] Explanation: `\"xxxx\" is the only `large group with start index 3 and end index 6. Example 2: Input: s = \"abc\"",
+    "generated_text": "like s = \"abbxxxxzyy \" has the groups \"a \" , \"bb \" , \"xxxx \" , \"z \" and \"yy \" . A group is identified by an interval [start, end] , where start and end denote the start and end indices (inclusive) of the group. In the above example, \"xxxx \" has the interval [3,6] . A group is considered large if it has 3 or more characters. Return _the intervals of every large group sorted in increasing order by start index _. Example 1: Input: s = \"abbxxxxzzy \" Output: [[3,6]] Explanation: \"xxxx \" is the only",
+    "is_exact_match": true
+  },
+  {
+    "id": 839,
+    "prefix_text": "Two strings `X` and `Y` are similar if we can swap two letters (in different positions) of `X`, so that",
+    "suffix_text": "it equals `Y`. Also two strings `X` and `Y` are similar if they are equal. For example, `\"tars\"` and `\"rats\"` are similar (swapping at positions `0` and `2`), and `\"rats\"` and `\"arts\"` are similar, but `\"star\"` is not similar to `\"tars\"`, `\"rats\"`, or `\"arts\"`. Together, these form two connected groups by similarity: `{\"tars\", \"rats\", \"arts\"}` and `{\"star\"}`. Notice that `\"tars\"` and `\"arts\"` are in the same group even though they are not similar. Formally, each group is such that a word is in the group if and only if it is similar to at least one other word in the",
+    "generated_text": "it equals Y . Also two strings X and Y are similar if they are equal. For example, \"tars \" and \"rats \" are similar (swapping at positions 0 and 2 ), and \"rats \" and \"arts \" are similar, but \"star \" is not similar to \"tars \" , \"rats \" , or \"arts \" . Together, these form two connected groups by similarity: { \"tars \", \"rats \", \"arts \"} and { \"star \"} . Notice that \"tars \" and \"arts \" are in the same group even though they are not similar. Formally, each group is such",
+    "is_exact_match": true
+  },
+  {
+    "id": 841,
+    "prefix_text": "There are `N` rooms and you start in room `0`. Each room has a distinct number in `0, 1, 2,",
+    "suffix_text": "..., N-1`, and each room may have some keys to access the next room. Formally, each room `i` has a list of keys `rooms[i]`, and each key `rooms[i][j]` is an integer in `[0, 1, ..., N-1]` where `N = rooms.length`. A key `rooms[i][j] = v` opens the room with number `v`. Initially, all the rooms start locked (except for room `0`). You can walk back and forth between rooms freely. Return `true` if and only if you can enter every room. Example 1: Input: [[1],[2],[3],[]] Output: true Explanation: We start in room 0, and pick up key 1. We then",
+    "generated_text": "... N-1 , and each room may have some keys to access the next room. Formally, each room i has a list of keys rooms[i] , and each key rooms[i][j] is an integer in [0, 1,..., N-1] where N = rooms.length . A key rooms[i][j] = v opens the room with number v . Initially, all the rooms start locked (except for room 0 ). You can walk back and forth between rooms freely. Return true if and only if you can enter every room. Example 1: Input: [[1],[2],[3],[]] Output: true Explanation: We start in room 0, and pick up",
+    "is_exact_match": true
+  },
+  {
+    "id": 868,
+    "prefix_text": "Given a positive integer `n`, find and return the longest distance between any two adjacent `1`'s in the binary representation",
+    "suffix_text": "of `n`. If there are no two adjacent `1`'s, return `0`. Two `1`'s are adjacent if there are only `0`'s separating them (possibly no `0`'s). The distance between two `1`'s is the absolute difference between their bit positions. For example, the two `1`'s in `\"1001\"` have a distance of 3. Example 1: Input: n = 22 Output: 2 Explanation: 22 in binary is \"10110\". The first adjacent pair of 1's is \"10110\" with a distance of 2. The second adjacent pair of 1's is \"10110\" with a distance of 1. The answer is the largest of these two distances, which",
+    "generated_text": "of n . If there are no two adjacent 1 's, return 0 . Two 1 's are adjacent if there are only 0 's separating them (possibly no 0 's). The distance between two 1 's is the absolute difference between their bit positions. For example, the two 1 's in \"1001 \" have a distance of 3. Example 1: Input: n = 22 Output: 2 Explanation: 22 in binary is \"10110 \". The first adjacent pair of 1's is \"10110 \" with a distance of 2. The second adjacent pair of 1's is \"10110 \" with a distance",
+    "is_exact_match": true
+  },
+  {
+    "id": 887,
+    "prefix_text": "You are given `k` identical eggs and you have access to a building with `n` floors labeled from `1` to",
+    "suffix_text": "`n`. You know that there exists a floor `f` where `0 <= f <= n` such that any egg dropped at a floor higher than `f` will break, and any egg dropped at or below floor `f` will not break. Each move, you may take an unbroken egg and drop it from any floor `x` (where `1 <= x <= n`). If the egg breaks, you can no longer use it. However, if the egg does not break, you may reuse it in future moves. Return the minimum number of moves that you need to determine with certainty what the",
+    "generated_text": "n . You know that there exists a floor f where 0 <= f <= n such that any egg dropped at a floor higher than f will break, and any egg dropped at or below floor f will not break. Each move, you may take an unbroken egg and drop it from any floor x (where 1 <= x <= n ). If the egg breaks, you can no longer use it. However, if the egg does not break, you may reuse it in future moves. Return the minimum number of moves that you need to determine with certainty",
+    "is_exact_match": true
+  },
+  {
+    "id": 895,
+    "prefix_text": "Design a stack-like data structure to push elements to the stack and pop the most frequent element from the stack.",
+    "suffix_text": "Implement the `FreqStack` class: `FreqStack()` constructs an empty frequency stack. `void push(int val)` pushes an integer `val` onto the top of the stack. `int pop()` removes and returns the most frequent element in the stack. If there is a tie for the most frequent element, the element closest to the stack's top is removed and returned. Example 1: Input [\"FreqStack\", \"push\", \"push\", \"push\", \"push\", \"push\", \"push\", \"pop\", \"pop\", \"pop\", \"pop\"] [[], [5], [7], [5], [7], [4], [5], [], [], [], []] Output [null, null, null, null, null, null, null, 5, 7, 5, 4] Explanation FreqStack freqStack = new FreqStack(); freqStack.push(5);",
+    "generated_text": "Implement the FreqStack class: FreqStack() constructs an empty frequency stack. void push(int val) pushes an integer val onto the top of the stack. int pop() removes and returns the most frequent element in the stack. If there is a tie for the most frequent element, the element closest to the stack's top is removed and returned. Example 1: Input [\"FreqStack\", \"push\", \"push\", \"push\", \"push\", \"push\", \"push\", \"pop\", \"pop\", \"pop\", \"pop\"] [[], [5], [7], [5], [7], [4], [5], [], [], [], []] Output [null, null, null, null, null, null, null, 5, 7, 5, 4] Explanation FreqStack freqStack = new FreqStack(); freqStack.push(5);",
+    "is_exact_match": true
+  },
+  {
+    "id": 899,
+    "prefix_text": "A string `S` of lowercase letters is given. Then, we may make any number of moves. In each move, we",
+    "suffix_text": "choose one of the first `K` letters (starting from the left), remove it, and place it at the end of the string. Return the lexicographically smallest string we could have after any number of moves. Example 1: Input: S = \"cba\", K = 1 Output: \"acb\" Explanation: In the first move, we move the 1st character (\"c\") to the end, obtaining the string \"bac\". In the second move, we move the 1st character (\"b\") to the end, obtaining the final result \"acb\". Example 2: Input: S = \"baaca\", K = 3 Output: \"aaabc\" Explanation: In the first move, we move",
+    "generated_text": "choose one of the first K letters (starting from the left), remove it, and place it at the end of the string. Return the lexicographically smallest string we could have after any number of moves. Example 1: Input: S = \"cba \", K = 1 Output: \"acb \" Explanation: In the first move, we move the 1st character \"c \" to the end, obtaining the string \"bac \". In the second move, we move the 1st character \"b \" to the end, obtaining the final result \"acb \". Example 2: Input: S = \"baaca \", K = 3 Output: \"aaabc",
+    "is_exact_match": true
+  },
+  {
+    "id": 918,
+    "prefix_text": "Given a circular array C of integers represented by `A`, find the maximum possible sum of a non-empty subarray of",
+    "suffix_text": "C. Here, a circular array means the end of the array connects to the beginning of the array. (Formally, `C[i] = A[i]` when `0 <= i < A.length`, and `C[i+A.length] = C[i]` when `i >= 0`.) Also, a subarray may only include each element of the fixed buffer `A` at most once. (Formally, for a subarray `C[i], C[i+1], ..., C[j]`, there does not exist `i <= k1, k2 <= j` with `k1 % A.length = k2 % A.length`.) Example 1: Input: [1,-2,3,-2] Output: 3 Explanation: Subarray [3] has maximum sum 3 Example 2: Input: [5,-3,5] Output: 10 Explanation: Subarray [5,5]",
+    "generated_text": "C. Here, a circular array means the end of the array connects to the beginning of the array. (Formally, C[i] = A[i] when 0 <= i < A.length, and C[i+A.length] = C[i] when i >= 0.) Also, a subarray may only include each element of the fixed buffer A at most once. (Formally, for a subarray C[i], C[i+1],..., C[j], there does not exist i <= k1, k2 <= j with k1 % A.length = k2 % A.length.) Example 1: Input: [1,-2,3,-2] Output: 3 Explanation: Subarray [3] has maximum sum 3 Example 2: Input: [5,-3,5] Output: 10 Explanation: Subarray [5,5] has",
+    "is_exact_match": true
+  },
+  {
+    "id": 927,
+    "prefix_text": "You are given an array `arr` which consists of only zeros and ones, divide the array into three non-empty parts",
+    "suffix_text": "such that all of these parts represent the same binary value. If it is possible, return any `[i, j]` with `i + 1 < j`, such that: `arr[0], arr[1], ..., arr[i]` is the first part, `arr[i + 1], arr[i + 2], ..., arr[j - 1]` is the second part, and `arr[j], arr[j + 1], ..., arr[arr.length - 1]` is the third part. All three parts have equal binary values. If it is not possible, return `[-1, -1]`. Note that the entire part is used when considering what binary value it represents. For example, `[1,1,0]` represents `6` in decimal, not `3`.",
+    "generated_text": "such that all of these parts represent the same binary value. If it is possible, return any [i, j] with i + 1 < j , such that: * arr[0], arr[1],..., arr[i] is the first part, * arr[i + 1], arr[i + 2],..., arr[j - 1] is the second part, and * arr[j], arr[j + 1],..., arr[arr.length - 1] is the third part. * All three parts have equal binary values. If it is not possible, return [-1, -1] . Note that the entire part is used when considering what binary value it represents. For example, [1,1,0] represents 6 in",
+    "is_exact_match": true
+  },
+  {
+    "id": 947,
+    "prefix_text": "On a 2D plane, we place `n` stones at some integer coordinate points. Each coordinate point may have at most",
+    "suffix_text": "one stone. A stone can be removed if it shares either the same row or the same column as another stone that has not been removed. Given an array `stones` of length `n` where `stones[i] = [xi, yi]` represents the location of the `ith` stone, return the largest possible number of stones that can be removed. Example 1: Input: stones = [[0,0],[0,1],[1,0],[1,2],[2,1],[2,2]] Output: 5 Explanation: One way to remove 5 stones is as follows: 1. Remove stone [2,2] because it shares the same row as [2,1]. 2. Remove stone [2,1] because it shares the same column as [0,1]. 3. Remove",
+    "generated_text": "one stone. A stone can be removed if it shares either the same row or the same column as another stone that has not been removed. Given an array stones of length n where stones[i] = [xi, yi] represents the location of the ith stone, return _the largest possible number of stones that can be removed_. Example 1: Input: stones = [[0,0],[0,1],[1,0],[1,2],[2,1],[2,2]] Output: 5 Explanation: One way to remove 5 stones is as follows: 1. Remove stone [2,2] because it shares the same row as [2,1]. 2. Remove stone [2,1] because it shares the same column as [0,1]. 3. Remove",
+    "is_exact_match": true
+  },
+  {
+    "id": 958,
+    "prefix_text": "Given the `root` of a binary tree, determine if it is a complete binary tree. In a complete binary tree,",
+    "suffix_text": "every level, except possibly the last, is completely filled, and all nodes in the last level are as far left as possible. It can have between `1` and `2h` nodes inclusive at the last level `h`. Example 1: Input: root = [1,2,3,4,5,6] Output: true Explanation: Every level before the last is full (ie. levels with node-values {1} and {2, 3}), and all nodes in the last level ({4, 5, 6}) are as far left as possible. Example 2: Input: root = [1,2,3,4,5,null,7] Output: false Explanation: The node with value 7 isn't as far left as possible. Constraints: The number of",
+    "generated_text": "every level, except possibly the last, is completely filled, and all nodes in the last level are as far left as possible. It can have between 1 and 2h nodes inclusive at the last level h. Example 1: Input: root = [1,2,3,4,5,6] Output: true Explanation: Every level before the last is full (ie. levels with node-values {1} and {2, 3}), and all nodes in the last level ({4, 5, 6}) are as far left as possible. Example 2: Input: root = [1,2,3,4,5,null,7] Output: false Explanation: The node with value 7 isn't as far left as possible. Constraints: * The number",
+    "is_exact_match": true
+  },
+  {
+    "id": 968,
+    "prefix_text": "Given a binary tree, we install cameras on the nodes of the tree. Each camera at a node can monitor",
+    "suffix_text": "its parent, itself, and its immediate children. Calculate the minimum number of cameras needed to monitor all nodes of the tree. Example 1: Input: [0,0,null,0,0] Output: 1 Explanation: One camera is enough to monitor all nodes if placed as shown. Example 2: Input: [0,0,null,0,null,0,null,null,0] Output: 2 Explanation: At least two cameras are needed to monitor all nodes of the tree. The above image shows one of the valid configurations of camera placement. Note: The number of nodes in the given tree will be in the range `[1, 1000]`. Every node has value 0.",
+    "generated_text": "its parent, itself, and its immediate children. Calculate the minimum number of cameras needed to monitor all nodes of the tree. Example 1: Input: [0,0,null,0,0] Output: 1 Explanation: One camera is enough to monitor all nodes if placed as shown. Example 2: Input: [0,0,null,0,null,0,null,null,0] Output: 2 Explanation: At least two cameras are needed to monitor all nodes of the tree. The above image shows one of the valid configurations of camera placement. Note: The number of nodes in the given tree will be in the range [1, 1000] . Every node has value",
+    "is_exact_match": true
+  },
+  {
+    "id": 987,
+    "prefix_text": "Given the `root` of a binary tree, calculate the vertical order traversal of the binary tree. For each node at",
+    "suffix_text": "position `(row, col)`, its left and right children will be at positions `(row + 1, col - 1)` and `(row + 1, col + 1)` respectively. The root of the tree is at `(0, 0)`. The vertical order traversal of a binary tree is a list of top-to-bottom orderings for each column index starting from the leftmost column and ending on the rightmost column. There may be multiple nodes in the same row and same column. In such a case, sort these nodes by their values. Return the vertical order traversal of the binary tree. Example 1: Input: root =",
+    "generated_text": "position (row, col) , its left and right children will be at positions (row + 1, col - 1) and (row + 1, col + 1) respectively. The root of the tree is at (0, 0) . The vertical order traversal of a binary tree is a list of top-to-bottom orderings for each column index starting from the leftmost column and ending on the rightmost column. There may be multiple nodes in the same row and same column. In such a case, sort these nodes by their values. Return _the vertical order traversal of the binary tree_. Example 1: Input:",
+    "is_exact_match": true
+  },
+  {
+    "id": 999,
+    "prefix_text": "On an `8 x 8` chessboard, there is exactly one white rook `'R'` and some number of white bishops `'B'`,",
+    "suffix_text": "black pawns `'p'`, and empty squares `'.'`. When the rook moves, it chooses one of four cardinal directions (north, east, south, or west), then moves in that direction until it chooses to stop, reaches the edge of the board, captures a black pawn, or is blocked by a white bishop. A rook is considered attacking a pawn if the rook can capture the pawn on the rook's turn. The number of available captures for the white rook is the number of pawns that the rook is attacking. Return the number of available captures for the white rook. Example 1: Input:",
+    "generated_text": "black pawns 'p' , and empty squares '.' . When the rook moves, it chooses one of four cardinal directions (north, east, south, or west), then moves in that direction until it chooses to stop, reaches the edge of the board, captures a black pawn, or is blocked by a white bishop. A rook is considered attacking a pawn if the rook can capture the pawn on the rook's turn. The number of available captures for the white rook is the number of pawns that the rook is attacking. Return the number of available captures for the white rook. Example",
+    "is_exact_match": true
+  },
+  {
+    "id": 1007,
+    "prefix_text": "In a row of dominoes, `A[i]` and `B[i]` represent the top and bottom halves of the `ith` domino. (A domino",
+    "suffix_text": "is a tile with two numbers from 1 to 6 - one on each half of the tile.) We may rotate the `ith` domino, so that `A[i]` and `B[i]` swap values. Return the minimum number of rotations so that all the values in `A` are the same, or all the values in `B` are the same. If it cannot be done, return `-1`. Example 1: Input: A = [2,1,2,4,2,2], B = [5,2,6,2,3,2] Output: 2 Explanation: The first figure represents the dominoes as given by A and B: before we do any rotations. If we rotate the second and fourth dominoes,",
+    "generated_text": "is a tile with two numbers from 1 to 6 - one on each half of the tile.) We may rotate the ith domino, so that A[i] and B[i] swap values. Return the minimum number of rotations so that all the values in A are the same, or all the values in B are the same. If it cannot be done, return -1. Example 1: Input: A = [2,1,2,4,2,2], B = [5,2,6,2,3,2] Output: 2 Explanation: The first figure represents the dominoes as given by A and B: before we do any rotations. If we rotate the second and fourth dominoes,",
+    "is_exact_match": true
+  },
+  {
+    "id": 1008,
+    "prefix_text": "Given an array of integers preorder, which represents the preorder traversal of a BST (i.e., binary search tree), construct the",
+    "suffix_text": "tree and return its root. It is guaranteed that there is always possible to find a binary search tree with the given requirements for the given test cases. A binary search tree is a binary tree where for every node, any descendant of `Node.left` has a value strictly less than `Node.val`, and any descendant of `Node.right` has a value strictly greater than `Node.val`. A preorder traversal of a binary tree displays the value of the node first, then traverses `Node.left`, then traverses `Node.right`. Example 1: Input: preorder = [8,5,1,7,10,12] Output: [8,5,10,1,7,null,12] Example 2: Input: preorder = [1,3] Output: [1,null,3] Constraints:",
+    "generated_text": "tree and return its root. It is guaranteed that there is always possible to find a binary search tree with the given requirements for the given test cases. A binary search tree is a binary tree where for every node, any descendant of Node.left has a value strictly less than Node.val, and any descendant of Node.right has a value strictly greater than Node.val. A preorder traversal of a binary tree displays the value of the node first, then traverses Node.left, then traverses Node.right. Example 1: Input: preorder = [8,5,1,7,10,12] Output: [8,5,10,1,7,null,12] Example 2: Input: preorder = [1,3] Output: [1,null,3] Constraints:",
+    "is_exact_match": true
+  },
+  {
+    "id": 1026,
+    "prefix_text": "Given the `root` of a binary tree, find the maximum value `V` for which there exist different nodes `A` and",
+    "suffix_text": "`B` where `V = |A.val - B.val|` and `A` is an ancestor of `B`. A node `A` is an ancestor of `B` if either: any child of `A` is equal to `B`, or any child of `A` is an ancestor of `B`. Example 1: Input: root = [8,3,10,1,6,null,14,null,null,4,7,13] Output: 7 Explanation: We have various ancestor-node differences, some of which are given below : |8 - 3| = 5 |3 - 7| = 4 |8 - 1| = 7 |10 - 13| = 3 Among all possible differences, the maximum value of 7 is obtained by |8 - 1| = 7.",
+    "generated_text": "B where V = |A.val - B.val| and A is an ancestor of B . A node A is an ancestor of B if either: any child of A is equal to B , or any child of A is an ancestor of B . Example 1: Input: root = [8,3,10,1,6,null,14,null,null,4,7,13] Output: 7 Explanation: We have various ancestor-node differences, some of which are given below : |8 - 3| = 5 |3 - 7| = 4 |8 - 1| = 7 |10 - 13| = 3 Among all possible differences, the maximum value of 7 is obtained by |8 -",
+    "is_exact_match": true
+  },
+  {
+    "id": 1029,
+    "prefix_text": "A company is planning to interview `2n` people. Given the array `costs` where `costs[i] = [aCosti, bCosti]`, the cost of",
+    "suffix_text": "flying the `ith` person to city `a` is `aCosti`, and the cost of flying the `ith` person to city `b` is `bCosti`. Return the minimum cost to fly every person to a city such that exactly `n` people arrive in each city. Example 1: Input: costs = [[10,20],[30,200],[400,50],[30,20]] Output: 110 Explanation: The first person goes to city A for a cost of 10. The second person goes to city A for a cost of 30. The third person goes to city B for a cost of 50. The fourth person goes to city B for a cost of 20. The",
+    "generated_text": "flying the ith person to city a is aCosti , and the cost of flying the ith person to city b is bCosti . Return _the minimum cost to fly every person to a city_ such that exactly n people arrive in each city. Example 1: Input: costs = [[10,20],[30,200],[400,50],[30,20]] Output: 110 Explanation: The first person goes to city A for a cost of 10. The second person goes to city A for a cost of 30. The third person goes to city B for a cost of 50. The fourth person goes to city B for a cost of",
+    "is_exact_match": true
+  },
+  {
+    "id": 1042,
+    "prefix_text": "You have `n` gardens, labeled from `1` to `n`, and an array `paths` where `paths[i] = [xi, yi]` describes a",
+    "suffix_text": "bidirectional path between garden `xi` to garden `yi`. In each garden, you want to plant one of 4 types of flowers. All gardens have at most 3 paths coming into or leaving it. Your task is to choose a flower type for each garden such that, for any two gardens connected by a path, they have different types of flowers. Return any such a choice as an array `answer`, where `answer[i]` is the type of flower planted in the `(i+1)th` garden. The flower types are denoted `1`, `2`, `3`, or `4`. It is guaranteed an answer exists. Example 1: Input:",
+    "generated_text": "bidirectional path between garden xi to garden yi . In each garden, you want to plant one of 4 types of flowers. All gardens have at most 3 paths coming into or leaving it . Your task is to choose a flower type for each garden such that, for any two gardens connected by a path, they have different types of flowers. Return _any such a choice as an array_ answer _, where_ answer[i] _is the type of flower planted in the_ (i+1)th _garden. The flower types are denoted_ 1 _,_ 2 _,_ 3 _, or_ 4 _. It is",
+    "is_exact_match": true
+  },
+  {
+    "id": 1055,
+    "prefix_text": "From any string, we can form a subsequence of that string by deleting some number of characters (possibly no deletions).",
+    "suffix_text": "Given two strings `source` and `target`, return the minimum number of subsequences of `source` such that their concatenation equals `target`. If the task is impossible, return `-1`. Example 1: Input: source = \"abc\", target = \"abcbc\" Output: 2 Explanation: The target \"abcbc\" can be formed by \"abc\" and \"bc\", which are subsequences of source \"abc\". Example 2: Input: source = \"abc\", target = \"acdbc\" Output: -1 Explanation: The target string cannot be constructed from the subsequences of source string due to the character \"d\" in target string. Example 3: Input: source = \"xyz\", target = \"xzyxz\" Output: 3 Explanation: The",
+    "generated_text": "Given two strings source and target, return the minimum number of subsequences of source such that their concatenation equals target. If the task is impossible, return -1. Example 1: Input: source = \"abc\", target = \"abcbc\" Output: 2 Explanation: The target \"abcbc\" can be formed by \"abc\" and \"bc\", which are subsequences of source \"abc\". Example 2: Input: source = \"abc\", target = \"acdbc\" Output: -1 Explanation: The target string cannot be constructed from the subsequences of source string due to the character \"d\" in target string. Example 3: Input: source = \"xyz\", target = \"xzyxz\" Output: 3 Explanation: The",
+    "is_exact_match": true
+  },
+  {
+    "id": 1137,
+    "prefix_text": "The Tribonacci sequence Tn is defined as follows: T0 = 0, T1 = 1, T2 = 1, and Tn+3 =",
+    "suffix_text": "Tn + Tn+1 + Tn+2 for n >= 0. Given `n`, return the value of Tn. Example 1: Input: n = 4 Output: 4 Explanation: T_3 = 0 + 1 + 1 = 2 T_4 = 1 + 1 + 2 = 4 Example 2: Input: n = 25 Output: 1389537 Constraints: `0 <= n <= 37` The answer is guaranteed to fit within a 32-bit integer, ie. `answer <= 2^31 - 1`.",
+    "generated_text": "Tn + Tn+1 + Tn+2 for n >= 0. Given n, return the value of Tn. Example 1: Input: n = 4 Output: 4 Explanation: T_3 = 0 + 1 + 1 = 2 T_4 = 1 + 1 + 2 = 4 Example 2: Input: n = 25 Output: 1389537 Constraints: 0 <= n <= 37 The answer is guaranteed to fit within a 32-bit integer, ie. answer <= 2^31 - 1.",
+    "is_exact_match": true
+  },
+  {
+    "id": 1191,
+    "prefix_text": "Given an integer array `arr` and an integer `k`, modify the array by repeating it `k` times. For example, if",
+    "suffix_text": "`arr = [1, 2]` and `k = 3 `then the modified array will be `[1, 2, 1, 2, 1, 2]`. Return the maximum sub-array sum in the modified array. Note that the length of the sub-array can be `0` and its sum in that case is `0`. As the answer can be very large, return the answer modulo `109 + 7`. Example 1: Input: arr = [1,2], k = 3 Output: 9 Example 2: Input: arr = [1,-2,1], k = 5 Output: 2 Example 3: Input: arr = [-1,-2], k = 7 Output: 0 Constraints: `1 <= arr.length <= 105`",
+    "generated_text": "arr = [1, 2] and k = 3 then the modified array will be [1, 2, 1, 2, 1, 2] . Return _the maximum sub-array sum in the modified array_. Note that the length of the sub-array can be 0 and its sum in that case is 0. As the answer can be very large, return the answer modulo 109 + 7 . Example 1: Input: arr = [1,2], k = 3 Output: 9 Example 2: Input: arr = [1,-2,1], k = 5 Output: 2 Example 3: Input: arr = [-1,-2], k = 7 Output: 0 Constraints: * 1 <=",
+    "is_exact_match": true
+  },
+  {
+    "id": 1209,
+    "prefix_text": "Given a string `s`, a k duplicate removal consists of choosing `k` adjacent and equal letters from `s` and removing",
+    "suffix_text": "them causing the left and the right side of the deleted substring to concatenate together. We repeatedly make `k` duplicate removals on `s` until we no longer can. Return the final string after all such duplicate removals have been made. It is guaranteed that the answer is unique. Example 1: Input: s = \"abcd\", k = 2 Output: \"abcd\" Explanation: There's nothing to delete. Example 2: Input: s = \"deeedbbcccbdaa\", k = 3 Output: \"aa\" Explanation: First delete \"eee\" and \"ccc\", get \"ddbbbdaa\" Then delete \"bbb\", get \"dddaa\" Finally delete \"ddd\", get \"aa\" Example 3: Input: s = \"pbbcggttciiippooaais\", k",
+    "generated_text": "them causing the left and the right side of the deleted substring to concatenate together. We repeatedly make k duplicate removals on s until we no longer can. Return the final string after all such duplicate removals have been made. It is guaranteed that the answer is unique. Example 1: Input: s = \"abcd\", k = 2 Output: \"abcd\" Explanation: There's nothing to delete. Example 2: Input: s = \"deeedbbcccbdaa\", k = 3 Output: \"aa\" Explanation: First delete \"eee\" and \"ccc\", get \"ddbbbdaa\" Then delete \"bbb\", get \"dddaa\" Finally delete \"ddd\", get \"aa\" Example 3: Input: s = \"pbbcggttciiippooaais\", k",
+    "is_exact_match": true
+  },
+  {
+    "id": 1216,
+    "prefix_text": "Given a string `s` and an integer `k`, return `true` if `s` is a `k`-palindrome. A string is `k`-palindrome if",
+    "suffix_text": "it can be transformed into a palindrome by removing at most `k` characters from it. Example 1: Input: s = \"abcdeca\", k = 2 Output: true Explanation: Remove 'b' and 'e' characters. Example 2: Input: s = \"abbababa\", k = 1 Output: true Constraints: `1 <= s.length <= 1000` `s` consists of only lowercase English letters. `1 <= k <= s.length`",
+    "generated_text": "it can be transformed into a palindrome by removing at most k characters from it. Example 1: Input: s = \"abcdeca \", k = 2 Output: true Explanation: Remove 'b' and 'e' characters. Example 2: Input: s = \"abbababa \", k = 1 Output: true Constraints: * 1 <= s.length <= 1000 * s consists of only lowercase English letters. *",
+    "is_exact_match": true
+  },
+  {
+    "id": 1219,
+    "prefix_text": "In a gold mine `grid` of size `m x n`, each cell in this mine has an integer representing the",
+    "suffix_text": "amount of gold in that cell, `0` if it is empty. Return the maximum amount of gold you can collect under the conditions: Every time you are located in a cell you will collect all the gold in that cell. From your position, you can walk one step to the left, right, up, or down. You can't visit the same cell more than once. Never visit a cell with `0` gold. You can start and stop collecting gold from any position in the grid that has some gold. Example 1: Input: grid = [[0,6,0],[5,8,7],[0,9,0]] Output: 24 Explanation: [[0,6,0], [5,8,7], [0,9,0]]",
+    "generated_text": "amount of gold in that cell, 0 if it is empty. Return the maximum amount of gold you can collect under the conditions: * Every time you are located in a cell you will collect all the gold in that cell. * From your position, you can walk one step to the left, right, up, or down. * You can't visit the same cell more than once. * Never visit a cell with 0 gold. * You can start and stop collecting gold from any position in the grid that has some gold. Example 1: Input: grid = [[0,6,0],[5,8,7],[0,9,0]] Output:",
+    "is_exact_match": true
+  },
+  {
+    "id": 1229,
+    "prefix_text": "Given the availability time slots arrays `slots1` and `slots2` of two people and a meeting duration `duration`, return the earliest",
+    "suffix_text": "time slot that works for both of them and is of duration `duration`. If there is no common time slot that satisfies the requirements, return an empty array. The format of a time slot is an array of two elements `[start, end]` representing an inclusive time range from `start` to `end`. It is guaranteed that no two availability slots of the same person intersect with each other. That is, for any two time slots `[start1, end1]` and `[start2, end2]` of the same person, either `start1 > end2` or `start2 > end1`. Example 1: Input: slots1 = [[10,50],[60,120],[140,210]], slots2 = [[0,15],[60,70]],",
+    "generated_text": "time slot that works for both of them and is of duration duration . If there is no common time slot that satisfies the requirements, return an empty array. The format of a time slot is an array of two elements [start, end] representing an inclusive time range from start to end . It is guaranteed that no two availability slots of the same person intersect with each other. That is, for any two time slots [start1, end1] and [start2, end2] of the same person, either start1 > end2 or start2 > end1 . Example 1: Input: slots1 = [[10,50],[60,120],[140,210]],",
+    "is_exact_match": true
+  },
+  {
+    "id": 1249,
+    "prefix_text": "Given a string s of `'('` , `')'` and lowercase English characters. Your task is to remove the minimum number",
+    "suffix_text": "of parentheses ( `'('` or `')'`, in any positions ) so that the resulting parentheses string is valid and return any valid string. Formally, a parentheses string is valid if and only if: It is the empty string, contains only lowercase characters, or It can be written as `AB` (`A` concatenated with `B`), where `A` and `B` are valid strings, or It can be written as `(A)`, where `A` is a valid string. Example 1: Input: s = \"lee(t(c)o)de)\" Output: \"lee(t(c)o)de\" Explanation: \"lee(t(co)de)\" , \"lee(t(c)ode)\" would also be accepted. Example 2: Input: s = \"a)b(c)d\" Output: \"ab(c)d\" Example 3: Input:",
+    "generated_text": "of parentheses ( '(' or ')' , in any positions ) so that the resulting parentheses string is valid and return any valid string. Formally, a parentheses string is valid if and only if: It is the empty string, contains only lowercase characters, or It can be written as AB ( A concatenated with B ), where A and B are valid strings, or It can be written as (A) , where A is a valid string. Example 1: Input: s = \"lee(t(c)o)de)\" Output: \"lee(t(c)o)de\" Explanation: \"lee(t(co)de)\", \"lee(t(c)ode)\" would also be accepted. Example 2: Input: s = \"a)b(c)d\" Output: \"ab(c)d\"",
+    "is_exact_match": true
+  },
+  {
+    "id": 1299,
+    "prefix_text": "Given an array `arr`, replace every element in that array with the greatest element among the elements to its right,",
+    "suffix_text": "and replace the last element with `-1`. After doing so, return the array. Example 1: Input: arr = [17,18,5,4,6,1] Output: [18,6,6,6,1,-1] Explanation: - index 0 --> the greatest element to the right of index 0 is index 1 (18). - index 1 --> the greatest element to the right of index 1 is index 4 (6). - index 2 --> the greatest element to the right of index 2 is index 4 (6). - index 3 --> the greatest element to the right of index 3 is index 4 (6). - index 4 --> the greatest element to the right",
+    "generated_text": "and replace the last element with -1 . After doing so, return the array. Example 1: Input: arr = [17,18,5,4,6,1] Output: [18,6,6,6,1,-1] Explanation: - index 0 --> the greatest element to the right of index 0 is index 1 (18). - index 1 --> the greatest element to the right of index 1 is index 4 (6). - index 2 --> the greatest element to the right of index 2 is index 4 (6). - index 3 --> the greatest element to the right of index 3 is index 4 (6). - index 4 --> the greatest element to the",
+    "is_exact_match": true
+  },
+  {
+    "id": 1315,
+    "prefix_text": "Given a binary tree, return the sum of values of nodes with even-valued grandparent. (A grandparent of a node is",
+    "suffix_text": "the parent of its parent, if it exists.) If there are no nodes with an even-valued grandparent, return `0`. Example 1: Input: root = [6,7,8,2,7,1,3,9,null,1,4,null,null,null,5] Output: 18 Explanation: The red nodes are the nodes with even-value grandparent while the blue nodes are the even-value grandparents. Constraints: The number of nodes in the tree is between `1` and `10^4`. The value of nodes is between `1` and `100`.",
+    "generated_text": "the parent of its parent if it exists.) If there are no nodes with an even-valued grandparent, return 0. Example 1: Input: root = [6,7,8,2,7,1,3,9,null,1,4,null,null,null,5] Output: 18 Explanation: The red nodes are the nodes with even-value grandparent while the blue nodes are the even-value grandparents. Constraints: The number of nodes in the tree is between 1 and 10^4. The value of nodes is between 1 and 100.",
+    "is_exact_match": true
+  },
+  {
+    "id": 1342,
+    "prefix_text": "Given a non-negative integer `num`, return the number of steps to reduce it to zero. If the current number is",
+    "suffix_text": "even, you have to divide it by 2, otherwise, you have to subtract 1 from it. Example 1: Input: num = 14 Output: 6 Explanation: Step 1) 14 is even; divide by 2 and obtain 7. Step 2) 7 is odd; subtract 1 and obtain 6. Step 3) 6 is even; divide by 2 and obtain 3. Step 4) 3 is odd; subtract 1 and obtain 2. Step 5) 2 is even; divide by 2 and obtain 1. Step 6) 1 is odd; subtract 1 and obtain 0. Example 2: Input: num = 8 Output: 4 Explanation: Step 1) 8",
+    "generated_text": "even, you have to divide it by 2 , otherwise, you have to subtract 1 from it. Example 1: Input: num = 14 Output: 6 Explanation: Step 1) 14 is even; divide by 2 and obtain 7. Step 2) 7 is odd; subtract 1 and obtain 6. Step 3) 6 is even; divide by 2 and obtain 3. Step 4) 3 is odd; subtract 1 and obtain 2. Step 5) 2 is even; divide by 2 and obtain 1. Step 6) 1 is odd; subtract 1 and obtain 0. Example 2: Input: num = 8 Output: 4 Explanation: Step 1)",
+    "is_exact_match": true
+  },
+  {
+    "id": 1345,
+    "prefix_text": "Given an array of integers `arr`, you are initially positioned at the first index of the array. In one step",
+    "suffix_text": "you can jump from index `i` to index: `i + 1` where: `i + 1 < arr.length`. `i - 1` where: `i - 1 >= 0`. `j` where: `arr[i] == arr[j]` and `i != j`. Return the minimum number of steps to reach the last index of the array. Notice that you can not jump outside of the array at any time. Example 1: Input: arr = [100,-23,-23,404,100,23,23,23,3,404] Output: 3 Explanation: You need three jumps from index 0 --> 4 --> 3 --> 9. Note that index 9 is the last index of the array. Example 2: Input: arr =",
+    "generated_text": "you can jump from index i to index: * i + 1 where: i + 1 < arr.length . * i - 1 where: i - 1 >= 0 . * j where: arr[i] == arr[j] and i!= j . Return the minimum number of steps to reach the last index of the array. Notice that you can not jump outside of the array at any time. Example 1: Input: arr = [100,-23,-23,404,100,23,23,23,3,404] Output: 3 Explanation: You need three jumps from index 0 --> 4 --> 3 --> 9. Note that index 9 is the last index of the array.",
+    "is_exact_match": true
+  },
+  {
+    "id": 1347,
+    "prefix_text": "Given two equal-size strings `s` and `t`. In one step you can choose any character of `t` and replace it",
+    "suffix_text": "with another character. Return the minimum number of steps to make `t` an anagram of `s`. An Anagram of a string is a string that contains the same characters with a different (or the same) ordering. Example 1: Input: s = \"bab\", t = \"aba\" Output: 1 Explanation: Replace the first 'a' in t with b, t = \"bba\" which is anagram of s. Example 2: Input: s = \"leetcode\", t = \"practice\" Output: 5 Explanation: Replace 'p', 'r', 'a', 'i' and 'c' from t with proper characters to make t anagram of s. Example 3: Input: s = \"anagram\",",
+    "generated_text": "with another character. Return the minimum number of steps to make t an anagram of s . An Anagram of a string is a string that contains the same characters with a different (or the same) ordering. Example 1: Input: s = \"bab \", t = \"aba \" Output: 1 Explanation: Replace the first 'a' in t with b, t = \"bba \" which is anagram of s. Example 2: Input: s = \"leetcode \", t = \"practice \" Output: 5 Explanation: Replace 'p', 'r', 'a', 'i' and 'c' from t with proper characters to make t anagram of s.",
+    "is_exact_match": true
+  },
+  {
+    "id": 1373,
+    "prefix_text": "Given a binary tree `root`, the task is to return the maximum sum of all keys of any sub-tree which",
+    "suffix_text": "is also a Binary Search Tree (BST). Assume a BST is defined as follows: The left subtree of a node contains only nodes with keys less than the node's key. The right subtree of a node contains only nodes with keys greater than the node's key. Both the left and right subtrees must also be binary search trees. Example 1: Input: root = [1,4,3,2,4,2,5,null,null,null,null,null,null,4,6] Output: 20 Explanation: Maximum sum in a valid Binary search tree is obtained in root node with key equal to 3. Example 2: Input: root = [4,3,null,1,2] Output: 2 Explanation: Maximum sum in a valid Binary",
+    "generated_text": "is also a Binary Search Tree (BST). Assume a BST is defined as follows: The left subtree of a node contains only nodes with keys less than the node's key. The right subtree of a node contains only nodes with keys greater than the node's key. Both the left and right subtrees must also be binary search trees. Example 1: Input: root = [1,4,3,2,4,2,5,null,null,null,null,null,null,4,6] Output: 20 Explanation: Maximum sum in a valid Binary search tree is obtained in root node with key equal to 3. Example 2: Input: root = [4,3,null,1,2] Output: 2 Explanation: Maximum sum in a valid Binary",
+    "is_exact_match": true
+  },
+  {
+    "id": 1377,
+    "prefix_text": "Given an undirected tree consisting of `n` vertices numbered from `1` to `n`. A frog starts jumping from vertex 1.",
+    "suffix_text": "In one second, the frog jumps from its current vertex to another unvisited vertex if they are directly connected. The frog can not jump back to a visited vertex. In case the frog can jump to several vertices, it jumps randomly to one of them with the same probability. Otherwise, when the frog can not jump to any unvisited vertex, it jumps forever on the same vertex. The edges of the undirected tree are given in the array `edges`, where `edges[i] = [ai, bi]` means that exists an edge connecting the vertices `ai` and `bi`. Return the probability that after",
+    "generated_text": "In one second, the frog jumps from its current vertex to another unvisited vertex if they are directly connected. The frog can not jump back to a visited vertex. In case the frog can jump to several vertices, it jumps randomly to one of them with the same probability. Otherwise, when the frog can not jump to any unvisited vertex, it jumps forever on the same vertex. The edges of the undirected tree are given in the array edges , where edges[i] = [ai, bi] means that exists an edge connecting the vertices ai and bi . Return _the probability",
+    "is_exact_match": true
+  },
+  {
+    "id": 1414,
+    "prefix_text": "Given an integer `k`, return the minimum number of Fibonacci numbers whose sum is equal to `k`. The same Fibonacci",
+    "suffix_text": "number can be used multiple times. The Fibonacci numbers are defined as: `F1 = 1` `F2 = 1` `Fn = Fn-1 + Fn-2` for `n > 2.` It is guaranteed that for the given constraints we can always find such Fibonacci numbers that sum up to `k`. Example 1: Input: k = 7 Output: 2 Explanation: The Fibonacci numbers are: 1, 1, 2, 3, 5, 8, 13, ... For k = 7 we can use 2 + 5 = 7. Example 2: Input: k = 10 Output: 2 Explanation: For k = 10 we can use 2 + 8 =",
+    "generated_text": "number can be used multiple times. The Fibonacci numbers are defined as: * F1 = 1 * F2 = 1 * Fn = Fn-1 + Fn-2 for n > 2. It is guaranteed that for the given constraints we can always find such Fibonacci numbers that sum up to k . Example 1: Input: k = 7 Output: 2 Explanation: The Fibonacci numbers are: 1, 1, 2, 3, 5, 8, 13,... For k = 7 we can use 2 + 5 = 7. Example 2: Input: k = 10 Output: 2 Explanation: For k = 10 we can use 2",
+    "is_exact_match": true
+  },
+  {
+    "id": 1423,
+    "prefix_text": "There are several cards arranged in a row, and each card has an associated number of points The points are",
+    "suffix_text": "given in the integer array `cardPoints`. In one step, you can take one card from the beginning or from the end of the row. You have to take exactly `k` cards. Your score is the sum of the points of the cards you have taken. Given the integer array `cardPoints` and the integer `k`, return the maximum score you can obtain. Example 1: Input: cardPoints = [1,2,3,4,5,6,1], k = 3 Output: 12 Explanation: After the first step, your score will always be 1. However, choosing the rightmost card first will maximize your total score. The optimal strategy is to take",
+    "generated_text": "given in the integer array cardPoints. In one step, you can take one card from the beginning or from the end of the row. You have to take exactly k cards. Your score is the sum of the points of the cards you have taken. Given the integer array cardPoints and the integer k, return the maximum score you can obtain. Example 1: Input: cardPoints = [1,2,3,4,5,6,1], k = 3 Output: 12 Explanation: After the first step, your score will always be 1. However, choosing the rightmost card first will maximize your total score. The optimal strategy is to take",
+    "is_exact_match": true
+  },
+  {
+    "id": 1425,
+    "prefix_text": "Given an integer array `nums` and an integer `k`, return the maximum sum of a non-empty subsequence of that array",
+    "suffix_text": "such that for every two consecutive integers in the subsequence, `nums[i]` and `nums[j]`, where `i < j`, the condition `j - i <= k` is satisfied. A subsequence of an array is obtained by deleting some number of elements (can be zero) from the array, leaving the remaining elements in their original order. Example 1: Input: nums = [10,2,-10,5,20], k = 2 Output: 37 Explanation: The subsequence is [10, 2, 5, 20]. Example 2: Input: nums = [-1,-2,-3], k = 1 Output: -1 Explanation: The subsequence must be non-empty, so we choose the largest number. Example 3: Input: nums =",
+    "generated_text": "such that for every two consecutive integers in the subsequence, nums[i] and nums[j] , where i < j , the condition j - i <= k is satisfied. A subsequence of an array is obtained by deleting some number of elements (can be zero) from the array, leaving the remaining elements in their original order. Example 1: Input: nums = [10,2,-10,5,20], k = 2 Output: 37 Explanation: The subsequence is [10, 2, 5, 20]. Example 2: Input: nums = [-1,-2,-3], k = 1 Output: -1 Explanation: The subsequence must be non-empty, so we choose the largest number. Example 3: Input:",
+    "is_exact_match": true
+  },
+  {
+    "id": 1430,
+    "prefix_text": "Given a binary tree where each path going from the root to any leaf form a valid sequence, check if",
+    "suffix_text": "a given string is a valid sequence in such binary tree. We get the given string from the concatenation of an array of integers `arr` and the concatenation of all values of the nodes along a path results in a sequence in the given binary tree. Example 1: Input: root = [0,1,0,0,1,0,null,null,1,0,0], arr = [0,1,0,1] Output: true Explanation: The path 0 -> 1 -> 0 -> 1 is a valid sequence (green color in the figure). Other valid sequences are: 0 -> 1 -> 1 -> 0 0 -> 0 -> 0 Example 2: Input: root = [0,1,0,0,1,0,null,null,1,0,0], arr =",
+    "generated_text": "a given string is a valid sequence in such binary tree. We get the given string from the concatenation of an array of integers arr and the concatenation of all values of the nodes along a path results in a sequence in the given binary tree. Example 1: Input: root = [0,1,0,0,1,0,null,null,1,0,0], arr = [0,1,0,1] Output: true Explanation: The path 0 -> 1 -> 0 -> 1 is a valid sequence (green color in the figure). Other valid sequences are: 0 -> 1 -> 1 -> 0 0 -> 0 -> 0 Example 2: Input: root = [0,1,0,0,1,0,null,null,1,0,0], arr =",
+    "is_exact_match": true
+  },
+  {
+    "id": 1431,
+    "prefix_text": "Given the array `candies` and the integer `extraCandies`, where `candies[i]` represents the number of candies that the ith kid has.",
+    "suffix_text": "For each kid check if there is a way to distribute `extraCandies` among the kids such that he or she can have the greatest number of candies among them. Notice that multiple kids can have the greatest number of candies. Example 1: Input: candies = [2,3,5,1,3], extraCandies = 3 Output: [true,true,true,false,true] Explanation: Kid 1 has 2 candies and if he or she receives all extra candies (3) will have 5 candies --- the greatest number of candies among the kids. Kid 2 has 3 candies and if he or she receives at least 2 extra candies will have the greatest",
+    "generated_text": "For each kid check if there is a way to distribute extraCandies among the kids such that he or she can have the greatest number of candies among them. Notice that multiple kids can have the greatest number of candies. Example 1: Input: candies = [2,3,5,1,3], extraCandies = 3 Output: [true,true,true,false,true] Explanation: Kid 1 has 2 candies and if he or she receives all extra candies (3) will have 5 candies --- the greatest number of candies among the kids. Kid 2 has 3 candies and if he or she receives at least 2 extra candies will have the greatest",
+    "is_exact_match": true
+  },
+  {
+    "id": 1448,
+    "prefix_text": "Given a binary tree `root`, a node X in the tree is named good if in the path from root",
+    "suffix_text": "to X there are no nodes with a value greater than X. Return the number of good nodes in the binary tree. Example 1: Input: root = [3,1,4,3,null,1,5] Output: 4 Explanation: Nodes in blue are good. Root Node (3) is always a good node. Node 4 -> (3,4) is the maximum value in the path starting from the root. Node 5 -> (3,4,5) is the maximum value in the path Node 3 -> (3,1,3) is the maximum value in the path. Example 2: Input: root = [3,3,null,4,2] Output: 3 Explanation: Node 2 -> (3, 3, 2) is not good, because",
+    "generated_text": "to X there are no nodes with a value greater than X. Return the number of good nodes in the binary tree. Example 1: Input: root = [3,1,4,3,null,1,5] Output: 4 Explanation: Nodes in blue are good. Root Node (3) is always a good node. Node 4 -> (3,4) is the maximum value in the path starting from the root. Node 5 -> (3,4,5) is the maximum value in the path Node 3 -> (3,1,3) is the maximum value in the path. Example 2: Input: root = [3,3,null,4,2] Output: 3 Explanation: Node 2 -> (3, 3, 2) is not good, because",
+    "is_exact_match": true
+  },
+  {
+    "id": 1514,
+    "prefix_text": "You are given an undirected weighted graph of `n` nodes (0-indexed), represented by an edge list where `edges[i] = [a,",
+    "suffix_text": "b]` is an undirected edge connecting the nodes `a` and `b` with a probability of success of traversing that edge `succProb[i]`. Given two nodes `start` and `end`, find the path with the maximum probability of success to go from `start` to `end` and return its success probability. If there is no path from `start` to `end`, return 0. Your answer will be accepted if it differs from the correct answer by at most 1e-5. Example 1: Input: n = 3, edges = [[0,1],[1,2],[0,2]], succProb = [0.5,0.5,0.2], start = 0, end = 2 Output: 0.25000 Explanation: There are two paths from",
+    "generated_text": "b] is an undirected edge connecting the nodes a and b with a probability of success of traversing that edge succProb[i] . Given two nodes start and end , find the path with the maximum probability of success to go from start to end and return its success probability. If there is no path from start to end , return 0. Your answer will be accepted if it differs from the correct answer by at most 1e-5. Example 1: Input: n = 3, edges = [[0,1],[1,2],[0,2]], succProb = [0.5,0.5,0.2], start = 0, end = 2 Output: 0.25000 Explanation: There are",
+    "is_exact_match": true
+  },
+  {
+    "id": 1518,
+    "prefix_text": "Given `numBottles` full water bottles, you can exchange `numExchange` empty water bottles for one full water bottle. The operation of",
+    "suffix_text": "drinking a full water bottle turns it into an empty bottle. Return the maximum number of water bottles you can drink. Example 1: Input: numBottles = 9, numExchange = 3 Output: 13 Explanation: You can exchange 3 empty bottles to get 1 full water bottle. Number of water bottles you can drink: 9 + 3 + 1 = 13. Example 2: Input: numBottles = 15, numExchange = 4 Output: 19 Explanation: You can exchange 4 empty bottles to get 1 full water bottle. Number of water bottles you can drink: 15 + 3 + 1 = 19. Example 3: Input:",
+    "generated_text": "drinking a full water bottle turns it into an empty bottle. Return _the maximum number of water bottles you can drink_. Example 1: Input: numBottles = 9, numExchange = 3 Output: 13 Explanation: You can exchange 3 empty bottles to get 1 full water bottle. Number of water bottles you can drink: 9 + 3 + 1 = 13. Example 2: Input: numBottles = 15, numExchange = 4 Output: 19 Explanation: You can exchange 4 empty bottles to get 1 full water bottle. Number of water bottles you can drink: 15 + 3 + 1 = 19. Example 3: Input:",
+    "is_exact_match": true
+  },
+  {
+    "id": 1523,
+    "prefix_text": "Given two non-negative integers `low` and `high`. Return the count of odd numbers between `low` and `high` (inclusive). Example 1:",
+    "suffix_text": "Input: low = 3, high = 7 Output: 3 Explanation: The odd numbers between 3 and 7 are [3,5,7]. Example 2: Input: low = 8, high = 10 Output: 1 Explanation: The odd numbers between 8 and 10 are [9]. Constraints: `0 <= low <= high <= 10^9`",
+    "generated_text": "Input: low = 3, high = 7 Output: 3 Explanation: The odd numbers between 3 and 7 are [3,5,7]. Example 2: Input: low = 8, high = 10 Output: 1 Explanation: The odd numbers between 8 and 10 are [9]. Constraints: * 0 <= low <= high <=",
+    "is_exact_match": true
+  },
+  {
+    "id": 1530,
+    "prefix_text": "Given the `root` of a binary tree and an integer `distance`. A pair of two different leaf nodes of a",
+    "suffix_text": "binary tree is said to be good if the length of the shortest path between them is less than or equal to `distance`. Return the number of good leaf node pairs in the tree. Example 1: Input: root = [1,2,3,null,4], distance = 3 Output: 1 Explanation: The leaf nodes of the tree are 3 and 4 and the length of the shortest path between them is 3. This is the only good pair. Example 2: Input: root = [1,2,3,4,5,6,7], distance = 3 Output: 2 Explanation: The good pairs are [4,5] and [6,7] with shortest path = 2. The pair [4,6]",
+    "generated_text": "binary tree is said to be good if the length of the shortest path between them is less than or equal to distance . Return the number of good leaf node pairs in the tree. Example 1: Input: root = [1,2,3,null,4], distance = 3 Output: 1 Explanation: The leaf nodes of the tree are 3 and 4 and the length of the shortest path between them is 3. This is the only good pair. Example 2: Input: root = [1,2,3,4,5,6,7], distance = 3 Output: 2 Explanation: The good pairs are [4,5] and [6,7] with shortest path = 2. The pair",
+    "is_exact_match": true
+  },
+  {
+    "id": 1561,
+    "prefix_text": "There are 3n piles of coins of varying size, you and your friends will take piles of coins as follows:",
+    "suffix_text": "In each step, you will choose any 3 piles of coins (not necessarily consecutive). Of your choice, Alice will pick the pile with the maximum number of coins. You will pick the next pile with maximum number of coins. Your friend Bob will pick the last pile. Repeat until there are no more piles of coins. Given an array of integers `piles` where `piles[i]` is the number of coins in the `ith` pile. Return the maximum number of coins which you can have. Example 1: Input: piles = [2,4,1,2,7,8] Output: 9 Explanation: Choose the triplet (2, 7, 8), Alice Pick",
+    "generated_text": "In each step, you will choose any 3 piles of coins (not necessarily consecutive). Of your choice, Alice will pick the pile with the maximum number of coins. You will pick the next pile with maximum number of coins. Your friend Bob will pick the last pile. Repeat until there are no more piles of coins. Given an array of integers piles where piles[i] is the number of coins in the ith pile. Return the maximum number of coins which you can have. Example 1: Input: piles = [2,4,1,2,7,8] Output: 9 Explanation: Choose the triplet (2, 7, 8), Alice Pick",
+    "is_exact_match": true
+  },
+  {
+    "id": 1566,
+    "prefix_text": "Given an array of positive integers `arr`, find a pattern of length `m` that is repeated `k` or more times.",
+    "suffix_text": "A pattern is a subarray (consecutive sub-sequence) that consists of one or more values, repeated multiple times consecutively without overlapping. A pattern is defined by its length and the number of repetitions. Return `true` if there exists a pattern of length `m` that is repeated `k` or more times, otherwise return `false`. Example 1: Input: arr = [1,2,4,4,4,4], m = 1, k = 3 Output: true Explanation: The pattern (4) of length 1 is repeated 4 consecutive times. Notice that pattern can be repeated k or more times but not less. Example 2: Input: arr = [1,2,1,2,1,1,1,3], m = 2,",
+    "generated_text": "A pattern is a subarray (consecutive sub-sequence) that consists of one or more values, repeated multiple times consecutively without overlapping. A pattern is defined by its length and the number of repetitions. Return true _if there exists a pattern of length_ m _that is repeated_ k _or more times, otherwise return_ false . Example 1: Input: arr = [1,2,4,4,4,4], m = 1, k = 3 Output: true Explanation: The pattern (4) of length 1 is repeated 4 consecutive times. Notice that pattern can be repeated k or more times but not less. Example 2: Input: arr = [1,2,1,2,1,1,1,3], m =",
+    "is_exact_match": true
+  },
+  {
+    "id": 1603,
+    "prefix_text": "Design a parking system for a parking lot. The parking lot has three kinds of parking spaces: big, medium, and",
+    "suffix_text": "small, with a fixed number of slots for each size. Implement the `ParkingSystem` class: `ParkingSystem(int big, int medium, int small)` Initializes object of the `ParkingSystem` class. The number of slots for each parking space are given as part of the constructor. `bool addCar(int carType)` Checks whether there is a parking space of `carType` for the car that wants to get into the parking lot. `carType` can be of three kinds: big, medium, or small, which are represented by `1`, `2`, and `3` respectively. A car can only park in a parking space of its `carType`. If there is no space",
+    "generated_text": "small, with a fixed number of slots for each size. Implement the ParkingSystem class: ParkingSystem(int big, int medium, int small) Initializes object of the ParkingSystem class. The number of slots for each parking space are given as part of the constructor. bool addCar(int carType) Checks whether there is a parking space of carType for the car that wants to get into the parking lot. carType can be of three kinds: big, medium, or small, which are represented by 1, 2, and 3 respectively. A car can only park in a parking space of its carType. If there is no space",
+    "is_exact_match": true
+  },
+  {
+    "id": 1608,
+    "prefix_text": "You are given an array `nums` of non-negative integers. `nums` is considered special if there exists a number `x` such",
+    "suffix_text": "that there are exactly `x` numbers in `nums` that are greater than or equal to `x`. Notice that `x` does not have to be an element in `nums`. Return `x` if the array is special, otherwise, return `-1`. It can be proven that if `nums` is special, the value for `x` is unique. Example 1: Input: nums = [3,5] Output: 2 Explanation: There are 2 values (3 and 5) that are greater than or equal to 2. Example 2: Input: nums = [0,0] Output: -1 Explanation: No numbers fit the criteria for x. If x = 0, there should be",
+    "generated_text": "that there are exactly x numbers in nums that are greater than or equal to x . Notice that x does not have to be an element in nums . Return x _if the array is special, otherwise, return_ -1 . It can be proven that if nums is special, the value for x is unique . Example 1: Input: nums = [3,5] Output: 2 Explanation: There are 2 values (3 and 5) that are greater than or equal to 2. Example 2: Input: nums = [0,0] Output: -1 Explanation: No numbers fit the criteria for x. If x =",
+    "is_exact_match": true
+  },
+  {
+    "id": 1630,
+    "prefix_text": "A sequence of numbers is called arithmetic if it consists of at least two elements, and the difference between every",
+    "suffix_text": "two consecutive elements is the same. More formally, a sequence `s` is arithmetic if and only if `s[i+1] - s[i] == s[1] - s[0] `for all valid `i`. For example, these are arithmetic sequences: 1, 3, 5, 7, 9 7, 7, 7, 7 3, -1, -5, -9 The following sequence is not arithmetic: 1, 1, 2, 5, 7 You are given an array of `n` integers, `nums`, and two arrays of `m` integers each, `l` and `r`, representing the `m` range queries, where the `ith` query is the range `[l[i], r[i]]`. All the arrays are 0-indexed. Return a list of",
+    "generated_text": "two consecutive elements is the same. More formally, a sequence s is arithmetic if and only if s[i+1] - s[i] == s[1] - s[0] for all valid i. For example, these are arithmetic sequences: 1, 3, 5, 7, 9 7, 7, 7, 7 3, -1, -5, -9 The following sequence is not arithmetic: 1, 1, 2, 5, 7 You are given an array of n integers, nums, and two arrays of m integers each, l and r, representing the m range queries, where the ith query is the range [l[i], r[i]]. All the arrays are 0-indexed. Return a list of",
+    "is_exact_match": true
+  },
+  {
+    "id": 1638,
+    "prefix_text": "Given two strings `s` and `t`, find the number of ways you can choose a non-empty substring of `s` and",
+    "suffix_text": "replace a single character by a different character such that the resulting substring is a substring of `t`. In other words, find the number of substrings in `s` that differ from some substring in `t` by exactly one character. For example, the underlined substrings in `\"computer\"` and `\"computation\"` only differ by the `'e'`/`'a'`, so this is a valid way. Return the number of substrings that satisfy the condition above. A substring is a contiguous sequence of characters within a string. Example 1: Input: s = \"aba\", t = \"baba\" Output: 6 Explanation: The following are the pairs of substrings from",
+    "generated_text": "replace a single character by a different character such that the resulting substring is a substring of t . In other words, find the number of substrings in s that differ from some substring in t by exactly one character . For example, the underlined substrings in \"computer \" and \"computation \" only differ by the 'e' / 'a' , so this is a valid way. Return _the number of substrings that satisfy the condition above._ A substring is a contiguous sequence of characters within a string. Example 1: Input: s = \"aba \", t = \"baba \" Output: 6",
+    "is_exact_match": true
+  },
+  {
+    "id": 1679,
+    "prefix_text": "You are given an integer array `nums` and an integer `k`. In one operation, you can pick two numbers from",
+    "suffix_text": "the array whose sum equals `k` and remove them from the array. Return the maximum number of operations you can perform on the array. Example 1: Input: nums = [1,2,3,4], k = 5 Output: 2 Explanation: Starting with nums = [1,2,3,4]: - Remove numbers 1 and 4, then nums = [2,3] - Remove numbers 2 and 3, then nums = [] There are no more pairs that sum up to 5, hence a total of 2 operations. Example 2: Input: nums = [3,1,3,4,3], k = 6 Output: 1 Explanation: Starting with nums = [3,1,3,4,3]: - Remove the first two 3's,",
+    "generated_text": "the array whose sum **equals** `k` and remove them from the array.\n\nReturn _the maximum number of operations you can perform on the array_.\n\n**Example 1:**\n\n**Input:** nums = \\[1,2,3,4\\], k = 5\n**Output:** 2\n**Explanation:** Starting with nums = \\[1,2,3,4\\]:\n- Remove numbers 1 and 4, then nums = \\[2,3\\]\n- Remove numbers 2 and 3, then nums = \\[\\]\nThere are no more pairs that sum up to 5, hence a total of 2 operations.\n\n**Example 2:**\n\n**Input:** nums = \\[3,1,3,4,3\\], k = 6\n**Output:** 1\n**Explanation:** Starting with nums = \\[3,1,3,4,3\\]:\n- Remove the first two 3's",
+    "is_exact_match": true
+  },
+  {
+    "id": 1710,
+    "prefix_text": "You are assigned to put some amount of boxes onto one truck. You are given a 2D array `boxTypes`, where",
+    "suffix_text": "`boxTypes[i] = [numberOfBoxesi, numberOfUnitsPerBoxi]`: `numberOfBoxesi` is the number of boxes of type `i`. `numberOfUnitsPerBoxi` is the number of units in each box of the type `i`. You are also given an integer `truckSize`, which is the maximum number of boxes that can be put on the truck. You can choose any boxes to put on the truck as long as the number of boxes does not exceed `truckSize`. Return the maximum total number of units that can be put on the truck. Example 1: Input: boxTypes = [[1,3],[2,2],[3,1]], truckSize = 4 Output: 8 Explanation: There are: - 1 box of",
+    "generated_text": "boxTypes[i] = [numberOfBoxesi, numberOfUnitsPerBoxi]: * numberOfBoxesi is the number of boxes of type i. * numberOfUnitsPerBoxi is the number of units in each box of the type i. You are also given an integer truckSize, which is the maximum number of boxes that can be put on the truck. You can choose any boxes to put on the truck as long as the number of boxes does not exceed truckSize. Return the maximum total number of units that can be put on the truck. Example 1: Input: boxTypes = [[1,3],[2,2],[3,1]], truckSize = 4 Output: 8 Explanation: There are: - 1",
+    "is_exact_match": true
+  },
+  {
+    "id": 1716,
+    "prefix_text": "Hercy wants to save money for his first car. He puts money in the Leetcode bank every day. He starts",
+    "suffix_text": "by putting in `$1` on Monday, the first day. Every day from Tuesday to Sunday, he will put in `$1` more than the day before. On every subsequent Monday, he will put in `$1` more than the previous Monday. Given `n`, return the total amount of money he will have in the Leetcode bank at the end of the `nth` day. Example 1: Input: n = 4 Output: 10 Explanation: After the 4th day, the total is 1 + 2 + 3 + 4 = 10. Example 2: Input: n = 10 Output: 37 Explanation: After the 10th day, the",
+    "generated_text": "by putting in $1 on Monday, the first day. Every day from Tuesday to Sunday he will put in $1 more than the day before. On every subsequent Monday, he will put in $1 more than the previous Monday. Given n, return the total amount of money he will have in the Leetcode bank at the end of the nth day. Example 1: Input: n = 4 Output: 10 Explanation: After the 4th day, the total is 1 + 2 + 3 + 4 = 10. Example 2: Input: n = 10 Output: 37 Explanation: After the 10th day, the",
+    "is_exact_match": true
+  },
+  {
+    "id": 1751,
+    "prefix_text": "You are given an array of `events` where `events[i] = [startDayi, endDayi, valuei]`. The `ith` event starts at `startDayi` and",
+    "suffix_text": "ends at `endDayi`, and if you attend this event, you will receive a value of `valuei`. You are also given an integer `k` which represents the maximum number of events you can attend. You can only attend one event at a time. If you choose to attend an event, you must attend the entire event. Note that the end day is inclusive: that is, you cannot attend two events where one of them starts and the other ends on the same day. Return the maximum sum of values that you can receive by attending events. Example 1: Input: events =",
+    "generated_text": "ends at endDayi , and if you attend this event, you will receive a value of valuei . You are also given an integer k which represents the maximum number of events you can attend. You can only attend one event at a time. If you choose to attend an event, you must attend the entire event. Note that the end day is inclusive : that is, you cannot attend two events where one of them starts and the other ends on the same day. Return _the maximum sum of values that you can receive by attending events._ Example 1:",
+    "is_exact_match": true
+  },
+  {
+    "id": 1752,
+    "prefix_text": "Given an array `nums`, return `true` if the array was originally sorted in non-decreasing order, then rotated some number of",
+    "suffix_text": "positions (including zero). Otherwise, return `false`. There may be duplicates in the original array. Note: An array `A` rotated by `x` positions results in an array `B` of the same length such that `A[i] == B[(i+x) % A.length]`, where `%` is the modulo operation. Example 1: Input: nums = [3,4,5,1,2] Output: true Explanation: [1,2,3,4,5] is the original sorted array. You can rotate the array by x = 3 positions to begin on the the element of value 3: [3,4,5,1,2]. Example 2: Input: nums = [2,1,3,4] Output: false Explanation: There is no sorted array once rotated that can make nums. Example",
+    "generated_text": "positions (including zero). Otherwise, return false . There may be duplicates in the original array. Note: An array A rotated by x positions results in an array B of the same length such that A[i] == B[(i+x) % A.length] , where % is the modulo operation. Example 1: Input: nums = [3,4,5,1,2] Output: true Explanation: [1,2,3,4,5] is the original sorted array. You can rotate the array by x = 3 positions to begin on the the element of value 3: [3,4,5,1,2]. Example 2: Input: nums = [2,1,3,4] Output: false Explanation: There is no sorted array once rotated that can make",
+    "is_exact_match": true
+  },
+  {
+    "id": 1755,
+    "prefix_text": "You are given an integer array `nums` and an integer `goal`. You want to choose a subsequence of `nums` such",
+    "suffix_text": "that the sum of its elements is the closest possible to `goal`. That is, if the sum of the subsequence's elements is `sum`, then you want to minimize the absolute difference `abs(sum - goal)`. Return the minimum possible value of `abs(sum - goal)`. Note that a subsequence of an array is an array formed by removing some elements (possibly all or none) of the original array. Example 1: Input: nums = [5,-7,3,5], goal = 6 Output: 0 Explanation: Choose the whole array as a subsequence, with a sum of 6. This is equal to the goal, so the absolute difference",
+    "generated_text": "that the sum of its elements is the closest possible to goal . That is, if the sum of the subsequence's elements is sum , then you want to minimize the absolute difference abs(sum - goal) . Return _the minimum possible value of_ abs(sum - goal) . Note that a subsequence of an array is an array formed by removing some elements (possibly all or none) of the original array. Example 1: Input: nums = [5,-7,3,5], goal = 6 Output: 0 Explanation: Choose the whole array as a subsequence, with a sum of 6. This is equal to the goal,",
+    "is_exact_match": true
+  },
+  {
+    "id": 1759,
+    "prefix_text": "Given a string `s`, return the number of homogenous substrings of `s`. Since the answer may be too large, return",
+    "suffix_text": "it modulo `109 + 7`. A string is homogenous if all the characters of the string are the same. A substring is a contiguous sequence of characters within a string. Example 1: Input: s = \"abbcccaa\" Output: 13 Explanation: The homogenous substrings are listed as below: \"a\" appears 3 times. \"aa\" appears 1 time. \"b\" appears 2 times. \"bb\" appears 1 time. \"c\" appears 3 times. \"cc\" appears 2 times. \"ccc\" appears 1 time. 3 + 1 + 2 + 1 + 3 + 2 + 1 = 13. Example 2: Input: s = \"xy\" Output: 2 Explanation: The homogenous",
+    "generated_text": "it modulo 109 + 7 . A string is homogenous if all the characters of the string are the same. A substring is a contiguous sequence of characters within a string. Example 1: Input: s = \"abbcccaa \" Output: 13 Explanation: The homogenous substrings are listed as below: \"a \" appears 3 times. \"aa \" appears 1 time. \"b \" appears 2 times. \"bb \" appears 1 time. \"c \" appears 3 times. \"cc \" appears 2 times. \"ccc \" appears 1 time. 3 + 1 + 2 + 1 + 3 + 2 + 1 = 13. Example 2:",
+    "is_exact_match": true
+  },
+  {
+    "id": 1768,
+    "prefix_text": "You are given two strings `word1` and `word2`. Merge the strings by adding letters in alternating order, starting with `word1`.",
+    "suffix_text": "If a string is longer than the other, append the additional letters onto the end of the merged string. Return the merged string. Example 1: Input: word1 = \"abc\", word2 = \"pqr\" Output: \"apbqcr\" Explanation: The merged string will be merged as so: word1: a b c word2: p q r merged: a p b q c r Example 2: Input: word1 = \"ab\", word2 = \"pqrs\" Output: \"apbqrs\" Explanation: Notice that as word2 is longer, \"rs\" is appended to the end. word1: a b word2: p q r s merged: a p b q r s Example 3: Input:",
+    "generated_text": "If a string is longer than the other, append the additional letters onto the end of the merged string. Return the merged string. Example 1: Input: word1 = \"abc \", word2 = \"pqr \" Output: \"apbqcr \" Explanation: The merged string will be merged as so: word1: a b c word2: p q r merged: a p b q c r Example 2: Input: word1 = \"ab \", word2 = \"pqrs \" Output: \"apbqrs \" Explanation: Notice that as word2 is longer, \"rs \" is appended to the end. word1: a b word2: p q r s merged: a p",
+    "is_exact_match": true
+  },
+  {
+    "id": 1780,
+    "prefix_text": "Given an integer `n`, return `true` if it is possible to represent `n` as the sum of distinct powers of",
+    "suffix_text": "three. Otherwise, return `false`. An integer `y` is a power of three if there exists an integer `x` such that `y == 3x`. Example 1: Input: n = 12 Output: true Explanation: 12 = 31 + 32 Example 2: Input: n = 91 Output: true Explanation: 91 = 30 + 32 + 34 Example 3: Input: n = 21 Output: false Constraints: `1 <= n <= 107`",
+    "generated_text": "three. Otherwise, return false . An integer y is a power of three if there exists an integer x such that y == 3x . Example 1: Input: n = 12 Output: true Explanation: 12 = 31 + 32 Example 2: Input: n = 91 Output: true Explanation: 91 = 30 + 32 + 34 Example 3: Input: n = 21 Output: false Constraints: * 1 <=",
+    "is_exact_match": true
+  },
+  {
+    "id": 1817,
+    "prefix_text": "You are given the logs for users' actions on LeetCode, and an integer `k`. The logs are represented by a",
+    "suffix_text": "2D integer array `logs` where each `logs[i] = [IDi, timei]` indicates that the user with `IDi` performed an action at the minute `timei`. Multiple users can perform actions simultaneously, and a single user can perform multiple actions in the same minute. The user active minutes (UAM) for a given user is defined as the number of unique minutes in which the user performed an action on LeetCode. A minute can only be counted once, even if multiple actions occur during it. You are to calculate a 1-indexed array `answer` of size `k` such that, for each `j` (`1 <= j",
+    "generated_text": "2D integer array logs where each logs[i] = [IDi, timei] indicates that the user with IDi performed an action at the minute timei . Multiple users can perform actions simultaneously, and a single user can perform multiple actions in the same minute. The user active minutes (UAM) for a given user is defined as the number of unique minutes in which the user performed an action on LeetCode. A minute can only be counted once, even if multiple actions occur during it. You are to calculate a 1-indexed array answer of size k such that, for each j ( 1",
+    "is_exact_match": true
+  }
+]
