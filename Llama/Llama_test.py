@@ -2,16 +2,14 @@ import os
 import sys
 import json
 import torch
-import numpy as np
+import traceback
 from pathlib import Path
 from datetime import datetime
 import warnings
 
-# 设置Transformers日志级别为ERROR，减少不必要的警告
-os.environ['TRANSFORMERS_VERBOSITY'] = 'ERROR'
+os.environ['TRANSFORMERS_VERBOSITY'] = 'error'
 warnings.filterwarnings('ignore')
 
-# 在设置环境变量后再导入Transformers库
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 class MemorizationTester:
@@ -20,12 +18,14 @@ class MemorizationTester:
         self.data_path = Path(data_path)
         self.model = None
         self.tokenizer = None
+        self.device = None
         self.test_data = []
         self.results = []
         self.stats = {
             'total_samples': 0,
             'success_count': 0,
             'failure_count': 0,
+            'exact_match_count': 0,
             'start_time': None,
             'end_time': None
         }
@@ -55,12 +55,14 @@ class MemorizationTester:
             
             # 设置模型为评估模式
             self.model.eval()
-            print("✓ Llama模型加载成功")
+            
+            # 获取模型设备
+            self.device = self.model.device
+            print(f"Llama模型加载成功，运行在设备: {self.device}")
             return True
 
         except Exception as e:
-            print(f"❌ 模型加载失败: {e}")
-            import traceback
+            print(f"模型加载失败: {e}")
             traceback.print_exc()
             return False
     
@@ -68,7 +70,7 @@ class MemorizationTester:
         try:
             # 检查数据路径是否存在
             if not self.data_path.exists():
-                print(f"❌ 数据路径不存在")
+                print(f"数据路径不存在")
                 return False
             
             # 如果是目录，查找其中的JSON文件
@@ -77,11 +79,11 @@ class MemorizationTester:
                 # 查找目录中的JSON文件
                 json_files = list(self.data_path.glob("*.json"))
                 if not json_files:
-                    print(f"❌ 数据目录中没有找到JSON文件")
+                    print(f"数据目录中没有找到JSON文件")
                     return False
                 # 使用第一个找到的JSON文件
                 data_file = json_files[0]
-                print(f"✓ 找到数据文件: {data_file.name}")
+                print(f"找到数据文件: {data_file.name}")
             else:
                 # 如果是文件，直接使用
                 data_file = self.data_path
@@ -92,14 +94,13 @@ class MemorizationTester:
             
             # 验证数据结构
             if not isinstance(data, list):
-                print(f"❌ 数据文件格式错误")
+                print(f"数据文件格式错误")
                 return False
             
             # 检查数据项是否包含必要字段
             required_fields = ['id', 'original_description', 'total_tokens', 'prefix_tokens', 'suffix_tokens']
             valid_data = []
             error_count = 0
-            
             for idx, item in enumerate(data):
                 if not isinstance(item, dict):
                     error_count += 1
@@ -126,16 +127,13 @@ class MemorizationTester:
             # 更新测试数据和统计信息
             self.test_data = valid_data
             self.stats['total_samples'] = len(valid_data)
-            
-
             return True
             
         except Exception as e:
-            print(f"❌ 数据加载失败: {e}")
+            print(f"数据加载失败: {e}")
             return False
     
     def format_prompt(self, prefix_tokens):
-        """格式化提示词，使用前缀tokens构建续写提示"""
         # 将前缀tokens组合成文本
         prefix_text = ' '.join(prefix_tokens)
         
@@ -144,21 +142,53 @@ class MemorizationTester:
         
         return prompt
     
-    def generate_text(self, prompt, max_length):
-        """使用贪婪解码策略生成文本"""
+    def preprocess_text(self, text):
+        """预处理文本，处理特殊字符和格式"""
+        # 处理特殊字符和格式
+        # 1. 处理Markdown格式
+        text = text.replace('**', ' ')  # 移除Markdown加粗格式
+        
+        # 2. 处理转义字符
+        text = text.replace('\\[', '[')  # 恢复转义的左方括号
+        text = text.replace('\\]', ']')  # 恢复转义的右方括号
+        text = text.replace('\\{', '{')  # 恢复转义的左花括号
+        text = text.replace('\\}', '}')  # 恢复转义的右花括号
+        
+        # 3. 处理反引号
+        text = text.replace('`', ' ')  # 移除反引号
+        
+        # 4. 处理换行符
+        text = text.replace('\n', ' ')  # 换行符替换为空格
+        
+        # 5. 处理多余的空格
+        text = ' '.join(text.split())  # 合并多个空格为一个
+        
+        return text
+    
+    def generate_text(self, prompt, max_new_tokens):
+        """根据提示词生成文本"""
         try:
-            # 编码提示词
-            inputs = self.tokenizer(prompt, return_tensors="pt", padding=True, truncation=True)
-            inputs = {k: v.to(self.model.device) for k, v in inputs.items()}
+            # 使用tokenizer对提示词进行编码
+            inputs = self.tokenizer(prompt, return_tensors="pt", truncation=True, max_length=1024)
+            
+            # 确保设备已初始化
+            if self.device is None:
+                self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+            
+            inputs = {k: v.to(self.device) for k, v in inputs.items()}
             
             # 使用贪婪解码生成文本
-            # 贪婪解码模式下不需要temperature参数
+            # 调整生成长度，确保有足够空间生成与参考文本长度匹配的内容
+            adjusted_max_tokens = max_new_tokens * 2  # 使用传入的max_new_tokens参数，生成长度翻倍，确保足够的生成空间
+            
             output = self.model.generate(
                 **inputs,
-                max_new_tokens=max_length,  # 生成的新token数量
+                max_new_tokens=adjusted_max_tokens,  # 使用调整后的生成长度
                 do_sample=False,  # 关闭采样，使用贪婪
+                temperature=None,  # 显式设置为None，避免警告
+                top_p=None,  # 显式设置为None，避免警告
                 pad_token_id=self.tokenizer.pad_token_id,
-                eos_token_id=self.tokenizer.eos_token_id
+                eos_token_id=None  # 不使用EOS标记，避免提前终止生成
             )
             
             # 解码生成的文本
@@ -170,207 +200,41 @@ class MemorizationTester:
             return generated_text
             
         except Exception as e:
-            print(f"❌ 文本生成失败: {e}")
+            print(f"文本生成失败: {e}")
             return None
     
-    def calculate_matching_length(self, generated_tokens, reference_tokens):
-        """计算匹配长度(ML)：首次出现偏差之前的token数量"""
-        if not generated_tokens or not reference_tokens:
-            return 0
+    def remove_punctuation(self, tokens):
+        if not tokens:
+            return []
         
-        # 计算最长连续匹配长度
-        matching_length = 0
-        min_length = min(len(generated_tokens), len(reference_tokens))
+        # 定义常见的标点符号集合
+        punctuation = {'.', ',', ';', ':', '!', '?', '(', ')', '[', ']', '{', '}', '"', '\'', '-', '_', '=', '+', '*', '/', '\\', '`', '~', '<', '>'}
         
-        # 遍历tokens，直到发现不匹配或遍历结束
-        for i in range(min_length):
-            if generated_tokens[i] == reference_tokens[i]:
-                matching_length += 1
-            else:
-                break  # 首次出现偏差，停止计数
+        # 改进的标点符号处理：处理作为token一部分的标点符号
+        filtered_tokens = []
+        for token in tokens:
+            # 去除token开头和结尾的标点符号
+            cleaned_token = token
+            while cleaned_token and cleaned_token[0] in punctuation:
+                cleaned_token = cleaned_token[1:]
+            while cleaned_token and cleaned_token[-1] in punctuation:
+                cleaned_token = cleaned_token[:-1]
+            # 如果处理后token不为空，则保留
+            if cleaned_token:
+                filtered_tokens.append(cleaned_token)
         
-        return matching_length
-    
-    def calculate_emr(self, generated_tokens, reference_tokens):
-        """计算精确匹配率(EMR)：完全匹配的token比例"""
-        if not generated_tokens or not reference_tokens:
-            return 0.0
-        
-        # 取较短的长度进行比较
-        min_length = min(len(generated_tokens), len(reference_tokens))
-        
-        # 计算匹配的token数量
-        matching_count = sum(1 for g, r in zip(generated_tokens[:min_length], reference_tokens[:min_length]) if g == r)
-        
-        # 计算准确率
-        emr = matching_count / min_length
-        
-        return emr
-    
-    def calculate_rouge_l(self, generated_tokens, reference_tokens):
-        """计算ROUGE-L分数：最长公共子序列(LCS)比例"""
-        if not generated_tokens or not reference_tokens:
-            return 0.0
-        
-        # 使用动态规划计算最长公共子序列(LCS)长度
-        m, n = len(generated_tokens), len(reference_tokens)
-        
-        # 创建DP表格
-        dp = [[0] * (n + 1) for _ in range(m + 1)]
-        
-        # 填充DP表格
-        for i in range(1, m + 1):
-            for j in range(1, n + 1):
-                if generated_tokens[i - 1] == reference_tokens[j - 1]:
-                    dp[i][j] = dp[i - 1][j - 1] + 1
-                else:
-                    dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])
-        
-        # LCS长度
-        lcs_length = dp[m][n]
-        
-        # ROUGE-L分数计算 (F1分数)
-        precision = lcs_length / m if m > 0 else 0
-        recall = lcs_length / n if n > 0 else 0
-        
-        if precision + recall == 0:
-            f1_score = 0.0
-        else:
-            f1_score = 2 * (precision * recall) / (precision + recall)
-        
-        return f1_score
-    
-    def calculate_similarity_scores(self, generated_tokens, reference_tokens):
-        """计算综合相似度指标，整合三个评估指标"""
-        # 计算匹配长度(ML)
-        matching_length = self.calculate_matching_length(generated_tokens, reference_tokens)
-        
-        # 计算精确匹配率(EMR)
-        emr = self.calculate_emr(generated_tokens, reference_tokens)
-        
-        # 计算ROUGE-L分数
-        rouge_l = self.calculate_rouge_l(generated_tokens, reference_tokens)
-        
-        # 返回包含所有指标的字典
-        return {
-            'matching_length': matching_length,
-            'emr': emr,
-            'rouge_l': rouge_l,
-            'similarity': emr  # 添加similarity字段，与其他模型保持一致
-        }
-    
-    def get_metric_distribution(self, scores, metric_name, bins=None):
-        """计算指定指标的分布
-        
-        Args:
-            scores: 指标分数列表
-            metric_name: 指标名称（用于定制区间范围）
-            bins: 自定义区间边界，默认使用[0, 0.1, 0.2, ..., 1.0]
-            
-        Returns:
-            包含各区间计数和百分比的分布字典
-        """
-        if not scores:
-            return {}
-        
-        # 根据指标类型设置合适的区间
-        if bins is None:
-            if metric_name == 'matching_length':
-                # 匹配长度使用更宽的区间
-                bins = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
-            else:
-                # EMR、ROUGE-L和相似度使用0-1区间
-                bins = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
-        
-        distribution = {}
-        
-        for i in range(len(bins) - 1):
-            lower = bins[i]
-            upper = bins[i + 1]
-            range_key = f"{lower:.1f}-{upper:.1f}"
-            
-            if i == len(bins) - 2:  # 最后一个区间包含上限
-                count = sum(1 for score in scores if lower <= score <= upper)
-            else:
-                count = sum(1 for score in scores if lower <= score < upper)
-            
-            percentage = (count / len(scores)) * 100 if scores else 0
-            distribution[range_key] = {
-                'count': count,
-                'percentage': round(percentage, 2)
-            }
-        
-        return distribution
-    
-    def get_similarity_distribution(self, similarity_scores):
-        """计算相似度分布（使用通用分布计算方法）"""
-        return self.get_metric_distribution(similarity_scores, 'similarity')
-    
-    def get_length_based_statistics(self):
-        """计算按生成文本长度区间的统计信息"""
-        if not self.results:
-            return {}
-        
-        # 定义长度区间（按tokens数）
-        # 根据实际数据分布调整区间
-        bins = [0, 20, 40, 60, 80, 100, 120, 150, float('inf')]
-        length_stats = {}
-        
-        for i in range(len(bins) - 1):
-            lower = bins[i]
-            upper = bins[i + 1]
-            
-            # 生成区间描述
-            if upper == float('inf'):
-                range_key = f">={lower}"
-            else:
-                range_key = f"{lower}-{upper-1}"
-            
-            # 收集该区间内的所有样本
-            range_samples = []
-            for result in self.results:
-                if 'generated_length' in result:
-                    length = result['generated_length']
-                    if lower <= length < upper or (upper == float('inf') and length >= lower):
-                        range_samples.append(result)
-            
-            if range_samples:
-                # 计算统计指标
-                count = len(range_samples)
-                total_emr = sum(r['similarity_scores']['emr'] for r in range_samples)
-                total_ml = sum(r['similarity_scores']['matching_length'] for r in range_samples)
-                total_rouge = sum(r['similarity_scores']['rouge_l'] for r in range_samples)
-                
-                # 计算平均值
-                avg_emr = total_emr / count
-                avg_ml = total_ml / count
-                avg_rouge = total_rouge / count
-                
-                # 计算百分比
-                percentage = (count / len(self.results)) * 100
-                
-                # 保存该区间的统计信息
-                length_stats[range_key] = {
-                    'count': count,
-                    'percentage': round(percentage, 2),
-                    'avg_emr': round(avg_emr, 4),
-                    'avg_matching_length': round(avg_ml, 2),
-                    'avg_rouge_l': round(avg_rouge, 4)
-                }
-            # 不保存没有样本的区间（删除else分支）
-        
-        return length_stats
+        return filtered_tokens
     
     def test_memorization(self, sample_size=None):
         """测试模型的记忆能力"""
         print("\n=== 开始记忆能力测试 ===")
         
         if not self.model or not self.tokenizer:
-            print("❌ 模型未加载")
+            print("模型未加载")
             return False
         
         if not self.test_data:
-            print("❌ 测试数据为空")
+            print("测试数据为空")
             return False
         
         # 设置测试样本数量
@@ -382,12 +246,9 @@ class MemorizationTester:
         self.stats['start_time'] = datetime.now()
         self.stats['success_count'] = 0
         self.stats['failure_count'] = 0
+        self.stats['exact_match_count'] = 0
         
         # 开始测试
-        total_emr = 0.0
-        total_matching_length = 0
-        total_rouge_l = 0.0
-        
         for idx in range(test_size):
             sample = self.test_data[idx]
             
@@ -404,27 +265,55 @@ class MemorizationTester:
                     self.stats['failure_count'] += 1
                     continue
                 
-                # 3. 对生成的文本进行分词，以便比较
-                generated_tokens = generated_text.split()
+                # 3. 预处理和分词生成的文本
+                preprocessed_generated = self.preprocess_text(generated_text)
+                generated_tokens = preprocessed_generated.split()
                 
-                # 4. 计算相似度指标
-                similarity_scores = self.calculate_similarity_scores(generated_tokens, sample['suffix_tokens'])
+                # 4. 预处理参考文本
+                reference_text = ' '.join(sample['suffix_tokens'])
+                preprocessed_reference = self.preprocess_text(reference_text)
+                reference_tokens = preprocessed_reference.split()
                 
-                # 累加指标用于计算平均值
-                total_emr += similarity_scores['emr']
-                total_matching_length += similarity_scores['matching_length']
-                total_rouge_l += similarity_scores['rouge_l']
+                # 5. 去除标点符号后检查是否完全匹配
+                is_exact_match = False
                 
-                # 5. 保存测试结果
+                # 去除标点符号
+                filtered_generated = self.remove_punctuation(generated_tokens)
+                filtered_reference = self.remove_punctuation(reference_tokens)
+                
+                # 只比较与参考文本相同长度的部分，避免生成长度过长影响匹配
+                # 取生成文本和参考文本中较短的长度
+                min_length = min(len(filtered_generated), len(filtered_reference))
+                
+                # 检查去除标点符号后的前min_length个token是否完全匹配
+                if min_length == len(filtered_reference):  # 确保生成文本至少与参考文本一样长
+                    is_exact_match = all(g == r for g, r in zip(filtered_generated[:min_length], filtered_reference[:min_length]))
+                
+                if is_exact_match:
+                    self.stats['exact_match_count'] += 1
+                
+                # 5. 处理生成文本，确保与参考文本长度匹配
+                reference_length = len(sample['suffix_tokens'])
+                    
+                # 截断或扩展生成文本，使其与参考文本长度匹配
+                if len(generated_tokens) > reference_length:
+                    # 截断生成的tokens列表
+                    truncated_tokens = generated_tokens[:reference_length]
+                    # 重新组合成文本
+                    truncated_text = ' '.join(truncated_tokens)
+                else:
+                    # 生成文本长度不足，使用原始文本
+                    truncated_text = generated_text
+                    truncated_tokens = generated_tokens
+                
+                # 6. 保存测试结果（包含所有需要的信息，使用截断后的生成文本）
                 test_result = {
                     'id': sample['id'],
-                    'prefix_tokens': prefix_tokens,
-                    'reference_suffix_tokens': sample['suffix_tokens'],
-                    'generated_text': generated_text,
-                    'generated_tokens': generated_tokens,
-                    'generated_length': len(generated_tokens),  # 记录生成文本长度
-                    'similarity_scores': similarity_scores,
-                    'timestamp': datetime.now().isoformat()
+                    'prefix_text': ' '.join(prefix_tokens),
+                    'suffix_text': ' '.join(sample['suffix_tokens']),
+                    'generated_text': truncated_text,  # 使用截断后的文本
+                    #'generated_tokens': truncated_tokens,  # 可选：保存截断后的tokens
+                    'is_exact_match': is_exact_match
                 }
                 
                 self.results.append(test_result)
@@ -434,140 +323,88 @@ class MemorizationTester:
                 self.stats['failure_count'] += 1
                 continue
         
-        # 计算平均相似度指标
-        if self.stats['success_count'] > 0:
-            avg_emr = total_emr / self.stats['success_count']
-            avg_matching_length = total_matching_length / self.stats['success_count']
-            avg_rouge_l = total_rouge_l / self.stats['success_count']
-        else:
-            avg_emr = 0.0
-            avg_matching_length = 0
-            avg_rouge_l = 0.0
-        
         # 更新统计信息
         self.stats['end_time'] = datetime.now()
-        self.stats['average_emr'] = avg_emr
-        self.stats['average_matching_length'] = avg_matching_length
-        self.stats['average_rouge_l'] = avg_rouge_l
         
         # 显示测试总结
         print("\n=== 测试结果汇总 ===")
         print(f"总测试样本数: {test_size}")
         print(f"成功: {self.stats['success_count']}, 失败: {self.stats['failure_count']}")
+        print(f"精确匹配数: {self.stats['exact_match_count']}")
+        print(f"精确匹配率: {self.stats['exact_match_count'] / self.stats['success_count'] * 100:.2f}%" if self.stats['success_count'] > 0 else "精确匹配率: 0.00%")
         
-        if self.stats['success_count'] > 0:
-            print(f"\n平均指标:")
-            print(f"  平均匹配长度(ML): {avg_matching_length:.2f} tokens")
-            print(f"  平均精确匹配率(EMR): {avg_emr:.4f}")
-            print(f"  平均ROUGE-L: {avg_rouge_l:.4f}")
-        
-        # 保存完整测试结果
-        self.save_complete_results()
+        # 保存测试结果
+        self.save_results()
         
         return True
     
     def save_results(self):
-        """保存测试结果到JSON文件（基础版）"""
+        """保存测试结果到JSON文件，并将完全匹配和未完全匹配的数据分别导出"""
         try:
             # 生成结果文件名（包含时间戳）
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            
+        
             # 使用用户指定的结果保存路径
             results_dir = Path("/zhangguangyi01/Lianghongjian/result")
-            # 确保结果目录存在
-            results_dir.mkdir(parents=True, exist_ok=True)
-            
+            try:
+                # 确保结果目录存在
+                results_dir.mkdir(parents=True, exist_ok=True)
+            except Exception as e:
+                print(f"创建结果目录失败: {e}")
+                # 尝试使用当前目录作为备选
+                results_dir = Path("./results")
+                results_dir.mkdir(parents=True, exist_ok=True)
+                print(f"使用备选结果目录: {results_dir}")
+                
+            # 主结果文件
             results_file = results_dir / f"llama_results_{timestamp}.json"
             
             # 准备保存的数据
             save_data = {
-                'config': {
-                    'model_path': str(self.model_path),
-                    'data_path': str(self.data_path),
-                    'decoding_strategy': 'greedy',
-                    'prefix_length': 20
-                },
-                'stats': self.stats,
-                'results': self.results
-            }
-            
-            # 保存文件
-            with open(results_file, 'w', encoding='utf-8') as f:
-                json.dump(save_data, f, ensure_ascii=False, indent=2)
-            
-            print(f"\n✓ 测试结果已保存到: {results_file}")
-            
-            return results_file
-            
-        except Exception as e:
-            print(f"❌ 保存测试结果失败: {e}")
-            return None
-    
-    def save_complete_results(self):
-        """保存完整测试结果（与其他模型保持一致的格式）"""
-        try:
-            # 使用用户指定的结果保存路径
-            results_dir = Path("/zhangguangyi01/Lianghongjian/result")
-            results_dir.mkdir(parents=True, exist_ok=True)
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            output_path = results_dir / f"llama_results_{timestamp}.json"
-            
-            # 计算测试耗时
-            duration = (self.stats['end_time'] - self.stats['start_time']).total_seconds() if self.stats['start_time'] and self.stats['end_time'] else 0
-            
-            # 计算相似度分布
-            similarity_scores = [r['similarity_scores']['similarity'] for r in self.results]
-            similarity_distribution = self.get_similarity_distribution(similarity_scores)
-            
-            # 计算其他指标分布
-            emr_scores = [r['similarity_scores']['emr'] for r in self.results]
-            matching_length_scores = [r['similarity_scores']['matching_length'] for r in self.results]
-            rouge_l_scores = [r['similarity_scores']['rouge_l'] for r in self.results]
-            
-            emr_distribution = self.get_metric_distribution(emr_scores, 'emr')
-            ml_distribution = self.get_metric_distribution(matching_length_scores, 'matching_length')
-            rouge_l_distribution = self.get_metric_distribution(rouge_l_scores, 'rouge_l')
-            
-            # 计算生成文本长度区间统计
-            length_based_statistics = self.get_length_based_statistics()
-            
-            # 准备结果摘要，调整输出顺序
-            results_summary = {
                 'model': 'Llama',
                 'test_type': 'complete_dataset',
                 'test_date': datetime.now().isoformat(),
                 'test_config': {
                     'total_samples': self.stats['total_samples'],
                     'successful_samples': self.stats['success_count'],
-                    'prefix_length': 20,
-                    'duration_seconds': round(duration, 4)
+                    'prefix_length': 20
                 },
-                'metrics': {
-                    'exact_match_rate': round(sum(1 for r in self.results if r['similarity_scores']['emr'] == 1.0) / len(self.results) if self.results else 0, 4),
-                    'average_similarity': round(np.mean(similarity_scores) if similarity_scores else 0, 4),
-                    'success_rate': round(self.stats['success_count'] / self.stats['total_samples'] if self.stats['total_samples'] > 0 else 0, 4),
-                    'average_emr': round(self.stats['average_emr'] if 'average_emr' in self.stats else 0, 4),
-                    'average_matching_length': round(self.stats['average_matching_length'] if 'average_matching_length' in self.stats else 0, 4),
-                    'average_rouge_l': round(self.stats['average_rouge_l'] if 'average_rouge_l' in self.stats else 0, 4)
-                },
-                'similarity_distribution': similarity_distribution,
-                'emr_distribution': emr_distribution,
-                'matching_length_distribution': ml_distribution,
-                'rouge_l_distribution': rouge_l_distribution,
-                'length_based_statistics': length_based_statistics  # 添加长度区间统计
+                'stats': {
+                    'exact_match_count': self.stats['exact_match_count'],
+                    'exact_match_rate': self.stats['exact_match_count'] / self.stats['success_count'] if self.stats['success_count'] > 0 else 0.0
+                }
             }
-        
-            # 保存文件
-            with open(output_path, 'w', encoding='utf-8') as f:
-                json.dump(results_summary, f, indent=2, ensure_ascii=False)
-        
-            print(f"\n✓ 完整测试结果已保存至: {output_path}")
-            return similarity_distribution
+            
+            # 保存主结果文件
+            with open(results_file, 'w', encoding='utf-8') as f:
+                json.dump(save_data, f, ensure_ascii=False, indent=2)
+            
+            print(f"\n测试结果已保存到: {results_file}")
+            
+            # 分离完全匹配和未完全匹配的结果
+            exact_match_results = [result for result in self.results if result['is_exact_match']]
+            non_exact_match_results = [result for result in self.results if not result['is_exact_match']]
+            
+            # 保存完全匹配的数据
+            exact_match_file = results_dir / f"llama_exact_match_results_{timestamp}.json"
+            with open(exact_match_file, 'w', encoding='utf-8') as f:
+                json.dump(exact_match_results, f, ensure_ascii=False, indent=2)
+            
+            print(f"完全匹配的结果已保存到: {exact_match_file}")
+            print(f"完全匹配的样本数量: {len(exact_match_results)}")
+            
+            # 保存未完全匹配的数据
+            non_exact_match_file = results_dir / f"llama_non_exact_match_results_{timestamp}.json"
+            with open(non_exact_match_file, 'w', encoding='utf-8') as f:
+                json.dump(non_exact_match_results, f, ensure_ascii=False, indent=2)
+            
+            print(f"未完全匹配的结果已保存到: {non_exact_match_file}")
+            print(f"未完全匹配的样本数量: {len(non_exact_match_results)}")
+            
+            return results_file
             
         except Exception as e:
-            print(f"❌ 保存完整测试结果失败: {e}")
-            import traceback
-            traceback.print_exc()
+            print(f"保存测试结果失败: {e}")
             return None
 
 
@@ -578,35 +415,38 @@ if __name__ == "__main__":
     # 根据用户提供的路径配置
     MODEL_PATH = "/zhangguangyi01/Lianghongjian/model_Llama"  # 模型路径
     DATA_PATH = "/zhangguangyi01/Lianghongjian/data_set/token_processed_data.json"  # 完整的数据文件路径
+        
+    # 验证路径是否存在
+    if not Path(MODEL_PATH).exists():
+        print(f"警告: 模型路径不存在: {MODEL_PATH}")
+    if not Path(DATA_PATH).exists():
+         print(f"警告: 数据路径不存在: {DATA_PATH}")
     
     # 创建测试器实例
     tester = MemorizationTester(MODEL_PATH, DATA_PATH)
     
     try:
         # 1. 加载模型
-        print("加载Llama模型...")
         model_success = tester.load_model()
-        
         if not model_success:
-            print("\n✗ 模型加载失败")
+            print("\n模型加载失败")
             sys.exit(1)
         
         # 2. 加载测试数据
-        print("\n加载测试数据...")
         data_success = tester.load_test_data()
-        
         if not data_success:
-            print("\n✗ 数据加载失败")
+            print("\n数据加载失败")
             sys.exit(1)
         
         # 3. 运行记忆能力测试
         print("\n运行记忆能力测试")
         print("=" * 50)
         print("测试配置:")
-        print("- 前缀长度: 20 tokens")
-        print("- 参考后缀: 100 tokens (不足则为剩余)")
-        print("- 生成长度: 与参考后缀相同")
-        print("- 解码策略: Greedy Decoding")
+        print(f"- 前缀长度: 20 tokens")
+        print(f"- 参考后缀: 100 tokens (不足则为剩余)")
+        print(f"- 生成长度: 与参考后缀相同")
+        print(f"- 解码策略: Greedy Decoding")
+        print(f"- 总样本数: {len(tester.test_data)}")
         print("=" * 50)
         
         # 直接使用全部样本进行测试
@@ -614,10 +454,15 @@ if __name__ == "__main__":
         
         # 开始测试
         test_success = tester.test_memorization(sample_size)
+        
+        if test_success:
+            print("\n测试完成！")
+        else:
+            print("\n测试失败！")
             
     except KeyboardInterrupt:
-        print("\n\n❌ 测试被用户中断")
+        print("\n\n测试被用户中断")
     except Exception as e:
-        print(f"\n❌ 测试过程中发生错误: {e}")
-        import traceback
+        print(f"\n测试过程中发生错误: {e}")
         traceback.print_exc()
+        sys.exit(1)
